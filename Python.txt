@@ -1,0 +1,318 @@
+cd #выбор дирректории
+python # запуск интерпритатора 
+quit #выход из интерпритатора
+python test.py # запуск файла
+
+print("Hello", name)
+int(-2.3) --> -2
+floal(5) --> 5
+type(7) --> int # вычесление типа
+s = int(input('Введите данные')) # ждет данные от пользователя и переводит в int и сохраняет в s
+
+x y or and not
+0 0 0  0   1
+0 1 1  0   1
+1 0 1  0   0
+1 1 1  1   0
+по порядку вычисления not and or
+
+a = 10
+print(10<=a<100)-->True
+print('*', end='') # печать символа без переноса на следующюю строку
+
+if (x=1):
+    print(1)
+elif (x=2)
+    print(2)
+else:
+    print(3)
+
+len('abcdef') --> 6
+'\n' #символ перевода строк
+'\t' #символ табуляции
+# # комментарий
+
+while i < 5: # оператор выполняющий цикл пока выполняется устловие
+a, b = input().split() # сохраняет и разделяет пользовательский ввод
+break # завершает цикл
+continue # переходит на следующий цикл
+for i in 1, 2, 3, 4 # оператор для последовательности чисел, i пройдет по всем числам после in
+for i in range(2, 15, 4) # числа от 2 до 14 с шагом 4
+
+for
+   break
+else:
+
+while
+else: somethink # else после for при выходе с break или выход с while будет выполнено 
+
+LIST COMPREHENSION
+
+a, b = (int(i) for i in input().split()) # для пременных
+a = [int(i) for i in input().split()] # для списка
+
+
+STRING
+
+строки не изменяемы
+genome = 'ATTG'
+for c in genome:
+    print(c)   # проход по строке
+
+genome = 'ATTG'
+print(genome.count('T')) # считает сколько T в genome 
+
+s='aTGcc' p='cc'
+s.upper() --> 'ATGCC'
+s.lower() --> 'atgcc'
+s.count(p) --> 1
+s.find(p) --> 3
+s.find('A') --> -1 #  не входит
+if 'TG' in s: #проверка вхождения в строку
+s.replace('c', 'C') --> 'aTGCC'
+
+s = 'agTtcAGtc'
+genome.upper().count('gt'.upper()) --> 2 # с начала поднимает s, потом поиск поднятого gt
+
+ 
+
+SLICING
+
+dna = 'ATTCGGAGCT'
+dna[1] --> 'T'
+dna[1:4] --> 'TTC'
+dna[:4] --> 'ATTC'
+dna[4:] --> 'GGTAGCT'
+dna[1:-1] --> 'TTCGGAGC'
+dna[1:-1:2] --> 'TCGG'
+dna[::-1] --> 'TCGAGGCTTA'
+
+СПИСКИ
+students = [] # пустой список
+students = ['olya', 'seriy', 'pasha'] # заполненный список
+for student in students:
+   print("hello, " + student + "!")
+
+можно явно исменять список: 
+students[0] = 'Olya'
+students += ['Katya'] или students.append('Katya') # students += 'Katya' прибавит 5 элементов в список
+students.insets(1, 'Boris') # вставляет элемент между 0 и 1 элементами
+students.remove('Boris') # удаляет первое вхождение элемента 'Boris'
+del students[0] # удаляет нулевой элемент
+
+поиск элементов в списке
+if 'ivan' in students:
+   print('ivan is here')
+
+if 'ivan' not in students:
+   print ('ivan is out')
+
+ind = students.index('Sasha') # возвращает индекс элемента в списке или ошибку
+
+сортировка
+
+sorted_students = sorted(students) # не меняет изначальный список
+student.sort() # меняет изначальный список
+min() , max() # выводит максимальный и мин элемент (если элементы сравнимы)
+
+students.reverse() или students[::-1] # переворачивает список
+reversed(students)  # тоже но без изменения изначального списка
+
+создание списков
+a = [] 
+a = [1, 3, 5]
+b = a // ссылка будет идти на один и тотже объект
+a = [0] * 5 --> [0, 0, 0, 0, 0]  
+a = [0 for i in range(5)] --> [0, 0, 0, 0, 0]
+a = [i * i for i in range(5)] --> [0, 1, 4, 9, 16]
+
+двумерные списки
+a = [[1,2],[3,4]]
+a = [1][1] --> 4
+
+a = [[0] * n for i in  range(n)]
+a = [[0 for j in range(n)] for i in range(n)]
+
+ФУНКЦИИ
+
+def f(n):
+    return n * 10 + 5 # Функция объявляется в начале программы
+
+def min(*a): # Функция с произвольным количеством параметров
+def my_range(start, stop, step = 1): # Функция с заданными параметрами
+
+МНОЖЕСТВА
+
+s = set() # создание множества пустого
+basket = {'apple', 'orange', 'apple'} # создание множества
+print(basket) --> {'orange', apple'} # повторы исключаются
+'orange' in basket --> True # проверка нахождения в множестве
+
+операции множеств
+
+s.add(element)
+s.remove(element) #вызывает ошибки при удалении если элемент отсутствует
+s.discard(element) #не вызывает ошибок при удалении 
+s.clear()
+
+СЛОВАРИ DICTIONARY
+
+d = dict()
+d = {}
+d = {'a': 239, 10:100}
+print(d['a']) # выведет ошибку если такого ключа нет в словаре
+d[key] = value # присвоение нового значения ключу
+d.get(key) # выдает либо значение либо None если ключа такого нет
+del d[key] # удаление пары ключ и заначение
+
+перебор элементов словаря
+
+d = {'C':14, 'A':12, 'T':9, 'G':18}
+for key in d
+    print(key, end=' ') --> G T A T
+for key in d.keys():
+   print(key, end=' ') --> G T A T
+for value in d.values():
+    print(value, end=' ') --> 18 14 12 9
+for key, value in d.items():
+    print(key, value, end='; ') --> G 18; C 14; A 12; T 9;
+
+d['aaa'] = ['a', 'b'] # одному ключу может соответствовать список заначений
+
+ЧТЕНИЕ ИЗ ФАЙЛА
+
+with open('text.txt', 'r') as inf:
+    s1 = inf.readline()
+    s2 = inf.readline()
+
+inf.readline() # читает строку
+inf.read() # читает весь текст
+inf.readline().strip() # убирает спец символы в строке('\t', '\n')
+inf.read().splitlines() # делит текст на строки
+
+with open('text.txt', 'r') as inf:
+    for line in inf:
+        line = line.strip()
+        print(line) # чтение всех строк в файле
+
+ 
+
+os.path.join('.', 'dirname', 'filename.txt') # подключаемый модуль позволяющий переделывать путь к файлу в разных ОС --> './dirname/filename.txt'
+
+ЗАПИСЬ В ФАЙЛ
+
+with open('text.txt', 'w') as out:
+    ouf.write('Some text\n') # \n oбязательна иначе переноса не будет
+    ouf.write(str(25)) # перевод в строку обязателен
+
+МОДУЛИ
+
+имя модуля - это имя файла без расширения
+import my_module # импорт модуля
+my_module.foo() # использование функции из импортированного модуля
+
+from my_module import foo
+foo() # импорт одной функции из модуля
+
+from my_module import *
+foo() # импорт всех функций
+
+from my_module import foo as my_foo
+my_foo() # импор функции из модуля и назначение ей особого имени
+
+Модуль sys показывает список аргументов командной строки
+запуск через cmd 
+python file.py
+import sys
+print(len(sys.argv)) --> 1 # показывает что программа запущенна с одним аргументом (file.py)
+print(sys.argv) --> file.py
+
+Модуль subprocess может запускать внешние процессы с параметрами
+subprocess.call(["python", "-h"])
+
+subprocess.call(args, *, stdin=None, stdout=None, stderr=None, shell=False, timeout=None) # можно назначить stdout и тогда вывод будет осуществлен в фаил, а не командную строку
+
+Установка библиотек
+
+после установки miniconda с галочкой PATH
+cmd от админа
+conda install requests # установка библиотеки для работы в интернете
+
+Модуль requests может взамодействовать с сайтами 
+import requests
+r = requests.get('http://example.com') 
+print(r.text) # выведет текст сайта
+
+Библиотека NumPy # работа с числовыми массивами
+conda install numpy
+a = array([2, 3, 4]) # создание одномерного массива, массивы могут быть только одного типа
+a.ndim --> 1 # размерность массива
+a.shape--> (1, 3) # 1строка 3 столбца
+z = zeros((3,2)) # заполнение массива 3 на 2 нулями
+arange(10, 30, 5) # генерирование массива от 10 до 30 с шагом 5
+linspace(0, 2, 9) # генерация массива от 0 до 2 (ключительно) в размере 9 точек
+b = arrage(12).reshape(4, 3) # превращение одноменого массива в 4 на 3
+
+сложение массивов
+a = array([10, 20, 30])
+b = arange(3)
+print(a) --> [10 20 30]
+print(b) --> [0 1 2]
+print(a + b) --> [10 21 32] # сложение и вычитание происходит поэлементно
+print(a**2)--> [100 400 900]
+print(2*sin(a)) --> [-1.08 1.82 -1.97]
+print(a<20) --> [True Folse Folse]
+
+
+
+Библтотека matplotlib # построение графиков
+conda install matplotlib
+
+КОРТЕЖИ
+
+не изменяемы, быстрее чем списки, можно использовать в качестве ключей словаря
+ не имеют метода index, но имеют in
+
+info = ('a', 0, False, (4, 5, 6), [])
+g = (5) # это не кортеж
+info[3:4] # срезы в кортежах это новый кортеж
+
+is_target_node = False
+node = 'Node1'
+if (node == 'Node1' or node == 'Node2' or node == 'Node3')
+    is_target_node = True
+сократим-->
+node = 'Node1'
+is_target_node = (node == 'Node1' or node == 'Node2' or node == 'Node3')
+сократим используя кортеж
+node = 'Node1'
+is_target_node = node in ('Node1', 'Node2', 'Node3')
+
+присваивание кортежу
+f, s, *c, l = [1, 2, 3, 4, 5, 6, 7]  # *c--> [3, 4, 5, 6]
+
+УСЛОВИЯ
+if foo == True:
+...
+if boo == False:
+сократим
+if foo:
+...
+if not boo:
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
