@@ -46,6 +46,12 @@ else:
 while
 else: somethink # else после for при выходе с break или выход с while будет выполнено 
 
+for
+    for
+        if
+            break
+    if # можно использовать если break не было
+
 LIST COMPREHENSION
 
 a, b = (int(i) for i in input().split()) # для пременных
@@ -140,6 +146,70 @@ def f(n):
 
 def min(*a): # Функция с произвольным количеством параметров
 def my_range(start, stop, step = 1): # Функция с заданными параметрами
+
+ПЕРЕДАЧА АРГУМЕНТОВ В ФУНКЦИЮ
+
+def printab(a, b):
+    print(a)
+    print(b)
+
+printab(10, 20)
+printab(a=10, b=20)
+lst=[10 ,20]
+printab(*lst)
+args = {'a': 10, 'b': 20}
+printab(**args)
+
+def foo(a, b=10): # b - значение по умолчанию если не задано
+def foo(a=20, b): --> Error syntacsis
+
+def foo(a, b ,*args):
+foo(1, 2, 3, 4, 5) # можно передовать произвольное количество аргументов
+
+def printab(a, b, **kwargs):
+    print(a, b)
+    for key in kwargs:
+        print(key, kwargs[key])
+printab(10, c=30, jimmi=123, b=20)
+
+порядок инициализирования аргументов
+def function_name([positional_args,
+                  [positional_args_with_default,
+                  [*post_args_name,
+                  [keyword_only_name,
+                  [**kw_args_name]]]]]):
+def printab(a, b=10, *args, c=10, d, **kwargs):
+    print(a, b, c, d)
+print(15, d=15)-->15 10 10 15
+
+GLOBAL VARIABLE
+
+ok_status = True
+vowels = ["a", "u", "i", "e", "o"]
+def check(word):
+    global ok_status # использование не локальной переменной функции, а глобальной
+    for vowel in vowels:
+        if vowerl in word:
+            return = False
+    ok_status = False
+    return False
+
+NONELOCAL VARIABLE
+
+def f():
+    ok_status = True
+    vowels = ["a", "u", "i", "e", "o"]
+    def check(word):
+        nonlocal ok_status # для использования переменных на уровень или несколько выше видимости выше
+            for vowel in vowels:
+                if vowerl in word:
+                    return = False
+            ok_status = False
+            return False
+
+f()
+print(ok_status) --> NameError
+
 
 МНОЖЕСТВА
 
@@ -301,15 +371,275 @@ if foo:
 if not boo:
 
 
+if len(value) > 0:
+сократим
+if len(value):
+сократим
+if value !=[]: # '' для строк, {} для словарей, set() для множеств, () для кортежей
+сократим
+if value:
+
+ЦИКЛЫ
+по циклу лучше проходить не используя индекс, а проходя по значению
+
+если требуется иметь доступ к индексу и значению то стоит использовать функцию enumerate
+my_list = ['Node1', 'Node2', 'Node3']
+for i, value in enumerate(my_list):
+    print(i, value)
+#enumerate превращает список в кортеж, где по два элемента (( , ),( , ))
+
+
+функция формат {}.format (потом поискать в интернете)
+
+
+FUNCTION .join
+
+l = ['a', 'b' , 'c']
+s = ''
+for value in l:
+    s += value + ', '
+print(s)
+***
+l = ['a', 'b' , 'c']
+print(', '.join(l))
+если требуется преобразование
+l = [1, 2 , 3]
+print(', '.join(str(x) for x in l))
+
+
+так как значение по умолчанию для функции вычисляется один раз, не стоит использовать изменяющиеся обьекты (списки, словари)
+def f(x, l=[]):
+    l.append(x)
+    return l
+print(f(1)) -->[1]
+print(f(2)) -->[1, 2]
+print(f(3)) -->[1, 2, 3]
+***
+def f(x, l=None):
+    if l is None:
+        l = []
+    l.append(x)
+    return l
+print(f(1)) -->[1]
+print(f(2)) -->[2]
+print(f(3)) -->[3]
+
+формирование словаря
+
+def foo()
+    somethink
+cache = {x: foo(x) for x in range(-100, 100)}
+
+при генерации в круглых скобках производится экономия памяти
+
+l = [...]
+v1 = [x for x in l if x % 2 == 0]
+v2 = (x for x in l if x % 2 == 0)
+
+ИДЕНТИФИКАТОР ОБЪЕКТА
+
+x = [1, 2, 3]
+print(id(x)) --->12345
+print(id([1, 2, 3])) --->44385
+
+ОПЕРАТОР is проверяет ссылаются ли переменные на один и тотже обьект
+x = [1, 2, 3]
+y = x
+y is x ---> True
+y is [1, 2, 3] ---> False
+x is None # проверяет объект на пустоту
+
+type(x) #показывает тит объекта
+
+Immutable                          Mutable
+int                                list
+float                              dict
+complex(комплексные числа)         set
+bool
+tuple(кортеж)
+str
+frozenset(не изменяемое множество)
+
+def от define(определим)
+
++РАБОТА ФУНКЦИИ
+
+a = []
+def foo(arg1, arg2):
+  a.append("foo")
+foo(a.append("arg1"), a.append("arg2"))
+print(a) --> ['arg1', 'arg2', 'foo']
+
+СТЕК ВЫЗОВА
+
+x = [1, 2, 3]
+print(x.pop())-->3
+print(x)-->[1, 2]
+print(x.append(4))-->None
+print(x)-->[1, 2, 4]
+
+FUNKTION lambda
+
+def identity(x):
+    return x
+сократим
+lambda x: x
+print(lambde x: x + 1)(3)-->4
 
 
 
+FUNKTION map()
+n, k = map(int, input().split()) #прогоняет список через нужную функцию
+
+def addition(n): 
+    return n + n  
+numbers = (1, 2, 3, 4) 
+result = map(addition, numbers) 
+print(list(result))-->[2, 4, 6, 8]
 
 
+numbers1 = [1, 2, 3] 
+numbers2 = [4, 5, 6] 
+result = map(lambda x, y: x + y, numbers1, numbers2) 
+print(list(result)) --> [5, 7, 9]
 
 
+def func(el1, el2): 
+    return '%s|%s' % (el1, el2)
+list(map(func, [1, 2], [3, 4, 5]))--> ['1|3', '2|4']
 
- 
+dict(map(lambda *args: args, [1, 2], [3, 4]))--> {1: 3, 2: 4} #удобное создание словаря
+
+CLASSES
+
+class MyClass:
+    a = 10
+    def func(self):
+        print('Hello')
+print(MyClass.a) # MyClass.a отребут класса MyClass
+print(MyClass.func) #  MyClass.func отребут класса MyClass
+в отличии от функций тело класса исполняется в момент определения самого класса и за ним закрепляется определенный namespace
+
+OBJECT OF CLASS
+
+class MyClass:
+    a = 10
+    def func(self):
+        print('Hello')
+x = MyClass() # x is instance(экземпляр) of class MyClass. MyClass() it's constructor of class MyClass
+print(type(x))
+print(type(MyClass))
+
+
+class Counter:
+    pass # when hollow(empty) class
+Counter -->class object
+x = Counter # x is instant object
+x.count = 0
+x.count += 1
+
+
+class Counter:
+    def __init__(self):  # a function __init__ принимает ещё не существующий instance(экземпляр) self
+        self.count = 0 # к ещё не существующему instance, add атрибут
+Counter
+x = Counter()
+print(x.conut) --> 0
+x.count += 1
+
+
+class Counter:
+    def __init__(self, start = 0):   
+        self.count = start 
+Counter
+x1 = Counter(10) # аргумент 10 встает after self in def __init__
+x = Counter()
+print(x.conut) --> 0
+x.count += 1
+
+METHOD
+
+class Counter:
+    def __init__(self):  
+        self.count = 0
+    def inc(self):
+        self.count += 1
+    def reset(self):
+        self.count = 0
+Counter
+x = Counter()
+x.inc --> 1
+print(x.count)
+Counter.inc(x) -->2 # Тоже самое что и x.inc строчкой выше (Bound Method(связанный метод))
+print(x.count)
+x.reset()-->0
+print(x.count)
+
+VARIABLE OF CLASS
+
+class Song:
+    tags = []
+    def __init__(self, artist, song):
+        self.artist = artist
+        self.song = song
+        #self.tags = []
+    def add_tags(self, *args):
+        self.tags.extend(args) # extend() - тоже самое что и append(), но может добавлять несколько элементов
+song1 = Song("Shakey", "Roll")
+song1.add_tags("Americana", "Country")
+song2 = Song ("Neuromonah", "Holodno")
+song2.add_tags("Russian", "Drum")
+print(song2.tags) --> "Americana" "Country" "Russian" "Drum" # все добавилось в tags = [] так как не объявлен атрибут self.tegs и интерпритатор ищет его в классе
+таково бы не случилось если ракоментировать self.tags = [] и закоментировать tags = []
+
+НАСЛЕДОВАНИЕ CLASS
+
+class DerivedClassName (Base1, Base2, Base3): # Base1..3 классы от которых идет наследование
+
+
+class MyList(list):
+    def even_lenght(self):
+        return len(self) % 2 == 0
+x = MyList()
+print(x)--> []
+x.extend([1, 2, 3, 4, 5])
+print(x)--> [1, 2, 3, 4, 5]
+print(x.even_lenght()) -->False
+x.append(6)
+print(x.even_lenght()) -->True  # def __repr__(self): #от representation print смотрит в классе как показать что либо (урок 1.6.3)
+
+
+class D: pass
+class E: pass
+class B(D, E): pass
+class C: pass
+class A(B, C): pass
+issubclass(A, A) --> True # every class heir(наследник) is himself. issubclass is function for проверки является ли first argument heir of second argument
+issubclass(C, D) --> False 
+issubclass(A, D) --> True
+issubclass(C, object) --> True # class object ancestor(предок) for every classes
+issubclass(object, С) --> False # class object don't have parents
+x = A()
+isinstance(x, A) --> True # isinstance проверяет является ли объект экземпляром какого-либо класса
+isinstance(x, B) --> True
+isinstance(x, object) --> True
+isinstance(x, str) --> False
+print(A.mro()) # от method resolution order, показывает порядок перебора классов в множественном наследовании 
+
+
+class EvenLengthMixin:
+    def even_length(self):
+        return len(self) % 2 == 0
+class MyList(list, EvenLengthMixin):
+    def pop(self):
+        x = super(MyList, self.pop() #функция супер застовляет искать функцию в предках MyList исключая MyList, тоже самое list.pop(self)
+        print("Last valut is ", x)
+        return x
+ml = MyList([1, 2, 4, 17])
+z = ml.pop() --> Last value is 17
+print(z) --> 17
+print(ml) --> [1, 2, 4]
+
 
 
 
