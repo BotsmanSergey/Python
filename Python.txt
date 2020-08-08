@@ -235,6 +235,20 @@ d[key] = value # присвоение нового значения ключу
 d.get(key) # выдает либо значение либо None если ключа такого нет
 del d[key] # удаление пары ключ и заначение
 
+
+dict.clear() # очищает словарь.
+dict.copy() # возвращает копию словаря.
+dict.get(key[, default]) # возвращает значение ключа, но если его нет, не бросает исключение, а возвращает default (по умолчанию None).
+dict.items() # возвращает пары (ключ, значение).
+dict.keys() # возвращает ключи в словаре.
+dict.pop(key[, default]) # удаляет ключ и возвращает значение. Если ключа нет, возвращает default (по умолчанию бросает исключение).
+dict.popitem() # удаляет и возвращает пару (ключ, значение). Если словарь пуст, бросает исключение KeyError. Помните, что словари неупорядочены.
+dict.setdefault(key[, default]) # возвращает значение ключа, но если его нет, не бросает исключение, а создает ключ с значением default (по умолчанию None).
+dict.update([other]) # обновляет словарь, добавляя пары (ключ, значение) из other. Существующие ключи перезаписываются. Возвращает None (не новый словарь!).
+dict.values() # возвращает значения в словаре
+
+
+
 перебор элементов словаря
 
 d = {'C':14, 'A':12, 'T':9, 'G':18}
@@ -632,7 +646,7 @@ class EvenLengthMixin:
         return len(self) % 2 == 0
 class MyList(list, EvenLengthMixin):
     def pop(self):
-        x = super(MyList, self.pop() #функция супер застовляет искать функцию в предках MyList исключая MyList, тоже самое list.pop(self)
+        x = super(MyList, self).pop() #функция супер застовляет искать функцию в предках MyList исключая MyList, тоже самое list.pop(self)
         print("Last valut is ", x)
         return x
 ml = MyList([1, 2, 4, 17])
@@ -641,7 +655,35 @@ print(z) --> 17
 print(ml) --> [1, 2, 4]
 
 
+EXCEPTIONS
 
+try:                          # try ... except TypeError - catch Error (TypeError) and do somethink after except
+    x = [1, 2, "hello", 7]
+    x.sort
+    print(x) 
+except TypeError:
+    print("Type Error :-(")
+except ZeroDivisionError:
+    print("ZeroDivisionError :-(") # we can make several exception 
+
+print ("I can natch")
+# если in function have error, then function return - None
+
+
+def f(x, y):
+    try:
+        return x / y
+    except (TypeError, ZeroDivisionError) as e: # catch in one exception two errors
+        print(type(e)) # выводим параметры ошибки (и в строках ниже тоже)
+        print(e)
+        print(e.args)
+    finally:  # блок finally запускается в любом случаи была поймана офибка или нет
+        print("finally")
+print(f(5, 0))
+
+
+except:   #cath every errors
+    print("Error :-(")
 
 
 
