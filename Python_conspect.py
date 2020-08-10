@@ -655,7 +655,7 @@ print(z) --> 17
 print(ml) --> [1, 2, 4]
 
 
-EXCEPTIONS
+# EXCEPTIONS
 
 try:                          # try ... except TypeError - catch Error (TypeError) and do somethink after except
     x = [1, 2, "hello", 7]
@@ -667,7 +667,7 @@ except ZeroDivisionError:
     print("ZeroDivisionError :-(") # we can make several exception 
 
 print ("I can natch")
-# если in function have error, then function return - None
+# if in function have error, then function return - None
 
 
 def f(x, y):
@@ -677,7 +677,7 @@ def f(x, y):
         print(type(e)) # выводим параметры ошибки (и в строках ниже тоже)
         print(e)
         print(e.args)
-    finally:  # блок finally запускается в любом случаи была поймана офибка или нет
+    finally:  # блок finally запускается в любом случаи, была поймана ошибка или нет
         print("finally")
 print(f(5, 0))
 
@@ -685,6 +685,45 @@ print(f(5, 0))
 except:   #cath every errors
     print("Error :-(")
 
+# MY EXCEPTIONS
+
+def greet(name):
+    if name[0].isupper():
+        return "Hello,  " + name
+    else:
+        raise ValueError (name + " is inappropriate name") # is crate me exception
+
+print(great("Anton"))
+print(great("anton")) --> ValueError: anton in inappropriate name
 
 
+# me can catch my exception
+def greet(name):
+    if name[0].isupper():
+        return "Hello,  " + name
+    else:
+        raise ValueError (name + " is inappropriate name")
 
+while True:
+    try:
+        name = input("Please enter you name: ")
+        greeting = great(name)
+        print(greeting)
+    except ValueError:
+        print("Please try again")
+    else:
+        break # if don't catch break
+
+
+# if we wont see our Error_name, then we create own Error_class
+class BadName(Exception): # Exception is main class all exceptions
+    pass
+
+def great(name):
+    if mane[0].isupper():
+        return "Hello, " + name
+    else:
+        raise BadName(name + " is inappropriate name")
+
+print(great("Anton"))
+print(great("anton"))--> BadName : antom is anapropriate name"
