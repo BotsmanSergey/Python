@@ -263,7 +263,7 @@ for key, value in d.items():
 
 d['aaa'] = ['a', 'b'] # одному ключу может соответствовать список заначений
 
-ЧТЕНИЕ ИЗ ФАЙЛА
+# ЧТЕНИЕ ИЗ ФАЙЛА
 
 with open('text.txt', 'r') as inf:
     s1 = inf.readline()
@@ -283,13 +283,13 @@ with open('text.txt', 'r') as inf:
 
 os.path.join('.', 'dirname', 'filename.txt') # подключаемый модуль позволяющий переделывать путь к файлу в разных ОС --> './dirname/filename.txt'
 
-ЗАПИСЬ В ФАЙЛ
+# ЗАПИСЬ В ФАЙЛ
 
 with open('text.txt', 'w') as out:
     ouf.write('Some text\n') # \n oбязательна иначе переноса не будет
     ouf.write(str(25)) # перевод в строку обязателен
 
-МОДУЛИ
+# МОДУЛИ
 
 имя модуля - это имя файла без расширения
 import my_module # импорт модуля
@@ -375,7 +375,13 @@ is_target_node = node in ('Node1', 'Node2', 'Node3')
 присваивание кортежу
 f, s, *c, l = [1, 2, 3, 4, 5, 6, 7]  # *c--> [3, 4, 5, 6]
 
-УСЛОВИЯ
+# передача dict to function argument
+d = {'a': 1, 'b': 2}
+def foo(a, b):
+    pass
+foo(**d)
+
+# УСЛОВИЯ
 if foo == True:
 ...
 if boo == False:
@@ -421,7 +427,7 @@ l = [1, 2 , 3]
 print(', '.join(str(x) for x in l))
 
 
-так как значение по умолчанию для функции вычисляется один раз, не стоит использовать изменяющиеся обьекты (списки, словари)
+# так как значение по умолчанию для функции вычисляется один раз, не стоит использовать изменяющиеся обьекты (списки, словари)
 def f(x, l=[]):
     l.append(x)
     return l
@@ -438,25 +444,25 @@ print(f(1)) -->[1]
 print(f(2)) -->[2]
 print(f(3)) -->[3]
 
-формирование словаря
+# формирование словаря
 
 def foo()
     somethink
 cache = {x: foo(x) for x in range(-100, 100)}
 
-при генерации в круглых скобках производится экономия памяти
+# при генерации в круглых скобках производится экономия памяти
 
 l = [...]
 v1 = [x for x in l if x % 2 == 0]
 v2 = (x for x in l if x % 2 == 0)
 
-ИДЕНТИФИКАТОР ОБЪЕКТА
+# ИДЕНТИФИКАТОР ОБЪЕКТА
 
 x = [1, 2, 3]
 print(id(x)) --->12345
 print(id([1, 2, 3])) --->44385
 
-ОПЕРАТОР is проверяет ссылаются ли переменные на один и тотже обьект
+# ОПЕРАТОР is проверяет ссылаются ли переменные на один и тотже обьект
 x = [1, 2, 3]
 y = x
 y is x ---> True
@@ -476,7 +482,7 @@ frozenset(не изменяемое множество)
 
 def от define(определим)
 
-+РАБОТА ФУНКЦИИ
+# +РАБОТА ФУНКЦИИ
 
 a = []
 def foo(arg1, arg2):
@@ -484,7 +490,7 @@ def foo(arg1, arg2):
 foo(a.append("arg1"), a.append("arg2"))
 print(a) --> ['arg1', 'arg2', 'foo']
 
-СТЕК ВЫЗОВА
+# СТЕК ВЫЗОВА
 
 x = [1, 2, 3]
 print(x.pop())-->3
@@ -524,7 +530,7 @@ list(map(func, [1, 2], [3, 4, 5]))--> ['1|3', '2|4']
 
 dict(map(lambda *args: args, [1, 2], [3, 4]))--> {1: 3, 2: 4} #удобное создание словаря
 
-CLASSES
+# CLASSES
 
 class MyClass:
     a = 10
@@ -571,7 +577,7 @@ x = Counter()
 print(x.conut) --> 0
 x.count += 1
 
-METHOD
+# METHOD
 
 class Counter:
     def __init__(self):  
@@ -580,7 +586,7 @@ class Counter:
         self.count += 1
     def reset(self):
         self.count = 0
-Counter
+# Counter
 x = Counter()
 x.inc --> 1
 print(x.count)
@@ -589,7 +595,7 @@ print(x.count)
 x.reset()-->0
 print(x.count)
 
-VARIABLE OF CLASS
+# VARIABLE OF CLASS
 
 class Song:
     tags = []
@@ -606,7 +612,7 @@ song2.add_tags("Russian", "Drum")
 print(song2.tags) --> "Americana" "Country" "Russian" "Drum" # все добавилось в tags = [] так как не объявлен атрибут self.tegs и интерпритатор ищет его в классе
 таково бы не случилось если ракоментировать self.tags = [] и закоментировать tags = []
 
-НАСЛЕДОВАНИЕ CLASS
+# НАСЛЕДОВАНИЕ CLASS
 
 class DerivedClassName (Base1, Base2, Base3): # Base1..3 классы от которых идет наследование
 
@@ -727,3 +733,165 @@ def great(name):
 
 print(great("Anton"))
 print(great("anton"))--> BadName : antom is anapropriate name"
+
+
+
+# IMPORT
+(2.2.1)
+
+#exceptions.py
+class BadName(Exception):
+    pass
+
+def great(name):
+    if mane[0].isupper():
+        return "Hello, " + name
+    else:
+        raise BadName(name + " is inappropriate name")
+print("Import is execution")
+
+#import_lesson.py
+
+import exceptions
+
+print(exceptions.great("Students"))
+-->
+Import is execution # becouse import исполняется in time объявления
+
+
+
+# что бы не исполнять не нужный код во время импорта в другой файл
+# есть паттерн проверки по имени. Если прописать print(__name__) в файле и запустить из это го же файла 
+# --> __main__
+
+
+# fib.py
+def fib(k):
+    if k == 0 or k == 1:
+        return 1
+    else:
+        return fib(k - 1) + fib(k -2)
+
+if name == "__main__": # если  запуск из файла --> __main__
+    print(__name__)
+    print(fib(31)) # это строка исполняется очень долго и импорт её очень затратен
+
+# import_lesson.py
+import fib # если запуск из файла с импортом то имя будет fit и строки ниже if name == "__main__": не исполнятся
+
+
+# большой урок 2.2.3 про import 
+# 1) импорт исполняется один раз 
+# 2) есть словать импорта куда всегда идет обращения, что бы не исполнять импорт 2 раза
+# 3) если в словаре нет поиск идет по внешним библиотекам 
+
+# IMPORT PART OF SOMETHINK
+from exceptions import BadName, greet #импорт из файла exceptions.py  класса BadName и функции greet
+
+from exceptions import BadName, greet as exc_greed # теперь в данном файле функция greed именнуется как exc_greed
+
+from exceptions inport * # импортируются все имена exceptions.py, кроме имен начинающихся с "_" и не перечисленных в 
+# __all__ если такая функция имеется
+
+# exceptions.py
+GREETING = "Hello"
+
+class BadName(Exception):
+    pass
+
+def great(name):
+    if mane[0].isupper():
+        return GREETING + name
+    else:
+        raise BadName(name + " is inappropriate name")
+
+__all__ = ["BadName", "greet"] # GREETING импортировано не будет
+
+# PIP - Утилита pip позволит нам устанавливать пакеты из репозитория Python Package Index
+pip --version
+# или
+pip3 --version
+
+
+# ITERATOR
+
+lst = [1, 2]
+iterator = iter(lst)
+print(next(iterator)) --> 1
+print(next(iterator)) --> 2
+print(next(iterator)) --> StopIteration
+
+
+for i in lst:
+    print(i)
+# same as
+it = iter(it)
+while True:
+    try:
+        i = next(it)
+        print(i)
+    except StopIteration:
+        break
+
+
+
+# iterator in my_class
+from random import random
+
+class RandomIterator:
+    def __init__(self, k):
+        self.k = k
+        self.i = 0
+
+    def __next__(self):
+        if self.i < self.k:
+            self.i += 1
+            return random
+        else:
+            raise StopIteration
+
+x = RandomIterator(3)
+print(next(x)) # next(x) эквивалентно x.__next__() 
+print(next(x))
+print(next(x))
+print(next(x))--> StopIteration
+
+# "for" in my_class
+from random import random
+
+class RandomIterator:
+    def __iter__(self):
+        return self
+
+    def __init__(self, k):
+        self.k = k
+        self.i = 0
+
+    def __next__(self):
+        if self.i < self.k:
+            self.i += 1
+            return random
+        else:
+            raise StopIteration
+
+for x in RandomIterator(10):
+    print(x)
+
+# "for" in my_class2
+class DoubleElementListIterator:
+    def __init__(self, lst):
+        self.lst = lst
+        self.i = 0
+    def __next__(self):
+        if self.i < len(self.lst):
+            self.i += 2
+            return self.lst[self.i-2], self.lst[self.i-1]
+        else:
+            raise StopIteration
+
+class MyList(list)
+    def __iter__(self):
+        return DoubleElementListIterator(self)
+
+for pair in MyList([1, 2, 3, 4]):
+    print(pair)
