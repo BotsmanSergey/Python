@@ -14,7 +14,7 @@ x y or and not
 0 1 1  0   1
 1 0 1  0   0
 1 1 1  1   0
-по порядку вычисления not and or
+# по порядку вычисления not and or
 
 a = 10
 print(10<=a<100)-->True
@@ -52,15 +52,15 @@ for
             break
     if # можно использовать если break не было
 
-LIST COMPREHENSION
+# LIST COMPREHENSION
 
 a, b = (int(i) for i in input().split()) # для пременных
 a = [int(i) for i in input().split()] # для списка
 
 
-STRING
+# STRING
 
-строки не изменяемы
+# строки не изменяемы
 genome = 'ATTG'
 for c in genome:
     print(c)   # проход по строке
@@ -82,7 +82,7 @@ genome.upper().count('gt'.upper()) --> 2 # с начала поднимает s,
 
  
 
-SLICING
+# SLICING
 
 dna = 'ATTCGGAGCT'
 dna[1] --> 'T'
@@ -93,20 +93,20 @@ dna[1:-1] --> 'TTCGGAGC'
 dna[1:-1:2] --> 'TCGG'
 dna[::-1] --> 'TCGAGGCTTA'
 
-СПИСКИ
+# СПИСКИ
 students = [] # пустой список
 students = ['olya', 'seriy', 'pasha'] # заполненный список
 for student in students:
    print("hello, " + student + "!")
 
-можно явно исменять список: 
+# можно явно исменять список: 
 students[0] = 'Olya'
 students += ['Katya'] или students.append('Katya') # students += 'Katya' прибавит 5 элементов в список
 students.insets(1, 'Boris') # вставляет элемент между 0 и 1 элементами
 students.remove('Boris') # удаляет первое вхождение элемента 'Boris'
 del students[0] # удаляет нулевой элемент
 
-поиск элементов в списке
+# поиск элементов в списке
 if 'ivan' in students:
    print('ivan is here')
 
@@ -115,7 +115,7 @@ if 'ivan' not in students:
 
 ind = students.index('Sasha') # возвращает индекс элемента в списке или ошибку
 
-сортировка
+# сортировка
 
 sorted_students = sorted(students) # не меняет изначальный список
 student.sort() # меняет изначальный список
@@ -124,7 +124,7 @@ min() , max() # выводит максимальный и мин элемент
 students.reverse() или students[::-1] # переворачивает список
 reversed(students)  # тоже но без изменения изначального списка
 
-создание списков
+# создание списков
 a = [] 
 a = [1, 3, 5]
 b = a // ссылка будет идти на один и тотже объект
@@ -132,14 +132,14 @@ a = [0] * 5 --> [0, 0, 0, 0, 0]
 a = [0 for i in range(5)] --> [0, 0, 0, 0, 0]
 a = [i * i for i in range(5)] --> [0, 1, 4, 9, 16]
 
-двумерные списки
+# двумерные списки
 a = [[1,2],[3,4]]
 a = [1][1] --> 4
 
 a = [[0] * n for i in  range(n)]
 a = [[0 for j in range(n)] for i in range(n)]
 
-ФУНКЦИИ
+# ФУНКЦИИ
 
 def f(n):
     return n * 10 + 5 # Функция объявляется в начале программы
@@ -147,7 +147,7 @@ def f(n):
 def min(*a): # Функция с произвольным количеством параметров
 def my_range(start, stop, step = 1): # Функция с заданными параметрами
 
-ПЕРЕДАЧА АРГУМЕНТОВ В ФУНКЦИЮ
+# ПЕРЕДАЧА АРГУМЕНТОВ В ФУНКЦИЮ
 
 def printab(a, b):
     print(a)
@@ -172,7 +172,7 @@ def printab(a, b, **kwargs):
         print(key, kwargs[key])
 printab(10, c=30, jimmi=123, b=20)
 
-порядок инициализирования аргументов
+# порядок инициализирования аргументов
 def function_name([positional_args,
                   [positional_args_with_default,
                   [*post_args_name,
@@ -182,7 +182,7 @@ def printab(a, b=10, *args, c=10, d, **kwargs):
     print(a, b, c, d)
 print(15, d=15)-->15 10 10 15
 
-GLOBAL VARIABLE
+# GLOBAL VARIABLE
 
 ok_status = True
 vowels = ["a", "u", "i", "e", "o"]
@@ -194,7 +194,7 @@ def check(word):
     ok_status = False
     return False
 
-NONELOCAL VARIABLE
+# NONELOCAL VARIABLE
 
 def f():
     ok_status = True
@@ -211,21 +211,21 @@ f()
 print(ok_status) --> NameError
 
 
-МНОЖЕСТВА
+# МНОЖЕСТВА
 
 s = set() # создание множества пустого
 basket = {'apple', 'orange', 'apple'} # создание множества
 print(basket) --> {'orange', apple'} # повторы исключаются
 'orange' in basket --> True # проверка нахождения в множестве
 
-операции множеств
+# операции множеств
 
 s.add(element)
 s.remove(element) #вызывает ошибки при удалении если элемент отсутствует
 s.discard(element) #не вызывает ошибок при удалении 
 s.clear()
 
-СЛОВАРИ DICTIONARY
+# СЛОВАРИ DICTIONARY
 
 d = dict()
 d = {}
@@ -249,7 +249,7 @@ dict.values() # возвращает значения в словаре
 
 
 
-перебор элементов словаря
+# перебор элементов словаря
 
 d = {'C':14, 'A':12, 'T':9, 'G':18}
 for key in d
@@ -291,7 +291,7 @@ with open('text.txt', 'w') as out:
 
 # МОДУЛИ
 
-имя модуля - это имя файла без расширения
+# имя модуля - это имя файла без расширения
 import my_module # импорт модуля
 my_module.foo() # использование функции из импортированного модуля
 
@@ -304,30 +304,30 @@ foo() # импорт всех функций
 from my_module import foo as my_foo
 my_foo() # импор функции из модуля и назначение ей особого имени
 
-Модуль sys показывает список аргументов командной строки
-запуск через cmd 
+# Модуль sys показывает список аргументов командной строки
+# запуск через cmd 
 python file.py
 import sys
 print(len(sys.argv)) --> 1 # показывает что программа запущенна с одним аргументом (file.py)
 print(sys.argv) --> file.py
 
-Модуль subprocess может запускать внешние процессы с параметрами
+# Модуль subprocess может запускать внешние процессы с параметрами
 subprocess.call(["python", "-h"])
 
 subprocess.call(args, *, stdin=None, stdout=None, stderr=None, shell=False, timeout=None) # можно назначить stdout и тогда вывод будет осуществлен в фаил, а не командную строку
 
-Установка библиотек
+# Установка библиотек
 
-после установки miniconda с галочкой PATH
-cmd от админа
+# после установки miniconda с галочкой PATH
+# cmd от админа
 conda install requests # установка библиотеки для работы в интернете
 
-Модуль requests может взамодействовать с сайтами 
+# Модуль requests может взамодействовать с сайтами 
 import requests
 r = requests.get('http://example.com') 
 print(r.text) # выведет текст сайта
 
-Библиотека NumPy # работа с числовыми массивами
+# Библиотека NumPy # работа с числовыми массивами
 conda install numpy
 a = array([2, 3, 4]) # создание одномерного массива, массивы могут быть только одного типа
 a.ndim --> 1 # размерность массива
@@ -337,7 +337,7 @@ arange(10, 30, 5) # генерирование массива от 10 до 30 с
 linspace(0, 2, 9) # генерация массива от 0 до 2 (ключительно) в размере 9 точек
 b = arrage(12).reshape(4, 3) # превращение одноменого массива в 4 на 3
 
-сложение массивов
+# сложение массивов
 a = array([10, 20, 30])
 b = arange(3)
 print(a) --> [10 20 30]
@@ -349,13 +349,13 @@ print(a<20) --> [True Folse Folse]
 
 
 
-Библтотека matplotlib # построение графиков
+# Библтотека matplotlib # построение графиков
 conda install matplotlib
 
-КОРТЕЖИ
+# КОРТЕЖИ
 
-не изменяемы, быстрее чем списки, можно использовать в качестве ключей словаря
- не имеют метода index, но имеют in
+# не изменяемы, быстрее чем списки, можно использовать в качестве ключей словаря
+# не имеют метода index, но имеют in
 
 info = ('a', 0, False, (4, 5, 6), [])
 g = (5) # это не кортеж
@@ -365,14 +365,14 @@ is_target_node = False
 node = 'Node1'
 if (node == 'Node1' or node == 'Node2' or node == 'Node3')
     is_target_node = True
-сократим-->
+# сократим-->
 node = 'Node1'
 is_target_node = (node == 'Node1' or node == 'Node2' or node == 'Node3')
-сократим используя кортеж
+# сократим используя кортеж
 node = 'Node1'
 is_target_node = node in ('Node1', 'Node2', 'Node3')
 
-присваивание кортежу
+# присваивание кортежу
 f, s, *c, l = [1, 2, 3, 4, 5, 6, 7]  # *c--> [3, 4, 5, 6]
 
 # передача dict to function argument
@@ -385,34 +385,34 @@ foo(**d)
 if foo == True:
 ...
 if boo == False:
-сократим
+# сократим
 if foo:
 ...
 if not boo:
 
 
 if len(value) > 0:
-сократим
+# сократим
 if len(value):
-сократим
+# сократим
 if value !=[]: # '' для строк, {} для словарей, set() для множеств, () для кортежей
-сократим
+# сократим
 if value:
 
-ЦИКЛЫ
-по циклу лучше проходить не используя индекс, а проходя по значению
+# ЦИКЛЫ
+# по циклу лучше проходить не используя индекс, а проходя по значению
 
-если требуется иметь доступ к индексу и значению то стоит использовать функцию enumerate
+# если требуется иметь доступ к индексу и значению то стоит использовать функцию enumerate
 my_list = ['Node1', 'Node2', 'Node3']
 for i, value in enumerate(my_list):
     print(i, value)
-#enumerate превращает список в кортеж, где по два элемента (( , ),( , ))
+# enumerate превращает список в кортеж, где по два элемента (( , ),( , ))
 
 
-функция формат {}.format (потом поискать в интернете)
+# функция формат {}.format (потом поискать в интернете)
 
 
-FUNCTION .join
+# FUNCTION .join
 
 l = ['a', 'b' , 'c']
 s = ''
@@ -422,7 +422,7 @@ print(s)
 ***
 l = ['a', 'b' , 'c']
 print(', '.join(l))
-если требуется преобразование
+# если требуется преобразование
 l = [1, 2 , 3]
 print(', '.join(str(x) for x in l))
 
@@ -498,17 +498,17 @@ print(x)-->[1, 2]
 print(x.append(4))-->None
 print(x)-->[1, 2, 4]
 
-FUNKTION lambda
+# FUNKTION lambda
 
 def identity(x):
     return x
-сократим
+# сократим
 lambda x: x
 print(lambde x: x + 1)(3)-->4
 
 
 
-FUNKTION map()
+# FUNKTION map()
 n, k = map(int, input().split()) #прогоняет список через нужную функцию
 
 def addition(n): 
@@ -538,9 +538,9 @@ class MyClass:
         print('Hello')
 print(MyClass.a) # MyClass.a отребут класса MyClass
 print(MyClass.func) #  MyClass.func отребут класса MyClass
-в отличии от функций тело класса исполняется в момент определения самого класса и за ним закрепляется определенный namespace
+# в отличии от функций тело класса исполняется в момент определения самого класса и за ним закрепляется определенный namespace
 
-OBJECT OF CLASS
+# OBJECT OF CLASS
 
 class MyClass:
     a = 10
@@ -836,6 +836,15 @@ while True:
 
 
 # iterator in my_class
+class RandomIterator:
+    def __next__(self):
+        return 0
+
+x = RandomIterator()
+print(next(x))
+
+
+
 from random import random
 
 class RandomIterator:
@@ -890,8 +899,45 @@ class DoubleElementListIterator:
             raise StopIteration
 
 class MyList(list)
-    def __iter__(self):
+    def __iter__(self): 
         return DoubleElementListIterator(self)
 
-for pair in MyList([1, 2, 3, 4]):
+for pair in MyList([1, 2, 3, 4]): 
     print(pair)
+#Метод __iter__() запускается один раз при создании экземпляра класса MyList и в этот момент 
+# этот созданный экземпляр становится "итерируемым" (интерпретатор запоминает все, что ему нужно 
+# для работы про этот объект). Дальше вы уже работаете с этим экземпляром и все что вы делаете, 
+# в том числе итерируетесь по нему (вызываете метод next), связано именно с этим экземпляром. 
+# При создании нового экземпляра __iter__() будет запущен еще раз, но этот вызов будет связан 
+# именно с этим новым экземпляром и никак не повлияет на счетчики ранее созданных экземпляров.
+
+# GENERATOR
+# yield - это отложенное исполнение при этом не требующее next и iter
+
+def semple_gen():
+    print(1)
+    yield 1
+    print(2)
+    # retunt "No more lements" - если вставить эту строку, то после return ничего читаться не будет,
+    # будет брощена StopIteration: No more elements
+    yield 2
+    print (3)
+
+gen = simple_gen()
+x = next(gen)
+print(x) --> 1
+y = next(gen)
+print(y) --> 2
+z = next(gen) --> StopIteration
+
+
+
+
+from random import random
+
+def random_generator(k):
+    for i in range(k):
+        yeild random()
+gen = random_generator(3)
+for i in gen:
+    print(i)
