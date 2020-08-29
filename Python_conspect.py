@@ -58,6 +58,29 @@ a, b = (int(i) for i in input().split()) # для пременных
 a = [int(i) for i in input().split()] # для списка
 
 
+x = [-2, -1, 0, 1, 2]
+y = [i*i for i in x]
+print(y) --> [4, 1, 0, 1, 4]
+
+y = [i*i for i in x if i > 0]
+print(y) --> [1, 4]
+
+
+z = []
+for x in range(3):
+    for y in range(3):
+        if y >= x:
+            z.append((x, y))
+#same as
+z =[(x, y) for x in range(3) for y in range(3) if y >= x] --> [(0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 2)]
+
+
+z =((x, y) for x in range(3) for y in range(3) if y >= x) # если круглые скобки
+print(z) --> generator object
+print(next(z)) --> (0, 0)
+print(next(z)) --> (0, 1)
+
+
 # STRING
 
 # строки не изменяемы
@@ -263,6 +286,34 @@ for key, value in d.items():
 
 d['aaa'] = ['a', 'b'] # одному ключу может соответствовать список заначений
 
+
+# WORK WITH FILE
+
+# r (read) - open for read (default)
+# w (write) - open for write, file clear
+# a (append) - open for write, write in end
+# b (binary) - open in binary mode
+# t (text) - open in text mode
+# r+ - open for read and write
+# w+ - open for read adn write, file clear
+f = open("test.txt", "rb")
+x = f.read(5) # read first 5 simbols
+y = f.read() # чтение всего оставшегося файла
+print(repr(x)) # выводит строку со служебными символами ()
+x = x.splitlines() # разделение на строки без спец сиволов и перенос в список
+x = f.readline() # чтение построчно, так как целый фаил может занимать много места и чтение по строкам рациональнее
+x = x.rstrip() # убирание символов с права от строки
+f.close
+
+f = open("text.txt")
+for line in f:
+    line = line.rstrip()
+    print(repr(line))
+    # в конце остается пустая строка
+x = f.read()
+print(repr(x)) -->'' # выводит посленюю строку
+f.close
+
 # ЧТЕНИЕ ИЗ ФАЙЛА
 
 with open('text.txt', 'r') as inf:
@@ -288,6 +339,34 @@ os.path.join('.', 'dirname', 'filename.txt') # подключаемый моду
 with open('text.txt', 'w') as out:
     ouf.write('Some text\n') # \n oбязательна иначе переноса не будет
     ouf.write(str(25)) # перевод в строку обязателен
+
+# write file
+
+f = open("test.txt", "w") # если такого файла нет, то он будет создан
+f.write("hello")
+f.write("world") --> helloworld # для переноса нужет \n
+
+lines = ["Line 1", "Line 2", "Line 3"]
+contents = "\n".join(lines)
+f.write(contents) # будет записано 3 строки
+
+#append in file
+
+f = open("test_append.txt", "a") # будет создан файл даже если он не создан
+f.write("Hello")
+
+f.close
+
+# with - same as open-close
+
+with open("text.txt") as f, open("text_copy.txt", "w") as w:
+    for line in f:
+        w.write(line) # copy in text_copy
+        line = line.rstrip()
+        print(line)
+
+f.close
+
 
 # МОДУЛИ
 
@@ -498,37 +577,6 @@ print(x)-->[1, 2]
 print(x.append(4))-->None
 print(x)-->[1, 2, 4]
 
-# FUNKTION lambda
-
-def identity(x):
-    return x
-# сократим
-lambda x: x
-print(lambde x: x + 1)(3)-->4
-
-
-
-# FUNKTION map()
-n, k = map(int, input().split()) #прогоняет список через нужную функцию
-
-def addition(n): 
-    return n + n  
-numbers = (1, 2, 3, 4) 
-result = map(addition, numbers) 
-print(list(result))-->[2, 4, 6, 8]
-
-
-numbers1 = [1, 2, 3] 
-numbers2 = [4, 5, 6] 
-result = map(lambda x, y: x + y, numbers1, numbers2) 
-print(list(result)) --> [5, 7, 9]
-
-
-def func(el1, el2): 
-    return '%s|%s' % (el1, el2)
-list(map(func, [1, 2], [3, 4, 5]))--> ['1|3', '2|4']
-
-dict(map(lambda *args: args, [1, 2], [3, 4]))--> {1: 3, 2: 4} #удобное создание словаря
 
 # CLASSES
 
@@ -941,3 +989,70 @@ def random_generator(k):
 gen = random_generator(3)
 for i in gen:
     print(i)
+
+
+
+
+# MODULE OS
+
+import os
+import os.path
+
+print(os.getcwd())# show used dirrectory interpritator
+print(os.listdit.("Test")) # show files in derrectory "Test"
+print(os.path.exists("file.py"))--> True/False # show exists(существует) file or folder
+print(os.path.isfile("file.py"))--> True # is file or not
+print(os.path.isdir("Test"))-->True # is dirrectory or nor
+print(os.path.abspath("file.py")) # show absolutely way to file
+os.chdir("2") # change dirrectory
+os.chdir(r"C:\\Learning\Python\2\2.4.6\sample") # for windows  '\\' and 'r'
+
+for current_dir, dirs, files in os.walk("."): # "." - is текущая dir
+    print(current_dir, dirs, files) # show all dir and files
+
+# MODULE SHUTIL
+
+import shutil
+
+shutil.copy("tests/test1.txt", "tests/test2.txt") # copy test1.txt in dir tests to test2.txt in dir tests
+shutil.copytree("tests", "tests/tests") # copy folder "tests" to tests/tests
+
+# FUNKTION lambda
+
+def identity(x):
+    return x
+# сократим
+lambda x: x
+
+
+print(lambda x: x + 1)(3)-->4
+
+
+add_one = lambda x: x + 1
+add_one(2) --> 3
+
+# FUNKTION map()
+# map is itetable function
+n, k = map(int, input().split()) #прогоняет список через нужную функцию
+# same as
+x = input().split()
+n, k = [int(i) for i in ]
+
+def addition(n): 
+    return n + n  
+numbers = (1, 2, 3, 4) 
+result = map(addition, numbers) 
+print(list(result))-->[2, 4, 6, 8]
+
+
+numbers1 = [1, 2, 3] 
+numbers2 = [4, 5, 6] 
+result = map(lambda x, y: x + y, numbers1, numbers2) 
+print(list(result)) --> [5, 7, 9]
+
+
+def func(el1, el2): 
+    return '%s|%s' % (el1, el2)
+list(map(func, [1, 2], [3, 4, 5]))--> ['1|3', '2|4']
+
+dict(map(lambda *args: args, [1, 2], [3, 4]))--> {1: 3, 2: 4} #удобное создание словаря
