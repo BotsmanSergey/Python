@@ -1,1 +1,1 @@
-print(list([1, 2, 3]))
+print(str.replace.__doc__)

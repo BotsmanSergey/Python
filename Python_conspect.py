@@ -94,17 +94,40 @@ print(genome.count('T')) # считает сколько T в genome
 s='aTGcc' p='cc'
 s.upper() --> 'ATGCC'
 s.lower() --> 'atgcc'
-s.count(p) --> 1
+s.count(p) --> 1 # количество не пересекающихся вхождений
 s.find(p) --> 3
+s.rfind(p)#см выше, только проверка идет справа
 s.find('A') --> -1 #  не входит
-if 'TG' in s: #проверка вхождения в строку
+if 'TG' in s:-->True #проверка вхождения в строку
 s.replace('c', 'C') --> 'aTGCC'
+s.index("TG")-->1 #index of first вхождения or ValueError
+s.startswith("The man in black") # проверка начинается ли строка с данного набора символов, функция может принемать кортеж
+s.endswith(".png")# см. выше, только проверяет окончание строки
+s.split() # разделение по пробелу или заданному символу
+s.strip() # clear simbols("\t", " ")
+s.rstrip()# clear right side
+s.lstrip()# clear left side
+
 
 s = 'agTtcAGtc'
 genome.upper().count('gt'.upper()) --> 2 # с начала поднимает s, потом поиск поднятого gt
 
- 
+#.format()
+template = '{} is the capital of {}.'
+print(template.format("London", "Great Britain"))
+template = '{1} is the capital of {0}.' #выбираем порядок
+print(template.format("London", "Great Britain"))
+template = '{capital} is the capital of {country}.' #выбираем порядок
+print(template.format(capital="London", coutnry="Great Britain"))
 
+import requests
+template = "Response from {0.url} with code {0.status_code}."
+res = requests.get("https://docs.python.org/3.5/")
+print(template.format(res))
+
+from random import random
+x = random
+print("{:.3}".format(x)) # output onli first three simbols after dot
 # SLICING
 
 dna = 'ATTCGGAGCT'
@@ -1017,26 +1040,13 @@ import shutil
 shutil.copy("tests/test1.txt", "tests/test2.txt") # copy test1.txt in dir tests to test2.txt in dir tests
 shutil.copytree("tests", "tests/tests") # copy folder "tests" to tests/tests
 
-# FUNKTION lambda
-
-def identity(x):
-    return x
-# сократим
-lambda x: x
-
-
-print(lambda x: x + 1)(3)-->4
-
-
-add_one = lambda x: x + 1
-add_one(2) --> 3
 
 # FUNKTION map()
 # map is itetable function
 n, k = map(int, input().split()) #прогоняет список через нужную функцию
 # same as
 x = input().split()
-n, k = [int(i) for i in ]
+n, k = (int(i) for i in x)
 
 def addition(n): 
     return n + n  
@@ -1056,3 +1066,135 @@ def func(el1, el2):
 list(map(func, [1, 2], [3, 4, 5]))--> ['1|3', '2|4']
 
 dict(map(lambda *args: args, [1, 2], [3, 4]))--> {1: 3, 2: 4} #удобное создание словаря
+
+
+numbers = map(str, [1, 2, 3, 4, 5])
+print(repr(" ".join(numbers)))
+# FUNCTION filter
+
+x = input().split()
+xs = (int(i) for i in x)
+
+def even(x):
+    return x % 2 == 0 -->T/F
+
+evens = filter(even, xs) # прогоняет list/cortage (xs) throw function (even), if even is True, element of xs append in evens
+for i in evens:
+    print(i)
+# same as
+evens = list(filter(even, xs)) # filter это итератор, если его поместить в list то он достанет все обьекты итератора (можно использовать если конечное число элементов и ест не много памяти)
+print(evens)
+
+# FUNKTION lambda
+
+def identity(x):
+    return x % 2 == 0
+a = identity(x)
+# сократим
+a = lambda x: x % 2 == 0
+
+
+print(lambda x: x + 1)(3)-->4
+
+
+add_one = lambda x: x + 1
+add_one(2) --> 3
+
+
+x = input().split()
+xs = (int(i) for i in x)
+evens = list(filter(lambda x: x % 2 == 0, xs ))
+print(evens)
+
+
+x = [
+    ("55555", "333", "666666"),
+    ("7777777", "55555"),
+    ("4444", "666666")
+]
+def length(name):
+    return len(" ".join(name))
+name_lengths = [length(name) for name in x]
+print(name_lengths)
+x.sort(key = length)
+print(x)
+# same as
+x = [
+    ("55555", "333", "666666"),
+    ("7777777", "55555"),
+    ("4444", "666666")
+]
+x.sort(key = lambda name: len(" ".join(name)))
+print(x)
+
+# LIB OPETATER
+
+import operator as op
+
+print(op.add(4, 5)) # сложение
+print(op.mul(4, 5)) # умножение
+print(op.contains([1, 2, 3, 4, 5], 6))-->False # проверяет наличия числа в контейнере
+
+x = [1, 2, 3]
+f = op.itemgetter(1) # выбран element with index 1 # f(x) == x[1]
+print(f(x))-->2 # x[1]
+
+x = {"123": "asfd"}
+f = op.itemgetter("123")
+pritn(f(x))
+
+f = op.attrgetter("sort") #f(x) == s.sort
+print(f([]))
+
+x = [
+    ("55555", "333", "Rosssum"),
+    ("7777777", "curry"),
+    ("4444", "backus")
+]
+x.sort(key = op.itemgetter(-1)) #sort by last element
+print(x)
+
+
+# LIB FUNCTOOLS
+from functools import partial
+
+x = int("1101", base=2)
+print(x)-->13
+#same as
+int_2 = printab(int, base =2)
+print(x) -->13
+
+
+import operator as op
+from functools import partial
+x = [
+    ("55555", "333", "Rosssum"),
+    ("7777777", "curry"),
+    ("4444", "backus")
+]
+sort_by_last = partial(list.sort, key=op.itemgetter(-1))
+print(x)
+#same as
+sort_by_last(x) #при помощи функции partial функция sotr_by_last запоминает параметры, что их не нужно вводить снова
+print(x)
+
+y = ["abc", "cba", "abb"]
+sort_by_last(y)
+print(y)
+
+# PEP8 AND DOCUMENTATION
+# https://www.python.org/dev/peps/pep-0008/ - EN
+# http://pythonworld.ru/osnovy/pep-8-rukovodstvo-po-napisaniyu-koda-na-python.html или http://defpython.ru/pep8 - RU
+
+
+class my_class:
+    """
+    documentation of my_class
+    """
+    pass
+print(my_class.__doc__) 
+
+
+print(str.find.__doc__) # документация какой-либо функции
+
+
