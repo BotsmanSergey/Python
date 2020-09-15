@@ -112,6 +112,10 @@ s.lstrip()# clear left side
 s = 'agTtcAGtc'
 genome.upper().count('gt'.upper()) --> 2 # с начала поднимает s, потом поиск поднятого gt
 
+
+x = r"hello\nworld" #raw
+print(x)-->hello\nworld
+
 #.format()
 template = '{} is the capital of {}.'
 print(template.format("London", "Great Britain"))
@@ -1197,4 +1201,104 @@ print(my_class.__doc__)
 
 print(str.find.__doc__) # документация какой-либо функции
 
+# MODULE RE РЕГУЛЯРНЫЕ ВЫРАЖЕНИЯ
 
+import re
+
+
+pattern = r"abc"  # r - raw значит читается как пишется
+string = "abcd"
+match_object = re.match(pattern, string) # проверяет начинается ли наша строка с "abc"--> (0, 3) и др параметры
+print(match_object)
+
+pattern = r"abc"
+string = "babcd"
+match_object = re.search(pattern, string) # проверяет имеет ли наша строка  "abc" --> (1, 4)  и др параметры
+print(match_object)
+
+pattern = r"a[abc]c" # вторым символом подходящим под шаблон может быть a, b or c (acc - подойдет)
+string = "abc, acc, aac"
+all_inclusions = re.findall(pattern, string) # выводит все подходящие шаблоны
+print(all_inclusions)
+
+fixed_typos = re.sub(pattern, "abc", string) # заменяет всё на "abc"
+print(fixed_typos)
+
+# pattern = r"a[a-c]c" # [a-zA-Z] -- for all simbols alphabet
+# pattern = r"a.c" # for any simbols
+# pattern = r"ab*a" # любое количество символа b включая 0 (aa, abba - подойдет )
+# pattern = r"ab+a" # любое количество символа b от 1 
+# pattern = r"ab?a" #  количество символа b от 0 до 1
+# pattern = r"ab{3}a" # количество символа b 3
+# pattern = r"ab{2, 4}a" # количество символа b от 2 до 4
+# pattern = r"a[ab]+a" # ищит жадным способом (из abaaba - вылезит вся строка)  https://stepik.org/lesson/24470/step/4?unit=6776
+# pattern = r"a[ab]+?a" # ищит наименее жадным способом (из abaaba - вылезит  aba)
+# [^a-c] -- указываем что  подходит всё кроме этого
+# [] - можно указывать множества подходящих символов
+# . ^ $ * + ? {} [] \ | () - метасимволы
+# \d ~[0-9]
+# \D ~[^0-9]
+# \s ~[\t\n\r\f\v]
+# \S ~[^\t\n\r\f\v]
+# \w ~[a-zA-Z0-9_]
+# \W ~[^a-zA-Z0-9_]
+
+
+
+pattern = r" english\?" #перед знаками нужно ставить "\" иначе в pattern попадет " english" (без "?")
+string = "Do you speak english?"
+match = re.search(pattetn, string)
+print(match)
+
+
+pattern = r"(test|text)*"
+string = "testtext"
+match = re.match(pattern, string)
+print(match) --> (0, 8)
+
+pattern = r"abc|(test|text)*"
+string = "abctest"
+match = re.match(pattern, string)
+print(match) --> span = (0, 3) , match = "abc" # span - координаты подходящего выражения, match - часть подошедшего выражения, берется первое подходящее
+
+
+pattern = r"((abc)|(test|text)*)"
+string = "testtext"
+match = re.match(pattern, string)
+print(match) --> span = (0, 3) , match = "abc"
+print(match.groups()) --> ('testtext', None, 'text')  #сперва показана группа в скобках (abc|(test|text)*, потом abc, затем test|text (показан text т.к. это последнее вхождение)
+print(match.group(0)) -->testtext # по умолчанию так же 0 (print(match.group()))
+print(match.group(1)) -->testtext
+print(match.group(2)) -->None
+print(match.group(3)) -->text
+
+
+pattern = r"(\w+)-\1" # берет все символы до дефиса и сравнивает их с первой группой(тоесть с группой до дефиса, тоесть test)
+string = "test-test" # если вторая часть не совпадает test-text --> None
+match = re.match(pattern, string)
+print(match) --> span=(0, 9), match = 'test-test'
+
+
+pattern = r"(\w+)-\1" 
+string = "test-test chow-chow"
+duplicates = re.match(pattern, r"\1", string) # берет только первое слово из подошедших групп
+print(duplicates) --> test chow
+
+
+pattern = r"(\w+)-\1" 
+string = "test-test chow-chow"
+duplicates = re.findall(pattern, string)
+print(duplicates) --> ['test', 'chow']
+
+
+pattern = r"((\w+)-\2)"  # https://stepik.org/lesson/24470/step/5?unit=6776
+string = "test-test chow-chow"
+duplicates = re.findall(pattern, string)
+print(duplicates) --> [('test-test', 'test'),('chow-chow', 'chow')]
+
+
+x = re.match(r"text", "TEXT", re.IGNORECASE)
+print(x)-->'TEXT' # и др параметры
+
+x = re.match(r"(te)*xt", "TEXT", re.IGNORECASE | re.DEBUG)
+print(x) # выводит параметры поиска
