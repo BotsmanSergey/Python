@@ -1244,6 +1244,7 @@ print(fixed_typos)
 # \W ~[^a-zA-Z0-9_]
 # \b ~начало и конец строки включая символы короме подчеркивания # \bcat\b - находит cat во всех местах кроме обрамленных [a-zA-Z0-9_] 
 # \B ~\Bcat\B - находит cat во всех местах обрамленных [a-zA-Z0-9_]
+# \A ~начало строки
 
 
 
@@ -1283,13 +1284,13 @@ print(match) --> span=(0, 9), match = 'test-test'
 
 pattern = r"(\w+)-\1" 
 string = "test-test chow-chow"
-duplicates = re.match(pattern, r"\1", string) # берет только первое слово из подошедших групп
+duplicates = re.sub(pattern, r"\1", string) 
 print(duplicates) --> test chow
 
 
 pattern = r"(\w+)-\1" 
 string = "test-test chow-chow"
-duplicates = re.findall(pattern, string)
+duplicates = re.findall(pattern, string) # берет только первое слово из подошедших групп
 print(duplicates) --> ['test', 'chow']
 
 
