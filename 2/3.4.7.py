@@ -1,7 +1,16 @@
 import re, requests
 
-with open('readfile.txt', 'r') as inf:
-    for line in inf:
-        line = line.strip()
-        res = re.sub(r'<a.+href=(\"|\')(http:|https:|ftp:|.*)(\w.\w.w|\w.\w)(\/|\:).*>', r'\3', line)
-        
+htmlfile = requests.get(input()).text
+res = re.findall(r'<a.+?href.*?=.*?(\'|\")(.+?\:\/\/|)(([0-9a-zA-Zа-яА-Я.-])+|)(\.\.\/|\:|\/|).*?(\'|\").*?>', htmlfile, flags=re.MULTILINE)
+lst = []
+for line in res:
+    if line[2] !='':
+        if line[2] not in lst:
+            lst.append(line[2])
+lst.sort()
+print('\n'.join(lst))
+
+# import requests, re
+# urls = set(re.findall(r"(?:.*)?(?:<a(?:.*)? href=[\"\'])(?:\w+://)?(\w[\w\.-]*)", requests.get(input()).text))
+
+# print('\n'.join(sorted(urls)))

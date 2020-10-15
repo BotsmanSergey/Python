@@ -432,6 +432,11 @@ conda install requests # установка библиотеки для рабо
 import requests
 r = requests.get('http://example.com') 
 print(r.text) # выведет текст сайта
+print(r.status_code)
+print(r.url)
+print(r.headers['Content-Type'])
+
+
 
 # Библиотека NumPy # работа с числовыми массивами
 conda install numpy
@@ -1305,3 +1310,37 @@ print(x)-->'TEXT' # и др параметры
 
 x = re.match(r"(te)*xt", "TEXT", re.IGNORECASE | re.DEBUG)
 print(x) # выводит параметры поиска
+
+
+# IMPORT CSV
+
+#first name, last name, module1, module2, module3
+#students, best, 100, 100, 100
+#students, good, 90, 90.2, 100  # for using ','  students, good, 90, "90,2", 100 # можно оборачивать несколько строк в кавычки (запишется вместе со '\n')
+import csv
+
+with open("example.csv") as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
+
+#first name last name   module1 module2 module3
+#students   best    100 100 100
+#students   good    90  90,2    100  
+
+with open("example.tsv") as f: #tsv format using \t instead (вместо) "," comma
+    reader = csv.reader(f, delimiter="\t")
+    for row in reader:
+        print(row)
+
+
+students = [
+    ["Greg", "Dean", 70, 80, 90, "Good job, Greg"]
+    ["Wirt", "Wood", 80, 80.2, 80, "Nicely done"]
+]
+with open("example.csv", "a") as f:
+    writer = csv.writer(f) #writer = csv.writer(f, quoting=csv.QUOTE_ALL) #поместить всё внутри кавычек
+    for student in students:
+        writer.writerow(student)
+    #same as
+    writer.writerows(students)
