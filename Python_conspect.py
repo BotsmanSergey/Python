@@ -277,6 +277,8 @@ s.clear()
 
 # СЛОВАРИ DICTIONARY
 
+https://webdevblog.ru/kak-perebrat-slovar-v-python/
+
 d = dict()
 d = {}
 d = {'a': 239, 10:100}
@@ -296,7 +298,7 @@ dict.popitem() # удаляет и возвращает пару (ключ, зн
 dict.setdefault(key[, default]) # возвращает значение ключа, но если его нет, не бросает исключение, а создает ключ с значением default (по умолчанию None).
 dict.update([other]) # обновляет словарь, добавляя пары (ключ, значение) из other. Существующие ключи перезаписываются. Возвращает None (не новый словарь!).
 dict.values() # возвращает значения в словаре
-
+for key in sorted(d): # сортировка словаря по ключу
 
 
 # перебор элементов словаря
@@ -435,6 +437,9 @@ print(r.text) # выведет текст сайта
 print(r.status_code)
 print(r.url)
 print(r.headers['Content-Type'])
+
+from requests import get
+get('https://stepic.org/favicon.ico').headers['Server'] # show server name
 
 
 
@@ -1344,3 +1349,177 @@ with open("example.csv", "a") as f:
         writer.writerow(student)
     #same as
     writer.writerows(students)
+
+#IMPORT JSON
+# example json
+[
+    {
+        "first name": "Greg",
+        "last name": "Dean",
+        "certificate": true,
+        "scores": [
+            70,
+            80,
+            90
+        ],
+        "description": "Good job, Greg"
+    },
+    {
+        "first name": "Wirt",
+        "last name": "Wood",
+        "certificate": true,
+        "scores": [
+            70,
+            80,
+            90
+        ],
+        "description": "Nicely Done"
+    }
+] 
+
+import json
+
+student1 = {
+    'first name': 'Greg',
+    'last name': 'Dean',
+    'score': [70, 80, 90],
+    'description': "Good job, Greg",
+    'certificate': True
+}
+
+student2 = {
+    'first name': 'Wirt',
+    'last name': 'Wood',
+    'score': [80, 80.2, 80],
+    'description': "Nicely done",
+    'certificate': True
+}
+
+data = [student1, student2]
+print(json.dumps(data, indent=4, sort_keys=True)) #dumps - команда для print не путать с dump для файла, indent - количество пробелов, 
+# sort_keys - сортировка ключенй в каждом объекте словаря
+
+# for writing in file
+with open("students.json", "w") as f:
+    json.dump(data, f, indent=4, sort_keys=True)
+
+
+#json.loads - for working in json format as python format
+data = [student1, student2]
+data_json = json.dumps(data, indent=4, sort_keys=True)
+data_again = json.loads(data_json)
+print(sum(data_again[0]["scores"])) -->240
+
+#json.load - for working in json format as python format in file
+with open("students.json", "r") as f:
+    data_again = json.load(f)
+    print(sum(data_again[1]["scores"])) -->240.2
+
+# IMPORT XML
+
+<studentsList>
+    <student id='1'>
+        <firstName>Greg</firstName>
+        <lastName>Dean</lastName>
+        <certificate>True</certificate>
+        <scores>
+            <module1>70</module1>
+            <module2>80</module2>
+            <module3>90</module3>
+        </scores>
+    </student>
+    <student id='2'>
+        <firstName>Wirt</firstName>
+        <lastName>Wood</lastName>
+        <certificate>True</certificate>
+        <scores>
+            <module1>80</module1>
+            <module2>80.2</module2>
+            <module3>80</module3>
+        </scores>
+    </student>
+</studentsList>
+
+from xml.etree import ElementTree
+
+tree = ElementTree.parse("example.xml")
+root = tree.getroot()
+# root = ElementTree.fromstring(input()) - принимать из строки
+print(root) # show root(main tag)
+print(root.tag, root.attrib) #attrib - show attribute selected tag's
+
+for child in root: 
+    print(child.tag, child.attrib) # show tag and atribute children
+
+print(root[0][0].text) # show children of children
+
+for element in root.iter("scores"): # проход по заданным тегам, передав его в итер
+    print(element)
+
+for element in root.iter("scores"):
+    score_sum = 0
+    for child in element:
+        score_sum += float(child.text)
+        print(score_sum)
+
+# writing on xml format
+from xml.etree import ElementTree
+
+tree = ElementTree.parse("example.xml")
+root = tree.getroot()
+
+tree.write("example_copy.xml") # make copy file
+
+greg = root[0]
+module = next(greg.iter("module"))
+print(module1.text)
+module.text = str(float(module.text) + 30) # change value on + 30
+
+tree.write("example_modified.xml")
+
+certificate = greg[2]
+certificate.set("typy", "with distinction") #  <certificate typy="with distintion">True</certificate>
+
+tree.write("example_modified.xml")
+
+description = ElementTree.Element("description") # create element
+description.text = "Showed excellent skills during the course"
+greg.append(description)
+
+tree.write("example_modified.xml")
+
+description = greg.find("description") # find element inside greg
+greg.remove(description) # remove element
+tree.write("example_modified.xml")
+
+#создание xml c нуля
+
+from xml.etree import ElementTree
+
+root = ElementTree.Element("student")
+first_name = ElementTree.SubElement(root, "firstName")
+first_name.text = "Greg"
+second_name = ElementTree.SubElement(root, "secondName")
+second_name.text = "Dean"
+scores = ElementTree.SubElement(root, "scores")
+
+module1 = ElementTree.SubElement(scores, "module1")
+module.text = "100"
+
+tree = ElementTree.ElementTree(root)
+tree.write("student.xml")
+
+# IMPORT LXML
+
+from lxml import etree
+import requests
+
+res = requests.get("https://docs.python.org/3/")
+print(res.status_code)
+print(res.headers["Content-Type"])
+
+parset = etree.HTMLParser() # работает с плохо сформированными частями язака HTML
+root = etree.fromstring(res.text, parset)
+
+for element in root.iter("a"):
+    print(element, element.attrib)
