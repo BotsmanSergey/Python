@@ -1,0 +1,2703 @@
+1zgi	User	зд.445 п.314	
+adm-asureo	User	Учетная запись для настройки серверов АСУ РЭО	
+adm-asutdln	User	Учетная запись администратора АСУ ТД	
+adm-citr	User	Администратор Терминального Доступа	
+adm-ib	User	Пользователь для систем контроля ИБ	
+adm-mssql	User	Администратор MS SQL на сервере S-MSSQL	
+adm-s30	User	отв. Синопальникоа А.К, ОИКТ, зд.445, п.333, т.55-680	
+adr41	User	ОРБ зд.601 п.407	
+adr42	User	ОРБ зд.601 п.407	
+aep-aav	User	АЭП зд.381 п.301	
+aep-sss	User	АЭП зд.381 п.301	
+aer-biv	User	Зд.601 пом. 506/1	
+aer-chln	User	Зд.630 пом.9	
+aer-ian	User	зд.601 пом.23/2	
+aer-pak	User	Зд.630	
+aer-pav	User	Зд. 601 пом. 507/2	
+aer-zelenov	User	Атомэнергоремонт город т.7-38-38	
+aho-svn	User	АХО зд.445 п.128	
+ao-aav	User	зд.380 п.285 т.5-14-13	
+ao-bnv	User	Атомохрана зд.380 п. 276 т.5-30-64 	
+ao-ggg	User	Атомохрана зд.380 п. 276 т.5-30-64	
+ao-gig	User	Атом-охрана зд.380	
+ao-knv	User	Атом-охрана зд.380	
+ao-pte	User	Атомохрана зд.380 п.276 т.5-30-64	
+ao-zng	User	Атомохрана зд.380 п. 276 т.5-14-13	
+apes	User	Сервер передачи данных ЛАЭС-2	
+ARCHIVE	User	Почтовый Архив (Не удалять!!!)	
+ARCHIVE_LN	User	Почтовый Архив (Не удалять!!!)	
+arm-askro	User	зд.445 п.32 	
+arm-rekas	User	зд.445 п.32	
+ascro	User	зд.АСКРО п.417	
+asp-adr	User	Консист-ОС зд.380 п.263 т.5-39-71	
+asp-aua	User	Консист-ОС зд.380 п.263	
+asp-bma	User	зд.445 п.54 т.5-57-49	
+asp-bnb	User	АСП зд.380 п. 237 т.5-23-45	
+asp-bpb	User	зд.380 п.262 т. 5-16-15	
+asp-bsa	User	Консист-ОС зд.380 п.263	
+asp-bss	User	КОнсист-ОС зд.380 п.246	
+asp-bsv	User	КОНСИСТ-ОС зд.445 п.12	
+asp-btv	User	Консист-ОС зд.445 п.22	
+asp-chmm	User	Консис-ОС зд. 380 п. 263	
+asp-civ	User	Консист- ОС зд.445 п.12 т.5-58-39	
+asp-csv	User	Консист-ОС, зд.401 п.908 т.5-26-82	
+asp-dia	User	Консист-ОС зд.61В п.128	
+asp-dir	User	Директор филиала "Ленинградский" АО "КОНСИСТ-ОС", зд.381, п.205, 5-54-90	
+asp-dlp	User	Консист-ОС зд.381 п.214 т.5-52-70	
+asp-dp	User	Консист-ОС зд.381 п.208	
+asp-dsu	User	Консист ОС зд.602 п. 215	
+asp-dsv	User	Консист-ОС зд.602 п.215 т.5-14-90	
+asp-dtu	User	Консист-ОС зд.381 п.210 т.5-25-86	
+asp-dvv	User	Консист-ОС зд.602 п.111 т.5-14-66	
+asp-eaa	User	Консист-ОС ЛенАЭС зд.370 п. 8 т.5-54-59	
+asp-eep	User	зд.381п.203	
+asp-eeu	User	АО Консист, зд.381 п.214 5-54-19	
+asp-fsl	User	АСП зд.445 п. 333 т. 5-58-89	
+asp-fva	User	КОНСИСТ-ОС, зд.381, п.207 5-33-64	
+asp-gin	User	КОНСИСТ-ОС, зд.381, пом.203	
+asp-giv	User	Консист-ОС зд.445 п.20	
+asp-gja	User	город Солнечная 51 п.417	
+asp-gss	User	Консист зд.445 п.12 т.5-58-39	
+asp-haa	User	Консист-ОС зд.380 п.263	
+asp-iai	User	Консист-ОС зд.445 п.11	
+asp-iia	User		
+asp-isu	User	Консист-ОС зд.370 п.9	
+asp-iua	User	КОНСИСТ-ОС зд.445 п.333 т. 5-20-82	
+asp-kaa	User	КОНСИСТ-ОС, зд.445, пом.315	
+asp-kas	User	Консис-ОС зд. 380 п. 263	
+asp-kls	User	зд.61b п.128 т.5-59-19	
+asp-kmf	User	Консист-ОС зд.602 п.215	
+asp-kna	User	Консист-ОС зд.380 п.263	
+asp-kne	User	КОНСИСТ-ОС, зд.380, пом.210	
+asp-lav	User	КОНСИСТ-ОС зд. 381 п. 214 т. 5-53-28	
+asp-lav1	User	Консист-ОС зд.458 п.12	
+asp-lda	User	Консист-ОС зд.380 п.235	
+asp-lva	User	КОНСИСТ-ОС зд.602 п.215	
+asp-lvd	User	Консист-ОС зд.381 п.220	
+asp-mad	User	зд.381 п.208	
+asp-man	User	Консист-ОС зд.381 п.212	
+asp-mia	User	Консист-ОС зд.380 п. 263 т. 5-10-67	
+asp-mpo	User	Консист-ОС зд.380 п.263	
+asp-mso	User	Консист-ОС зд.381 п.218 т.5-20-83	
+asp-nai	User	КОНСИСТ-ОС, зд.381, пом.218 т.5-52-02	
+asp-neb	User	КОНСИСТ-ОС зд.381 п.214 т.5-54-19	
+asp-nfa	User	КОНСИСТ-ОС, зд.381, пом.206	
+asp-nkm	User	КОНСИСТ-ОС зд. 601 п. 809	
+asp-onv	User	Консист-ОС зд.445 п. 219 т. 5-53-25	
+asp-pdv	User	КОНСИСТ-ОС зд.381 п.206	
+asp-plv	User	КОНСИСТ-ОС, зд.445, пом.333	
+asp-pmd	User	Консист-ОС зд.380 п.246	
+asp-pop	User	КОНСИСТ-ОС зд.445 п.23 т.5-57-40	
+asp-psa	User	КОНСИСТ-ОС зд.381 п.210 т.5-25-86	
+asp-pts	User	Консист-ОС зд.445 п.333	
+asp-pva	User	Консист-ОС ОИС зд.381 п. 218	
+asp-rgm	User	КОНСИСТ-ОС зд.381 п.218 т.5-26-30	
+asp-sav	User	КОНСИСТ-ОС зд.445 п.11	
+asp-seg	User	КОНСИСТ-ОС зд.381 п.208 т.5-33-60	
+asp-shab	User	КОНСИСТ-ОС зд.381 п.208	
+asp-shav	User	КОНСИСТ-ОС зд.381 п. 209	
+asp-shel	User	Консист-ОС зд.445 п.333 т.5-20-57	
+asp-shim	User	КОНСИСТ-ОС зд.401 п.908/b т.5-26-82	
+asp-shpe	User	КОНСИСТ-ОС зд.602 п.111 т.5-23-29	
+asp-spa	User	Консист-ОС, зд.445 п.333	
+asp-svn	User	Консист-ОС зд.445 п.333	
+asp-svv	User	КОНСИСТ-ОС, зд.602, пом.119/1	
+asp-taa	User	Консист-ОС зд.381 п.220 т.5-52-06	
+asp-taa1	User	381-203	
+asp-tan	User	КОНСИСТ-ОС зд.380 п.234 т.5-23-45	
+asp-tna	User	КОНСИСТ-ОС зд. 602 п. 111 т. 5-14-66	
+asp-tsa	User	КОНСИСТ-ОС зд.380 п.263	
+asp-uai	User	Консист-ОС зд.445 п. 333 т. 5-20-83 уволен	
+asp-uoa	User	Консист-ОС зд.381 п.218 т.5-53-24	
+asp-vom	User	АСП зд.380 п.237 т.5-23-45	
+asp-vvu	User	Консист-ОС зд.602 п.111	
+asp-zav	User	КОНСИСТ-ОС зд.381 п.218 т.5-20-83	
+asp-zrp	User	зд.602 п.215	
+asp-zvv	User	Консист-ОС зд.380 п.263	
+asp1-biv	User	Консист-ОС зд.380 п.237	
+asp1-lav	User	АСП зд.381 п. 203 т.5-39-91	
+asp1-taa	User	Консист-ОС зд.602 п.215 	
+atr-aed	User	Ленинградская АЭС-Авто, зд.61В, пом.205	
+atr-air	User	зд.380 п.129 т.5-14-22	
+atr-anoa	User	Ленинградская АЭС-Авто, зд.602, пом.110	
+atr-aoa	User	Атомтрудресурсы-Нева зд.777 п.327/2 т.5-16-23	
+atr-apa	User	зд.445 п.213 т.5-57-75	
+atr-asd	User	Ленинградская АЭС-Авто, зд.380, пом.133	
+atr-bev	User	Ленинградская АЭС-Авто, зд.602, пом.323/2	
+atr-bmg	User	АтомТрудРесурс-Нева зд.445 п.47а т.5-34-67	
+atr-bmv	User	зд.ФОС-1, пом.18	
+atr-bnd	User	Ленинградская АЭС-Авто, зд.777, пом.238	
+atr-bri	User	Атомтрудресурсы-Нева зд.602 п.517 т.5-12-35	
+atr-cbm	User	СБ зд.13b п.45	
+atr-dnf	User	Ленинградская АЭС-Авто, зд.777, пом.281	
+atr-ema	User	Типог. зд.380 п.133 т.54-22 	
+atr-eua	User	зд.445 пом.213	
+atr-fga	User	Ленинградская АЭС, зд.61В, пом.215	
+atr-fis	User	Атомтрудресурсы-Нева зд.380 п.107 т.5-25-49	
+atr-gag	User	Ленинградская АЭС, зд.602, пом.505	
+atr-gvi	User	Атомтрудресурсы-Нева зд.380 п.102 т.5-13-35	
+atr-hdv	User	зд.445 п.5 т.5-55-32 переход в ОРЗ	
+atr-hla	User	Ленинградская АЭС-Авто, зд.380, пом.133	
+atr-hlv	User	Ленинградская АЭС-Авто, зд.609, пом.217	
+atr-hvv	User	ЛАЭС-АВТО зд.402Б п.336	
+atr-ken	User	Ленинградская АЭС-Авто, зд.445, пом.213	
+atr-kgn	User	Ленинградская АЭС-Авто, зд.401, пом.918/2	
+atr-knu	User	Ленинградская АЭС-Авто, зд.61В, пом.104	
+atr-kom	User	Ленинградская АЭС-Авто, зд.777, пом.281	
+atr-kvi	User	зд.380 п.102 т.5-13-35	
+atr-pao	User	Ленинградская АЭС-Авто, зд.61В, пом.219	
+atr-piv	User	Атомтрудресерсы-Нева зд.380 п.132 т.5-14-93	
+atr-pov	User	Ленинградская АЭС-Авто, зд.445, пом.209	
+atr-rin	User	Ленинградская АЭС, зд.602, пом.214	
+atr-rvv	User	Атомтрудресурсы зд.602 п. 110 т. 5-54-70	
+atr-shdi	User	Атомтрудресурсы-Нева зд. 777/1 п.213 т.5-20-55	
+atr-sheb	User	зд.602 п.151 т.5-12-42	
+atr-slp	User	зд.380 п.106 т.5-10-89	
+atr-snt	User	Ленинградская АЭС-Авто, зд.445, пом.47а	
+atr-sov	User	зд.777/2 п.202	
+atr-stn	User	зд.380 п.130 т.5-17-71	
+atr-tvn	User	Ленинградская АЭС-Авто, зд.777/2, пом.305	
+atr-uks	User	зд.777 п. 258/1 n/5-15-73	
+atr-veu	User	ЛАЭС-Авто, зд.700, п.215	
+atr-vsv	User	Ленинградская АЭС-Авто, зд.609, пом.141/1	
+atr-vtv	User	зд.602 п.122 т.5-17-39	
+atr-vvi	User	Ленинградская АЭС-Авто, зд.445, пом.5	
+atr-zms	User	Ленинградская АЭС-Авто, зд.445, пом.242/2	
+atr1-paa	User	Ленинградская АЭС-Авто, зд.777, пом.287	
+aud-gim	User	зд.445	
+aud2	User	61В	
+aud3	User		
+aud4	User	зд.61b	
+avto-aaa	User	ЛАЭС-АВТО зд.777 п. 273	
+avto-aek	User	ЛАЭС-Авто зд.428 п.261	
+avto-aev	User	зд.602 п.214 т.5-14-86	
+avto-afj	User	ЛАЭС-АВТО зд.61В п.217	
+avto-aon	User	ЛАЭС-Авто зд.777 п.327	
+avto-arz	User	ЛАЭС-Авто зд.438 п.203	
+avto-aza	User	зд.61b п.228	
+avto-azi	User	Лаэс-Авто зд.602 п.144	
+avto-bav	User	ЛАЭС-Авто зд.777 п.327	
+avto-bei	User	ЛАЭС-Авто зд.777 п.114	
+avto-blv	User	ЛАЭС-АВТО зд.61В п. 217	
+avto-bma	User	ЛАЭС-Авто зд.381 п. 318	
+avto-bmm	User	зд.380 п.130	
+avto-bse	User	ЛАЭС-АВТО зд.777 п.287	
+avto-bsm	User	ЛАЭС-АВТО зд.701 п.213	
+avto-cae	User	ЛАЭС-Авто зд.602 п.110	
+avto-cmn	User	ЛАЭС-Авто (ОЭБ) зд.445 п.338	
+avto-dae	User	ЛАЭС-Авто зд.61В п.217	
+avto-dvp	User	Ленинградская АЭС-Авто, зд.445, пом.334 не бл вх.525	
+avto-euv	User	ЛАЭС-Авто зд.609 п.161	
+avto-ev	User	зд.402А пом.409А	
+avto-eva	User	Ленинградская АЭС-Авто, зд.428, пом.261	
+avto-evm	User	ЛАЭС-Авто зд.61В п.219	
+avto-fam	User	ЛАЭС-Авто зд.430а п.207	
+avto-fsa	User	Ленинградская АЭС-Авто, зд.602, пом.421	
+avto-gav	User	ЛАЭС-Авто зд.777 п.217	
+avto-gev	User	ЛАЭС-Авто зд.445 п.56	
+avto-hes	User	ЛАЭС-Авто зд.445 п.7	
+avto-hrb	User	ЛАЭС-АВТО зд.61B п.205	
+avto-ien	User	ЛАЭС-АВТО зд.445 п.133/1	
+avto-jav	User	ЛАЭС-Авто зд.445 п.243	
+avto-jmv	User	ЛАЭС-Авто зд.1(АСКРО) п.622 НЕ БЛОКИРОВАТЬ ДО 02.09.2020!!!	
+avto-kas	User	Ленинградская АЭС-Авто, зд.445, пом.334	
+avto-kea	User	ЛАЭС-Авто зд.777 п.217	
+avto-kem	User	ЛАЭС-АВТО, зд.602 п.404	
+avto-ker	User	зд.61b п.217	
+avto-kin	User	ЛАЭС-АВТО зд.61в п.215	
+avto-kiu	User	ЛАЭС-Авто зд.61B п.217	
+avto-kmv	User	ЛАЭС-АВТО зд.777/2 п.402	
+avto-kns	User	ЛАЭС-Авто зд.445 п.103	
+avto-kov	User	ЛАЭС-Авто зд.61b п.123 	
+avto-kui	User	ЛАЭС-Авто зд.61В п. 217 т. 5-39-21	
+avto-kvv	User	ЛАЭС-АВТО зд.672Р п.240/1	
+avto-lar	User	ЛАЭС-АВТО(УТЦ)  зд.777 п. 316	
+avto-liv	User	ЛАЭС-АВТО зд.777 п.217	
+avto-lka	User	ЛАЭС-Авто зд.445, пом.338,  тел. 5-58-84	
+avto-lns	User	ЛАЭС-АВТО зд.445 п.51	
+avto-lss	User	ЛАЭС-АВТО зд.777 п.316	
+avto-mau	User	ЛАЭС-АВТО зд.777 п.316	
+avto-mev	User	ЛАЭС-АВТО (ТЦ) зд.701 п.214	
+avto-mie	User	ЛАЭС-Авто зд.АСКРО п.322	
+avto-mkv	User	зд.701,пом.214	
+avto-mms	User	зд.. 61в,  пом. 134	
+avto-mtn	User	Ленинградская АЭС-Авто, зд.438, пом.203	
+avto-nea	User	ЛАЭС-АВТО зд.3 (ФОС1) п.18	
+avto-nia	User	ЛАЭС-АВТО зд.445 п. 245	
+avto-nop	User	ЛАЭС-Авто зд.445 п. 338 т. 5-58-84 	
+avto-onr	User	ЛАЭС-Авто зд.777/2 п.402	
+avto-oog	User	ЛАЭС-АВТО	
+avto-pev	User	ЛАЭС-АВТО зд.1 АСКРО п.622	
+avto-pev1	User	ЛАЭС-АВТО зд.402а п.409а	
+avto-rei	User	ЛАЭС-АВТО зд.1 п. 57	
+avto-rev	User	ЛАЭС-Авто зд.445 п.243	
+avto-rok	User	ЛАЭС-АВТО зд.609 п.210	
+avto-sas	User	ЛАЭС-АВТО зд.609 п.190	
+avto-sav	User	ЛАЭС-АВТО зд.777 п.217	
+avto-sav1	User	ЛАЭС-АВТО зд.3 (ФОС1) п.18	
+avto-sek	User	зд.438 пом. 203	
+avto-shen	User	ЛАЭС-АВТО зд.445 п.203	
+avto-shes	User	зд.445 п.9 т.5-52-65	
+avto-shnn	User	ЛАЭС-Авто зд.445 п.243	
+avto-shta	User	ЛАЭС-АВТО зд.609 п.218	
+avto-ska	User	зд.602 п.421	
+avto-stn	User	Ленинградская АЭС-Авто, зд.601, пом.408/1	
+avto-teb	User	ЛАЭС-Авто зд.602 п.517	
+avto-vao	User	ЛАЭС-АВТО зд.602 п.144	
+avto-vav	User	ЛАЭС-АВТО зд.672р п.253 	
+avto-vmf	User	ЛАЭС-АВТО зд.777 п. 217	
+avto-zma	User	ЛАЭС-Авто зд.61В п. 221	
+avto-zov	User	ЛАЭС-Авто зд.445 п.130	
+bap	User	ИВЦ зд.380 п.252 т.36-29 	
+bdv	User	ОИКТ зд. 380 п. 259 т. 5-26-30	
+ben	User	ИВЦ зд.380 т.37-69	
+biks	User	бИКС зд.445 п.333	
+bio-aav	User	зд.1 АСКРО  п.322	
+bio-gnm	User	зд.61В п.220 т.216-20	
+buh-aom	User	зд.61в п.120 т.5-12-27	
+buh-bdi	User	зд.61b п.121	
+buh-bie	User	зд.61b п.229 т.5-59-25	
+buh-blu	User	БУХ зд.61В п.112 т.5-59-65	
+buh-bto	User	Ленинградская АЭС, зд.61В, пом.229	
+buh-chkv	User	Бух. зд.61В п. 115 т. 5-37-20	
+buh-cog	User	зд.61в п.127 т.53-43       	
+buh-dta	User	зд.61в п.135 т.37-20	
+buh-fni	User	Ленинградская АЭС, зд.61в, пом.121	
+buh-foa	User	Ленинградская АЭС, зд.61В, пом.104	
+buh-fvp	User	зд.61В п.124 т.53-43   служ. вх№2314 от 04.12.2015	
+buh-gan	User	Бух зд.61В п.299 т.5-59-25	
+buh-geg	User	Бух, зд.61В, п.229	
+buh-gii	User	Бух. зд.61В п.115	
+buh-giv	User	Ленинградская АЭС, зд.61В, пом.136	
+buh-gna	User	зд.61в п.126 т.5-58-96	
+buh-gnv	User	БУХ зд.61В п.126 т.5-30-02	
+buh-itn	User	Ленинградская АЭС-Авто, зд.61В, пом.135	
+buh-jlg	User	Бух. зд.61b п.115	
+buh-keg	User	зд.61в п.130 т.52-91	
+buh-kmv	User	Ленинградская АЭС, зд.61В, пом.121	
+buh-kof	User	зд.61 п. 127 т.5-58-96	
+buh-kueg	User	зд.61B  п.125 т.59-85	
+buh-kuz	User	зд.61b п.125	
+buh-les	User	Бух. зд.61В п.104	
+buh-mlv	User	БУХ зд.61В п.134 т.5-10-56	
+buh-nne	User	Бух зд.61в п.118 т.5-55-78	
+buh-oks	User	зд.61b п.214 т.5-27-06	
+buh-pfa	User	Ленинградская АЭС, зд.61В, пом.130	
+buh-pnm	User	зд.61в п.130 т.5-12-91	
+buh-res	User	Ленинградская АЭС, зд.61В, пом.203	
+buh-run	User	Бух. зд.61b п.129	
+buh-sga	User	Бух.зд.61В п.115 т.50-55	
+buh-shsa	User	Бух. зд.61В п.134 т.5-53-76	
+buh-sms	User	 БУХ зд. 61в п. 126 т. 5-38-96	
+buh-soa	User	Бух. зд.61В п.130 т.5-59-23	
+buh-sol	User	зд.61B п.120 т.52-27	
+buh-ssa	User	Ленинградская АЭС, зд.61В, пом.105	
+buh-ssa1	User	Бух. зд. 61В п. 121	
+buh-stb	User	Бух. зд.61В п.115 т.5-58-73	
+buh-tam	User	БУХ зд.61b п.104	
+buh-teo	User	зд.61в п.135 т.37-20	
+buh-via	User	Ленинградская АЭС, зд.61В, пом.115	
+buh-zes	User	Бух. зд. 61в п. 115	
+ccr-bsv	User	зд.601 п.156 т.5-19-92	
+ccr-gma	User	ЦЦР зд.603 п. 213  	
+ccr-kai	User	ЦЦР зд.602 п.317	
+ccr-kei	User	ЦЦР зд.602 п. 323/2	
+ccr-kiu	User	ЦЦР зд.602 п.317 т.5-12-95	
+ccr-kmn	User	ЦЦР зд.602 п.315 т.5-19-27	
+ccr-luv	User	Ленинградская АЭС, зд.602, пом.203	
+ccr-msp	User	ЦЦР зд.602 п.308	
+ccr-oav	User	ЦЦР зд..603 п.317	
+ccr-peg	User	зд.603 п.153	
+ccr-pua	User	ЦЦР зд. 602 п. 317	
+ccr-rnu	User	ЦЦР зд. 602 п. 321 т. 5-12-95	
+ccr-san	User	Ленинградская АЭС, зд.602, пом.307	
+ccr-ssi	User	ЦЦР зд.602 п.321	
+ccr-tam	User	ЦЦР зд.420 п.114/1	
+ccr-vaa	User	ЦЦР зд. 601 п. 408 п. 5-16-84	
+ccr2-fmm	User	ЦЦР зд.602 п.323/2 т.5-36-89	
+ccr2-kam	User	ЦЦР-2 зд.602 п.323/2 т.59-45	
+ccr2-len	User	зд.602 п.315   	
+ccr2-lni	User	ЦЦР, зд.602, п.323/1	
+ccr2-tsv	User	ЦЦР зд.602 п.517 т.5-12-95	
+ccr2-zea	User	ЦЦР-2 зд.602 п.203	
+cd-aeu	User	ЦД зд.602 п.118	
+cd-eon	User	Ленинградская АЭС, зд.602, пом.118	
+cd-goa	User	ЦД зд.602 п.151	
+cd-gov	User	ЦД зд.602 п.151	
+cd-kak	User	Ленинградская АЭС, зд.602, пом.123	
+cd-lna	User	ЦД зд. 602 п. 118 т. 5-16-63 	
+cd-lon	User	ЦД зд.602 п. 144	
+cd-shev	User	зд.602 п.118 т.5-16-63	
+cgts-aab	User	ЦГТС зд.480 п.105/1 т. 5-13-83	
+cgts-aaf	User	зд.480 п.405/1	
+cgts-ada	User	ЦГТС зд.480 п.13 т.5-10-78 	
+cgts-bae	User	Ленинградская АЭС, зд.609, пом.163	
+cgts-bsv	User	Ленинградская АЭС, зд.602, пом.417	
+cgts-eef	User	ЦГТС зд.480 п.101/4 т.5-36-14	
+cgts-esi	User	зд.410 п.204 т.5-10-78	
+cgts-gai	User	Ленинградская АЭС, зд.480, пом.104/1	
+cgts-gms	User	ЦГТС зд.609 п.161/1 т.5-30-99	
+cgts-hmm	User	зд. 480 п. 105 т. 5-13-83	
+cgts-knf	User	зд.480, п..101/3	
+cgts-ksa	User	зд.410 п.204	
+cgts-mei	User	Ленинградская АЭС, зд.602, пом.417	
+cgts-shtm	User	ЦГТС зд.480 п.104/1	
+cgts-vaa	User	ЦГТС зд.602 п.417	
+cgts-vef	User	ЦГТС зд.630 п. 8	
+ciso	User	Учётная запись для почты EXCHANGE	
+ciso-asn	User	Ленинградская АЭС, зд.777/2, пом.317	
+ciso-bbi	User	ОИ зд.777/2 п. 301 т. 5-57-23	
+ciso-cev	User	зд.445 п.329	
+ciso-cnn	User	ЦИСО зд.445 п. 329 т. 5-32-52	
+ciso-fev	User	ЦИСО зд. 777/2 п. 301а т.5-57-18 	
+ciso-ktu	User	Ленинградская АЭС, зд.777/2, пом.301а	
+ciso-mms	User	зд.445 п.329 т.36-03 в связи с отсутствием подтверждения получения парольной информации	
+ciso-pvv	User	ЦИСО зд.445 п. 329 т. 2-31-48	
+ciso-zmv	User	Ленинградская АЭС, зд.777/2, пом.317	
+Citrix_Groups	OrganizationalUnit		
+cn-blsh	User	ЦНиИО, зд.609, п.115	
+cn-dev	User	зд.609 п.204 т.5-37-68	
+cn-edi	User	ЦНиИО ЛГХ	
+cn-eis	User	ОМиПР зд.401 п.918/2	
+cn-gaa	User	зд.609 п.206 т.5-37-68	
+cn-kag	User	Ленинградская АЭС, зд.609, пом.115	
+cn-kea	User	ОМиПР, зд.445, п.344	
+cn-kki	User	зд. 401 п. 919.2 т. 56-03	
+cn-kon	User	Ленинградская АЭС, зд.401, пом.402/1	
+cn-kusv	User	зд.609 п.206 т.37-68	
+cn-kvv	User	ЦНиИО зд.401 п.402/2 т.54-37 	
+cn-lam	User	Ленинградская АЭС, зд.401, пом.402/2	
+cn-lie	User	Лебедев Эдуардович	
+cn-mav	User	Зам. нач. ЦНиИО	
+cn-mde	User	Инженер (зд.УПАК. п.114 т.55-69)	
+cn-mev	User	ЦНиИО зд. 609 п. 114 т. 5-15-69 	
+cn-mix	User	зд.401 п.919/1-2 т.56-03	
+cn-mug	User	ЦНиИО зд.445 п.334 т.37-80	
+cn-ndv	User	зд.401 п. 918.2 т. 55-96	
+cn-nev	User	ЦНиИО зд.402Б п.128	
+cn-pdi	User	(инженер ЛОБ ЦНиИО зд.609 п.115 тел.5-15-69)	
+cn-rev	User	ОИТПЭ зд.609 п.115 т.46-66	
+cn-shov	User	Ленинградская АЭС, зд.401, пом.402/1	
+cn-vsn	User	ЦНиИО зд. 401 п. 402/1 т. 5-14-46	
+cn2-bvi	User	Ленинградская АЭС, зд.601 Бл.Б2, пом.521	
+cn2-env	User	ЦНиИО зд.601 п. 310 т. 5-13-22	
+cn2-ram	User	инженер ЦНиИО	
+co-hc	User	ХЦ зд.460 п.501 т. 5-14-57 	
+coi-aau	User	зд.777/2 п.302 т.5-57-24	
+coi-cdv	User	зд.380 п.110 т.5-33-96	
+coi-cea	User	зд.777/2 п.317	
+coi-hov	User	УИОС зд.777/2 п.317	
+coi-ila	User	ЦОИ Город зд.1 п.230	
+coi-klv	User	УИОС зд.777/2 п.301а	
+coi-sva	User	УИОС зд.380 п.101	
+computel	User		
+computers	OrganizationalUnit		
+cor-aan	User	Ленинградская АЭС, зд.672Р, пом.359	
+cor-ava	User	Ленинградская АЭС, зд.672, пом.342	
+cor-bav	User	зд.672 п.272	
+cor-eol	User	ЦОРО зд.672р п.325	
+cor-faa	User	Ленинградская АЭС, зд.672P, пом.342	
+cor-ies	User	Ленинградская АЭС, зд.672p, пом.254	
+cor-kal	User	зд.672p п.205 т.5-33-53  ув. п	
+cor-kit	User	зд.672р п.240/1 5-39-04	
+cor-ksa	User	Ленинградская АЭС, зд.672Р, пом.210	
+cor-kus	User	ЦОРО зд.672р п.340	
+cor-ltu	User	ЦОРО зд.672р п.366	
+cor-mas	User	ЦОРО зд.601 п.211	
+cor-mav	User	зд.601 п.211 т.5-13-81	
+cor-mla	User	ЦОРО зд.672р п.253 т.5-33-53	
+cor-mvv	User	ЦОРО зд.672р п. 254	
+cor-ns1	User	зд.672p п.296	
+cor-plu	User	ЦОРО зд.672р п.325	
+cor-ppo	User	зд.672p п.254	
+cor-rvn	User	Ленинградская АЭС, зд.672Р, пом.254	
+cor-shav	User	Ленинградская АЭС, зд.672Р, пом.272	
+cor-sol	User	ЦОРО ЛАЭС-2 зд.672р п. 348	
+cor-tka	User	ЦОРО зд.672р п.210	
+cor-vsv	User	Ленинградская АЭС, зд.401, пом.381/2	
+cor-zav	User	ЦОРО зд.674р	
+coro-adm	User	Учетная запись разработчика системы	
+coro-noe	User	Ленинградская АЭС, зд.672р, пом.266	
+coro-user	User	Пользователь сервера S-CORO	
+cos-aav	User	Ленинградская АЭС, зд.614, пом.328	
+cos-bav	User	Ленинградская АЭС, зд.430а (пристройка), пом.207	
+cos-bks	User	Ленинградская АЭС, зд.430А, пом.206	
+cos-blp	User	Ленинградская АЭС, зд.430а, пом.106	
+cos-bsa	User	ЦОС зд.430А п.115	
+cos-buj	User	Ленинградская АЭС, зд.430А (пристройка), пом.206	
+cos-cva	User	Ленинградская АЭС, зд.430а, пом.206	
+cos-eni	User	Ленинградская АЭС, зд.430а, пом.206	
+cos-erm	User	Ленинградская АЭС, зд.614, пом.329	
+cos-ids	User	Ленинградская АЭС, зд.430а, пом.204	
+cos-jlv	User	Ленинградская АЭС, зд.430А, пом.215	
+cos-kga	User	Ленинградская АЭС, зд.430а, пом.212	
+cos-kmu	User		
+cos-msr	User	Ленинградская АЭС, зд.619, пом.217/1	
+cos-ndg	User	ЦОС зд.619 п. 202 	
+cos-ns	User	ЦОС зд. 614 п. 326	
+cos-pev	User	ЦОС зд.619 п.215 п. 5-19-16	
+cos-ssu	User	Ленинградская АЭС, зд.619, пом.217/1	
+cos-tdp	User	зд.430a п.203 т.5-33-72	
+cpk-deu	User	Копанское зд.СКК п.88/4	
+crb-4281	User	зд.425 п.299/1	
+crb-4282	User	зд.428 п.296/1 т.5-20-50	
+crb-eou	User	зд.445 п.213	
+crb-lan	User	ОРБ зд.609 п.165/1	
+crb-msa	User	Ленатомэнергоремонт зд.672р п.353	
+crb-pna	User	зд.601 п.637 т.5-60-19	
+crb-sav	User	ЦРБ зд. 401 п. 371/2 т. 5-11-13	
+crb-srh	User	Ленинградская АЭС, зд.445, пом.213	
+crb-voa	User	ЦРБ зд. 602 п. 422/2 т. 5-10-02 	
+crb-vsg	User	ЦРБ зд.401 п.588 т.5-11-14	
+ctak-fak	User	Ленинградская АЭС, зд.619, пом.214	
+ctak-glv	User	Ленинградская АЭС, зд.430а, пом.204	
+ctak-ivn	User	Ленинградская АЭС, зд.430а, пом.205	
+ctr-bam	User	ТрЦ зд.800 п.305 т.5-17-97	
+ctr-ben	User	Ленинградская АЭС, зд.800, пом.305	
+ctr-gan	User	зд. 800 п 305- сменная учётная запись диспетчера транспортного цеха	
+ctr-iur	User	зд.440А 	
+ctr-lvv	User	Ленинградская АЭС, зд.800, пом.305	
+ctr-naa	User	Трц зд.490 п.202	
+ctr-nav	User	ТрЦ зд.492/1 п.206	
+ctr-ooa	User	ТрЦ зд.800 п.305	
+ctr-rai	User	Ленинградская АЭС-Авто, зд.800, пом.305	
+ctr-rbe	User	ТрЦ  зд. 800 п. 305 т. 5-17-97 ув.п.	
+ctr-rra	User	зд.384 п.1	
+ctr-sda	User	ТрЦ зд.800 п.305	
+ctr-slv	User	ТрЦ зд. 800 п. 305	
+ctr-vnv	User	зд.440А	
+ctr-zov	User	ТРЦ зд.800 п.305	
+cv-aib	User	ЦВ ФОС-1 п. 29	
+cv-aov	User	Ленинградская АЭС-Авто, зд.348, пом.5	
+cv-asv	User	ЦВ ЛАЭС-3(ФОС1)-22	
+cv-bmv	User	ЦВ ЛАЭС-3(ФОС1) п.18	
+cv-bnk	User	ЦВ ЛАЭС-348(ФОС2)-3	
+cv-chsg	User	фос-1 т.5-1523	
+cv-fan	User	Ленинградская АЭС, зд.348, пом.4	
+cv-keu	User	Ленинградская АЭС, зд.348, пом.7	
+cv-klv	User	ЦВ зд.348, п.19	
+cv-krs	User	ФОС-1	
+cv-kvv	User	Ленинградская АЭС-Авто, зд.3 ФОС-1, пом.21	
+cv-les	User	Ленинградская АЭС, зд.348, пом.3	
+cv-mms	User	Ленинградская АЭС, зд.ФОС-1, пом.21	
+cv-mvi	User	ЦВ 348 (ФОС-2)  п.12	
+cv-ndv	User	Ленинградская АЭС, зд.348, пом.3	
+cv-osi	User	ЦВ ФОС-1 п. 26	
+cv-ots	User	Ленинградская АЭС, зд.348, пом.4	
+cv-pau	User	Ленинградская АЭС, зд.348, пом.5	
+cv-pda	User	Ленинградская АЭС, зд.3 ФОС-1, пом.18	
+cv-rua	User	Зд.3 п.20 т.51523	
+cv-sem	User	Ленинградская АЭС, зд.348, пом.3	
+cv-sev	User	Ленинградская АЭС, зд.310, пом.11	
+cv-shan	User	Ленинградская АЭС, зд.348, пом.3	
+cv-shea	User	ЦВ ФОС-1 п. 20	
+cv-snp	User	ЦВ ФОС-1 п.29	
+cv-ssv	User	ЦВ ФОС-1 зд.3 п.13	
+cv-tao	User	Ленинградская АЭС, зд.3, пом.19	
+cv-tdu	User	Ленинградская АЭС, зд.3 ФОС-1, пом.3	
+cv-tev	User	ЦВ зд.348 (ФОС2) п.11	
+cv-tzv	User	ФОС-1 п.21	
+cv-zas	User	ЦВ ЛАЭС-3(ФОС1)-22	
+cv-zev	User	ЦВ зд.348 п.3	
+cv1-zev	User	Ленинградская АЭС, зд.3 ФОС-1, пом.12	
+cvt-aan	User	ЦВТ зд.601 В п.514/1-3	
+cvt-bav	User	зд.401 п.507а т.5-34-72	
+cvt-bnn	User	ЦВТ зд.601 В п.514/1-3	
+cvt-bus	User	ЦВТ зд.602 п. 420	
+cvt-kvu	User	зд.601 п.513 т.5-47-40	
+cvt-laa	User	ЦВТ зд.401 п.905/2-3	
+cvt-oper	User	ЦВТ зд.601 С1 п.417	
+cvt-pnl	User	Ленинградская АЭС, зд.401, пом.307/1-2	
+cvt-rmi	User	Ленинградская АЭС, зд.401, пом.307/2	
+cvt-rvv	User	Ленинградская АЭС, зд.601 Бл.В, пом.514/1-5	
+cvt-san	User	ЦВТ зд.401 п.905/1-3 т.5-30-14	
+cvt-shdg	User	ЦВТ зд.401 п.820	
+cvt-shea	User	ЦВТ зд.401 п.905/1-3 т.5-31-72	
+cvt-tef	User	Ленинградская АЭС, зд.401, пом.307/2	
+cvt-tva	User	Ленинградская АЭС, зд.601 Бл.В, пом.514/1-4 Бл.В	
+cvt2-gshf	User	ЦВТ зд. 601 п. 415/1-3 т. 5-43-47	
+cvt2-ns	User	Ленинградская АЭС, зд.601, пом.417	
+cvt2-tau	User	зд.601 п.514 	
+cz-bmp	User	Ленинградская АЭС, зд.1 АСКРО, пом.609	
+cz-bnu	User	УКС зд.381 п.306 	
+cz-cil	User	ЦЗ зд.381 п.205 т.5-31-12	
+cz-eia	User	зд.777/2 п.313 т.5-53-89	
+cz-fui	User	зд.381 п.227 т.5-52-97	
+cz-gun	User	ОМТО зд.445 п.341 т.50-63	
+cz-kea	User	УКС зд.381 п.322 т.50-01 	
+cz-kia	User	УЗ ЛАЭС-1(АСКРО) п.509	
+cz-kli	User	зд.445 п.338 т.5-58-52	
+cz-lam	User	зд.57в п.509	
+cz-lav	User	зд.609 п.160 т.5-52-34	
+cz-pia	User	зд.381 п.223 	
+cz-pmv	User	зд.381 п.227 	
+cz-sov	User	зд.609 п.160 т.5-54-14	
+cz-tan	User	зд.777/2 п.321 т.5-58-84	
+dc-la-snapdrive-svc	User	ОИКТ, зд.380, п.233	
+dc-la-sql	User	ОИКТ, зд.380, п.233	
+dc-la-vctr-sysuser	User	ОИКТ, зд.380, п.233	
+ddbadmin	User	Администратор системы БДВЭ	
+dir	User	УЭО зд.445 п. 321 т.53-50	
+dir-sek	User	Сек. директора зд. 445 приемная директора	
+DisabledUsers	OrganizationalUnit		
+dlv-vniiaes	User	ВНИИАЭС зд.428 п.297/1	
+dsl2-aei	User	ЮО зд.445 п.217	
+dsl2-dds	User	Служебная учетная запись (не менять пароль) для работы портала ЛАЭС-2	
+dsl2-ets	User	ЮО зд.445 п.336	
+dsl2-gaa	User	Ленинградская АЭС, зд.АЛБК, пом.21R104 (02UYA)	
+dsl2-mue	User	инженер отдела комплектации строительства УПТК	
+elc-agv	User	Ленинградская АЭС, зд.445, пом.23	
+elc-air	User	зд.445 п.242	
+elc-aiv	User	зд.402б п.327 т.5-13-48	
+elc-ana	User	Ленинградская АЭС, зд.ОРУ 110/330, пом.8	
+elc-anmv	User	ЭЦ зд.402b п.211 т.5-25-65	
+elc-bal	User	Ленинградская АЭС, зд.401, пом.670	
+elc-bdv	User	Ленинградская АЭС, зд.401, пом.185/2	
+elc-bka	User	ЭЦ зд. 601 п. 613	
+elc-bma	User	Ленинградская АЭС, зд.420, пом.202	
+elc-bmi	User	ЭЦ зд.401 п.675 т. 5-23-40; 5-13-04	
+elc-bnu	User	Ленинградская АЭС, зд.401, пом.428	
+elc-bsi	User	ЭЦ зд.445 п. 23 т. 5-55-69	
+elc-caa	User	ЭЦ зд.401 п.203	
+elc-chng	User	ЭЦ зд.445 п.54	
+elc-chsv	User	ЭЦ зд.1 п.58/1 т.5-17-92	
+elc-chvu	User	ЭЦ зд.404а п. 8	
+elc-clv	User	зд.445 п.57 а т.58-88	
+elc-csa	User	ЭЦ(ЛАЭС2) зд.380 п. 259	
+elc-cshu1	User	зд.401 п.397	
+elc-dav	User	ЭЦ зд.613 п. 215 т. 5-13-48	
+elc-deu	User	Ленинградская АЭС, зд.СКК «Энергетик», пом.32	
+elc-dma	User	зд.402б п.327	
+elc-dpv	User	зд.401 п.671 т.5-13-06	
+elc-dvb	User	ЭЦ зд.601 С1 п.616 т.5-18-59	
+elc-eii	User	ЭЦ зд.458 п.127	
+elc-ess	User	зд.601 п.616 т.5-18-59	
+elc-evg	User	зд.601 п.115/2 т.5-17-90	
+elc-faa	User	зд.402b п.121 т.5-22-77	
+elc-fas	User	ЭЦ зд.401 п. 397 	
+elc-fav	User	ЭЦ зд.601 бл.С1 п.612	
+elc-ffp	User	ЭЦ зд.601 п.119	
+elc-fgm	User	ЭЦ зд.601 п. 615	
+elc-fja	User	ЭЦ зд.445 п.242/2 т.5-57-61	
+elc-flk	User	ЭЦ НП-1 зд. 601 п. 617 блк.3 т. 5-17-73 	
+elc-flv	User	ЭЦ зд. 445 п. 242а	
+elc-fna	User	зд.445 п.23 т.5-57-10	
+elc-foa	User	Ленинградская АЭС, зд.402а, пом.460	
+elc-gaa	User	Ленинградская АЭС, зд.445, пом.57	
+elc-gai	User	зд.458 п.127 т.52-97	
+elc-gbp	User	зд.701 п.223	
+elc-glvi	User	 ЭЦ зд.601 п.117 т.54-53	
+elc-gnv	User	ЭЦ зд.401 п.674 т.5-13-06	
+elc-gsu	User	ЭЦ зд.601 п.612	
+elc-hms	User	ЭЦ, зд.445, п.14, т.55-940	
+elc-hnv	User	Ленинградская АЭС, зд.402А, пом.326	
+elc-hos	User	Ленинградская АЭС, зд.401, пом.666/2	
+elc-hvv	User	ЭЦ зд.401 п.674 т.5-32-84	
+elc-idv	User	ЭЦ зд.402а п.558	
+elc-igu	User	зд.445 п.57 т.58-88	
+elc-iie	User	ЭЦ зд.458 п.127	
+elc-isb	User	Ленинградская АЭС, зд.401, пом.167/3	
+elc-isv	User	зд.401 п.837/3 т.52-97	
+elc-ivi	User	Ленинградская АЭС, зд.445, пом.52	
+elc-jig	User	Ленинградская АЭС, зд.401, пом.642	
+elc-jsi	User	ЭЦ зд.458 п.127	
+elc-kad	User	ЭЦ зд.420 п.202	
+elc-kan	User	ЭЦ, зд.445, п.55	
+elc-kan1	User	ЭЦ зд.401 п.185/3	
+elc-kau	User	Ленинградская АЭС, зд.428, пом.297/3	
+elc-kav	User	Ленинградская АЭС, зд.402а, пом.409	
+elc-kde	User	зд.613 п.215	
+elc-kdi	User	ЭЦ зд.601 п.119	
+elc-kdu	User	ЭЦ зд.401 п.671 т.5-13-06	
+elc-kea	User	ЭЦ зд.445 п.10 т.51-91	
+elc-kev	User	ЭЦ зд.401 п671 т.5-13-06	
+elc-kii	User	ЭЦ зд.601 п. 609/2	
+elc-kir	User	Ленинградская АЭС, зд.402А, пом.521	
+elc-kkp	User	ЭЦ зд.420 п.202	
+elc-kla	User	ЭЦ зд..602 п. 421 т. 5-38-62 	
+elc-kmu	User	Ленинградская АЭС, зд.401, пом.439	
+elc-kmv	User	зд.428 п.297/2 т.5-19-57	
+elc-kna	User	Ленинградская АЭС, зд.445, пом.57	
+elc-kof	User	зд.601 п.609 т.5-17-40	
+elc-kpg	User	ЭЦ зд.402б п.211 т.5-25-65	
+elc-kpv	User	зд.401 п.674 	
+elc-ksn	User	ЭЦ зд.428 п.292	
+elc-kss	User	ЭЦ зд.428 п. 296/2 т.5-19-57	
+elc-ksv	User	ЭЦ зд.380 п.256 т.5-16-80 	
+elc-kua	User	Ленинградская АЭС, зд.445, пом.13	
+elc-kva	User	Ленинградская АЭС, зд.601, пом.104	
+elc-kvv	User	ЭЦ зд.401 п.303 т.5-56-12 парольная информация	
+elc-lan	User	ЭЦ зд.401 Д п.382/2 т.5-27-40	
+elc-leya	User	АСУ ППА-2 ЭЦ	
+elc-lme	User	ЭЦ зд.401 п.187	
+elc-lon	User	Ленинградская АЭС, зд.603/2, пом.147А	
+elc-los	User	Ленинградская АЭС, зд.445, пом.51	
+elc-lsa	User	ЭЦ зд.601 п. 612	
+elc-lsv	User	зд.402Б пю428 т.5-53-41	
+elc-mal	User	Ленинградская АЭС, зд.402а, пом.558	
+elc-mas	User	ЭЦ зд. 601 п .615	
+elc-mdv	User	ЭЦ зд.401 п.642	
+elc-melb	User	ЭЦ зд.445 п.57	
+elc-mev	User	ЭЦ зд.401 п.226/2 т.5-16-89	
+elc-mii	User	зд.601 п. 10 т. 5-12-21	
+elc-miu	User	зд.	
+elc-mka	User	ЭЦ зд.402А п.428 т.5-53-05	
+elc-mps	User	зд.420 п.202 т.5-31-43	
+elc-mts	User	ЭЦ зд.402а п.409	
+elc-mvv	User	ЭЦ зд.445 п. 23 т. 5-32-45	
+elc-nds	User	ЭЦ, зд.777, п.162	
+elc-ndv	User	ЭЦ зд.601 п.Д/ 314	
+elc-ngv	User	ЛенАЭР, зд.401, пом.222	
+elc-nsm	User		
+elc-nsv	User	ЭЦ зд. 401 п. 675 т. 5-36-12	
+elc-nvd	User	Ленинградская АЭС, зд.601 бл.С1, пом.619	
+elc-oag	User	ЭЦ зд. 401 п. 670  т. 5-13-05	
+elc-omp	User	Ленинградская АЭС, зд.401, пом.12	
+elc-os3	User	Ленинградская АЭС, зд.601 бл.С1, пом.619	
+elc-ovv	User	зд.601 п.657/2 т.5-46-13	
+elc-paa	User	зд.1 склад ХБК п.55	
+elc-pav	User	ЭЦ зд.404а	
+elc-pda	User	ЭЦ зд.401 п. 439	
+elc-pds	User	ЭЦ зд. 404а п. 8	
+elc-pev	User	Ленинградская АЭС, зд.445, пом.16	
+elc-pis	User	ЭЦ зд. 407 п. 4	
+elc-pli	User	зд.601 п.606 т.5-46-56	
+elc-plo	User	ЭЦ зд.601 п.617	
+elc-pnp	User	ЭЦ зд.445 п.240 т.56-12	
+elc-pov	User	зд.445 п.57 т.58-88	
+elc-ppa	User	зд.401 п.226/2 т.5-16-89	
+elc-psa	User	Ленинградская АЭС, зд.428, пом.296/2	
+elc-psi	User	Ленинградская АЭС, зд.445, пом.56	
+elc-pvn	User	ЭЦ зд.690 п.309/3	
+elc-pvs	User	ЭЦ зд.458 п.127	
+elc-rau	User	ЭЦ зд.420 п.149 т.5-11-71	
+elc-rav	User	ЭЦ зд.601 п. 309	
+elc-ren	User	зд.401 п.837/8	
+elc-rev	User	ЭЦ зд.672р п.302/1	
+elc-rin	User	зд.428 п.17	
+elc-rmv	User	ЭЦ зд. 445 п. 242а т. 5-57-20	
+elc-rpm	User	ЭЦ зд.601 С1 п.617	
+elc-saa	User	зд.445 п.57 	
+elc-sav	User	Ленинградская АЭС, зд.601, пом.Д 314	
+elc-sds	User	ЭЦ зд. 401 п.670 т.5-13-05	
+elc-sea	User	ЭЦ зд.401п.439 В	
+elc-sev	User	ЭЦ зд.401b п.439	
+elc-shav	User	зд.428, п.296/2, т.51957	
+elc-shev	User	ЭЦ зд.601 п.116 т.5-17-90	
+elc-shvb	User	зд.401 п.671 т.5-13-06	
+elc-shvs	User	ЭЦ зд.602 п.309/3 т.5-19-86	
+elc-shvy	User	зд.601 п.613 т.51-93	
+elc-sma	User	зд.619 п.202-1	
+elc-smz	User	зд.402а п.428 т.5-53-05	
+elc-sov	User	зд.401 п.185	
+elc-ssn	User	Ленинградская АЭС, зд.1 АСКРО, пом.508	
+elc-sta	User	ЭЦ зд.402а п.428 (СОТИ АССО)	
+elc-stv	User	Ленинградская АЭС, зд.601 бл.С1, пом.619	
+elc-svg	User	зд.445 п.57 т.58-88	
+elc-svi	User	ЭЦ зд.602 п.215 т.54-90	
+elc-svk	User	Ленинградская АЭС, зд.401, пом.669	
+elc-svr	User	ЭЦ зд. 601 п. 22/2 т. 5-12-04	
+elc-svv	User	зд.428 п.296-2 т.5-15-41	
+elc-syf	User	Ленинградская АЭС, зд.690, пом.35	
+elc-szhn	User	Ленинградская АЭС, зд.601 Бл.С1, пом.609	
+elc-tdi	User	ЭЦ зд.445 п.57 т.58-88	
+elc-tea	User	ЭЦ зд.601 п.124 т.5-18-42	
+elc-tim	User	зд.401 п.671	
+elc-tln	User	Ленинградская АЭС, зд.407, пом.4	
+elc-tma	User	ЭЦ зд.1 ХБК п. 58/1	
+elc-ttk	User	ЭЦ зд.402А п.409	
+elc-ttn	User	ЭЦ зд. 601 п. 119 т. 5-17-02	
+elc-tun	User	ЭЦ зд.601 бл.С-1 п.612	
+elc-tvn	User	Ленинградская АЭС, зд.613, пом.314	
+elc-uaf	User	зд.401 п.676 т.52-52	
+elc-uen	User	зд.445 п.242а т.5-57-20	
+elc-uia	User	ЭЦ зд.402а п. 459 т. 5-32-87 	
+elc-uvg	User	Ленинградская АЭС, зд.ОРУ 330/110, пом.10	
+elc-uvv	User	зд.601, п.22/2, т.5-12-04	
+elc-van	User	зд.402а п.558 не блокировать перехов на ЛАЭС-2 ЭЦ	
+elc-vgg	User	Ленинградская АЭС, зд.601 Бл.С1, пом.119	
+elc-vip1	User	зд.401 п.675 т.5-13-04 	
+elc-voa	User	Ленинградская АЭС, зд.445, пом.51	
+elc-vvs	User	ЭЦ зд.445 п. 10	
+elc-vvv	User	Ленинградская АЭС, зд.402Б, пом.460	
+elc-zbv	User	ОИКТ зд.402б п.453	
+elc-zda	User	Ленинградская АЭС, зд.401, пом.439	
+elc-zgp	User	Ленинградская АЭС, зд.ОРУ-330/110, пом.9	
+elc-ziv	User	Ленинградская АЭС, зд.402Б, пом.327	
+elc-zlv	User	ЭЦ зд.445 п.13 т.5-11-89	
+elc-zti	User	ЭЦ зд.428 п.292	
+elc-zvb	User	ЭЦ зд.601 п.315/1	
+elc-zvl	User	ЭЦ зд. 601 п.119 С1 т.5-17-02	
+elc-zvv	User	Ленинградская АЭС, зд.445, пом.55	
+elc-zyv	User	ЭЦ зд.601 п.613 т.51-93	
+elc1-baa	User	зд.601 п.119 т.57-02 и зд. 445 п. 52/1	
+elc1-bav	User	зд.602, п.309/3, т.51986	
+elc1-dma	User	ЭЦ зд.420 п.202 т.5-31-43	
+elc1-gnb	User	Ленинградская АЭС, зд.660, пом.506	
+elc1-kaa	User	Ленинградская АЭС, зд.445, пом.16	
+elc1-kan	User	ЭЦ зд.601 п.612 С-1 т. 5-11-79	
+elc1-kau	User	Ленинградская АЭС, зд.609, пом.117/1	
+elc1-kea	User	зд.601 п.422 т.5-18-72	
+elc1-kia	User	Ленинградская АЭС, зд.401, пом.671	
+elc1-ksa	User	зд.601 б.с1 п.613 т.5-11-93	
+elc1-ksv	User	ЭЦ зд.402а п.121	
+elc1-lan	User	ЭЦ зд.401п.812/1	
+elc1-pav	User	ЭЦ зд.401 п.669в т.5-13-07	
+elc1-pov	User	ЛенАЭР, зд.401, пом.382/2	
+elc1-psi	User	ОИКТ зд.445 п.13	
+elc1-saa	User	зд.402a п.409 т.5-54-26	
+elc1-smn	User	ЭЦ зд.401 п.386/2	
+elc1-vvv	User	ЭЦ зд.601 п.617 т.5-17-73	
+elc2-bka	User	ЭЦ зд.602 п.605	
+elc2-chal	User	ЭЦ зд.601 п.616	
+elc2-gan	User	зд.601 п.617 т.5-17-86	
+elc2-gvb	User	Ленинградская АЭС, зд.601, пом.657/2	
+elc2-iag	User	ЭЦ зд.601 п.23	
+elc2-iva	User	Ленинградская АЭС, зд.672р, пом.302	
+elc2-kaa	User	зд.402б п.323	
+elc2-kai	User	ЭЦ зд.601 п.609/1 С1 т.5-17-40	
+elc2-kau	User	ЭЦ зд.613 п. 208	
+elc2-kea	User	зд.601 п.616	
+elc2-kev	User	Ленинградская АЭС, зд.601, пом.605	
+elc2-kla	User	Ленинградская АЭС, зд.601 бл.Д, пом.425	
+elc2-kov	User	Ленинградская АЭС, зд.601, пом.657/1	
+elc2-ksa	User	Ленинградская АЭС, зд.601, пом.242	
+elc2-ksp	User	ЭЦ зд.601 п.658/1  т.5-17-99 	
+elc2-ksv	User	ЭЦ зд.610а п.4	
+elc2-kvv	User	Ленинградская АЭС, зд.601, пом.616	
+elc2-lai	User	зд.601 п.309/3 т.5-19-86	
+elc2-lms	User	ЭЦ зд.601 п.617 т.5-17-73	
+elc2-mmv	User	ЭЦ зд.601 п.617	
+elc2-mp	User	ЭЦ зд.601 Д п.605	
+elc2-msn	User	ЭЦ зд.601 п.611 т.5-14-97	
+elc2-mti	User	зд.601 п.613	
+elc2-ns	User	ЗД.601 П.422 Т.58-38	
+elc2-rdn	User	Ленинградская АЭС, зд.601, пом.609/2	
+elc2-sav	User	ЭЦ  зд. 401 п. 672	
+elc2-si	User	ЭЦ зд.601 п.309/3	
+elc2-smp	User	зд.601 п.119 т.5-17-02	
+elc2-sre	User	Ленинградская АЭС, зд.601 бл.С1, пом.619	
+elc2-sva	User	ЭЦ зд.601 п.613	
+elc2-tav	User	ЭЦ зд. 601 С1 п.617 т.5-17-73	
+elc2-tiv	User	ЭЦ зд.601 п.658/2 т.5-10-11	
+elc2-van	User	Ленинградская АЭС, зд.601, пом.609/1	
+elc2-vas	User	зд.601 п.312 т.5-18-72	
+elc2-vvv	User	зд.601 п.124	
+EOSDO Autosetup	OrganizationalUnit		
+EXCHANGE ARCHIVE	OrganizationalUnit		
+EXCHANGE GROUPS	OrganizationalUnit		
+fedor.nokhrin	User		
+Fedulov asp-fva1	User		
+fo-gim	User	ФО зд.445 п.207	
+fo-gtm	User		
+fo-jni	User	зд.445 п.207	
+fo-kav	User	зд.445 п.313 т.55-56	
+fo-kee	User	зд.445 п.346а т.5-53-33	
+fo-kmv	User	ФО зд.445 п.346а т.53-66	
+fo-lev	User	Ленинградская АЭС, зд.445, пом.207	
+fo-mvi	User	зд.445 п.41	
+fo-nin	User	ФО зд.445 п.222 т.56-88 уволен	
+fo-psb	User	ФО зд.445 п.224 т.51-55	
+fo-ptv	User	ФО зд.445 п.207 т.52-44	
+fo-vnv	User	ФО зд.445 п. 220	
+ga-bak	User	Гринатом зд.445 п. 117 	
+ga-esv	User	ЗАО"Гринатом" зд. 777/2  п. 407 т. 5-53-91	
+ga-fav	User	Гринатом зд.61В п. 128	
+ga-kns	User	Гринатом зд.445 п.117	
+ga-kov	User	Консист зд.380 п.259 т.5-26-30	
+ga-ksv	User	ЗАО"Гринатом" зд.61В п. 128  т. 5-59-19	
+ga-les	User	Гринатом зд.445 п.117	
+ga-mav	User	зд.445 п.117	
+ga-moe	User	Гринатом зд.445 п.117	
+ga-nrr	User	Гринатом зд.445 п. 133/1	
+ga-snr	User	Гринатом зд.445 п.117	
+ga-ton	User	зд.445 п.117	
+gan-hvm	User	зд.445 п.310 т.58-32	
+gan-lrh	User	Ленинградская АЭС, зд.445, пом.316	
+gan-mai	User	Ростехнадзор, зд.445, пом.310	
+gan-uav	User	Ростехнадзор, зд.445, пом.310	
+GI	User	зд.445 п.320  Сл.дир. т. 53-51	
+gi-kkg	User	УЭО зд.445 п. 321 	
+gip-fsv	User	Ленинградская АЭС, зд.445, пом.331	
+giv	User		
+go-akrb	User	п.16	
+go-arhiv	User		
+go-askro	User		
+go-deg	User		
+go-deg1	User		
+go-degs	User	ЗПУПДГ п.32	
+go-evak	User	ЗПУПДГ п.15	
+go-gaa	User	ГОиЧС зд.445 п.227	
+go-gsg	User	ГОиЧС зд.401 п.10 	
+go-gsm	User	ЗПУПД Г п.11	
+go-gzm1	User		
+go-hva	User	Ленинградская АЭС, зд.445А, пом.0032	
+go-igb	User	зд.380 п.10 т.5-12-13	
+go-kda	User	ГОиЧС, зд.445 п.14	
+go-kep	User	зд.380 п.14	
+go-kiv	User	445а п.35	
+go-kops	User		
+go-lva	User	ОМПГОиЧС зд.372 п.2 Реаб_центр	
+go-mto	User		
+go-nshgo	User	ЗПУПД Г п.61	
+go-opas1	User		
+go-opas2	User		
+go-opas3	User		
+go-opas4	User	п.18	
+go-pna	User	СТК п.12	
+go-poi	User	ОМП,ГОиЧС,АЦ зд.445 п.35	
+go-prco2	User		
+go-prgo1	User		
+go-prgo2	User	ЗПУПДГ п.24	
+go-prso1	User		
+go-rar	User		
+go-recas	User	ЗПУ города	
+go-ropas	User		
+go-ru1	User		
+go-ru2	User		
+go-ru3	User		
+go-ru4	User	ГОиЧС зд.445  п.19	
+go-ru5	User	ГОиЧС зд.ЗПУПД п.038	
+go-ru6	User	ГОиЧС зд.445а п.0014	
+go-skpi	User	зд.1 ГОиЧС	
+go-smi	User		
+go-ssa	User	ГОиЧС зд.380 п.14-2 т.5-21-87	
+go-sve	User	ГОиЧС зд.380 п.14	
+go-tov	User	Ленинградская АЭС, зд.445а, пом.0035	
+go-vksacg	User	зд.1 ГОиЧС	
+go-vnm	User	зд.445а п.32	
+god	User	зд.445 п. 317 т.53-91	
+Groups	OrganizationalUnit		
+gsn	User	т.36-68 зд.602 п.409 ИВЦ	
+gzm1	User		
+hc-aiv	User	ХЦ зд.420 п. 212	
+hc-amr	User	ХЦ зд.438 п.201 т.5-25-91	
+hc-ava	User	ХЦ зд.660 п.512	
+hc-bas	User	зд.401 п.136	
+hc-bav	User	ХЦ зд.438 п.202-1 т.5-13-95	
+hc-ces	User	ХЦ зд.438 п.202/2 т. 5-60-27	
+hc-che	User	Ленинградская АЭС, зд.660, пом.505	
+hc-drv	User	ХЦ зд.438 п.201 ув. п	
+hc-dsn	User	Ленинградская АЭС, зд.420, пом.212	
+hc-eav	User	Ленинградская АЭС, зд.420, пом.136	
+hc-eds	User	зд.438 п.202 т.5-40-27	
+hc-fel	User	зд.672р п.203 т.5-33-07	
+hc-fsi	User	ХЦ зд.660 пом.507 т. 5-14-57	
+hc-gea	User	зд.401 п.525 т.5-13-42	
+hc-glg	User	ХЦ зд.601 п.732	
+hc-hbv	User	зд.420 п.136 т.5-11-44	
+hc-iks	User	Ленинградская АЭС, зд.601 Бл.Б1, пом.513	
+hc-jta	User	ХЦ зд.601B	
+hc-jug	User	Ленинградская АЭС, зд.401 бл.В, пом.630/2	
+hc-koa	User	Ленинградская АЭС, зд.660, пом.410	
+hc-kpn	User	Ленинградская АЭС, зд.660, пом.605	
+hc-kug	User	ХЦ зд.701 п.224 	
+hc-labls	User	ХЦ зд.660 п.407	
+hc-maa	User	ХЦ зд. 438 п. 110	
+hc-maj	User	ХЦ зд. 420 п. 135 т. 5-13-55	
+hc-mea	User	ХЦ зд.401 п. 453	
+hc-mng	User	ХЦ зд. 438 п. 201 т. 5-26-69 	
+hc-msv	User	ХЦ зд. 601 п. 513, т. 5-12-66 	
+hc-mtv	User	ХЦ зд.660 п.407	
+hc-nc	User	Ленинградская АЭС, зд.445, пом.209	
+hc-nks	User	ХЦ зд.420 п. 212	
+hc-ns-kpo	User	ХЦ-КПО зд.660 п.605 т.5-14-19	
+hc-oper	User	зд.601 п.513	
+hc-pif	User	зд.438 п.110	
+hc-piv	User	ХЦ зд.660 п.507 т. 5-25-87	
+hc-raa	User	ХЦ зд.660 п. 216 т. 5-12-32	
+hc-rva	User	Ленинградская АЭС, зд.401, пом.630/2	
+hc-shpa	User	Ленинградская АЭС, зд.660, пом.510	
+hc-shvv	User	зд.438 п.202/1 	
+hc-sns	User	зд.438 п.201 т.56-93	
+hc-stoperator	User	ХЦ зд.660 п.605	
+hc-stoperator-kpo	User	ХЦ зд.460 п.501	
+hc-svs	User	зд.660, п.550/2А, т.5-22-91	
+hc-tech	User	ХЦ зд.401 п.449 т.51-12	
+hc-tiv	User	ХЦ  зд.438 п. 118	
+hc-tna	User	Ленинградская АЭС-Авто, зд.438, пом.203	
+hc-tnl	User	зд.401 п.456	
+hc-usv	User	ХЦ зд.445 п.209	
+hc-zau	User	ХЦ зд. 660 п. 507 	
+hc-zne	User	не бл. Ленинградская АЭС, зд.602, пом.143	
+hc-zto	User	ХЦ зд.700 п.108	
+hc1-bav	User	Ленинградская АЭС, зд.660, пом.219	
+hc1-lkgm	User	ХЦ зд. 401 п. 453 	
+hc1-msv	User	Ленинградская АЭС, зд.672, пом.203 уволен	
+hc1-ns	User	ХЦ зд.401 В  пом.539	
+hc1-zav	User	Ленинградская АЭС, зд.601, пом.513	
+hc1-zn	User	ХЦ зд.401 п.509 т.5-12-39	
+hc2-adz	User	ХЦ зд.601 п.411/1	
+hc2-aiv	User	ХЦ зд.601 п.732 т.5-18-91	
+hc2-avv	User	Ленинградская АЭС, зд.420, пом.136	
+hc2-kas	User	Ленинградская АЭС, зд.601, пом.736	
+hc2-kea	User	ХЦ зд. 601 п. 732 т. 5-18-49 	
+hc2-kon	User	ХЦ зд.601b п.728 т..5-18-91  ув. п	
+hc2-lav	User	зд.601 п.411	
+hc2-lkm	User	ХЦ зд.601 п.738 т.5-17-58	
+hc2-mev	User	Ленинградская АЭС, зд.602, пом.143	
+hc2-ns	User	зд.601 п.411	
+hc2-rga	User	зд.601 п.732 бл.В т.58-91	
+hc2-shvo4	User	ХЦ зд.601 п. 411/2	
+hc2-smv	User	Ленинградская АЭС, зд.601, пом.518	
+hc2-tech	User	зд.601 п.732	
+hc2-yata	User	ХЦ зд.601B п.372	
+ho-div	User	АХО зд.445 п.47а	
+ho-gip	User	АХО зд.445 п.5 т. 5-55-32	
+ho-isa	User	зд.445 п.5 т.5-55-30	
+ho-kev	User	АХО зд.61B п.123	
+ho-ksa	User	зд.445 п.126	
+ho-ksg	User	зд.445 п.34	
+ho-ktv	User	Ленинградская АЭС-Авто, зд.445, пом.128	
+ho-lkpo	User	ХЦ зд. 660 п. 406 т. 5-15-34	
+ho-meg	User	АХО зд.445 п.20	
+ho-mlk	User	АХО зд.445 п.47а	
+ho-pma	User	АХО зд.445 п.128	
+ho-pvn	User	АХО зд.445 п.5	
+ho-rav	User	зд.445 п.2 т.5-55-23	
+ho-sau	User	Ленинградская АЭС-Авто, зд.445, пом.5	
+ho-ssu	User	АХО зд.445 п. 5	
+ho-svn	User	АХО зд.445 п.5	
+ho-tna	User	АХО зд.445 п.240	
+ht-anv	User	ЦХОЯТ зд.428 п.321	
+ht-auu	User	ЦХОЯТ зд.428 п. 169/2	
+ht-ava	User	Ленинградская АЭС, зд.428, пом.288/3	
+ht-avn	User	ЦХОЯТ зд.428 п.288/3	
+ht-bao	User	Ленинградская АЭС, зд.428, пом.407	
+ht-bkv	User	Ленинградская АЭС, зд.428, пом.406	
+ht-bvn	User	ЦХОЯТ зд. 428 п. 503	
+ht-bvv	User	зд.428 п.288/1 т.5-31-21 переход в УТЦ	
+ht-eaa	User	ЦХОЯТ зд.428 п.503	
+ht-gue	User	ЦХОЯТ зд.428 п.337	
+ht-ktn	User	зд.428 п.260 т.5-57-47	
+ht-lsn	User	Ленинградская АЭС, зд.428, пом.288/3	
+ht-mbk2	User	РЦ зд.428 п.323/2 т.5-14-51	
+ht-mvv	User	зд.428 п.13 т.5-55-56	
+ht-nav	User	ЦХОЯТ зд.428 п.288/3	
+ht-nin	User	ЦХОЯТ зд.428 п.288/2	
+ht-ns1	User	зд.428 п.412 т.5-37-92	
+ht-oe3	User	РЦ зд.428 п.288/3	
+ht-oh1	User	зд.428 п.169/2	
+ht-oov	User	ЦХОЯТ зд.428 п.261	
+ht-or2	User	зд.428 п.252/2 т.5-33-48	
+ht-pav	User	ЦХОЯТ зд.428 п.260	
+ht-poa	User	ЦХОЯТ зд.428 п. 189/2	
+ht-prv	User	зд.428 п.296/3 т.5-25-18	
+ht-rem	User	зд.428 п.289	
+ht-rev	User	ЦХОЯТ зд.428 п.189/2	
+ht-rom	User	Ленинградская АЭС, зд.428, пом.407	
+ht-rsv	User	зд.428 п.189/2 	
+ht-shns	User	ЦХОЯТ зд.428 п. 288/3 т.5-57-51	
+ht-svo1	User	зд.428 п.404 т.5-15-51	
+ht-zkg	User	ЦХОЯТ зд.428 п.288/2 т.5-57-46	
+ikt-bdv	User	Ленинградская АЭС, зд.602, пом.409	
+ikt-rav	User	ОИКТ, зд.602 п.409, т.5-26-68	
+ikt-taa	User	ОИКТ зд.602 п. 409 т. 5-26-68	
+imu-adm	User	Администратор ПАК ИМУ Гелеверя С.Н. т.5-10-17	
+InternetTerminalAccess	Security Group		
+ivb	User	ИВЦ зд.445 п.219 т.37-13	
+ivc-1	User	зд.445	
+ivc-2	User	зд.445	
+ivc-3	User	зд.445	
+ivc-319-13	User	зд.445 п. 319	
+ivc-319-3	User	зд.445 п.319	
+ivc-319-4	User	зд.445 п.319	
+ivc-319-5	User	Комиссия зд.445 п. 319	
+ivc-319-6	User	Комиссия зд.445 п. 319	
+ivc-319-7	User	косиссия зд.445 п.319	
+ivc-319-8	User	зд.445 п. 319	
+ivc-319-9	User	зд.445 п.319 	
+ivc-3501	User	зд.445 п.350	
+ivc-3502	User	зд.445 п.350	
+ivc-3503	User	зд.445 п.350	
+ivc-3504	User	зд.445 п.350	
+ivc-3505	User	зд.445 п.350	
+ivc-3506	User	зд.445 п.350	
+ivc-3507	User	зд.445 п.350	
+ivc-3508	User	зд.445 п.350	
+ivc-4	User	зд.445	
+ivc-6	User	зд.445	
+ivc-adm	User		
+ivc-gaa	User	Ленинградская АЭС, зд.1 АСКРО, пом.325	
+ivc-kkt10	User	зд.380 п. 249	
+ivc-kkt11	User	зд.380 п.249	
+ivc-kkt12	User	зд.380 п.249	
+ivc-kkt9	User	ОИКТ зд.380 п.249 	
+ivc-koms1	User	Используется ЛАЭС_2 (Снежков)	
+ivc-koms10	User	с 10.12.2018 по 19.12.2018 зд.777/2 п.304/2	
+ivc-koms11	User	Используется ЛАЭС_2 (Снежков)	
+ivc-koms12	User	с 27.10.17 зд.609 OSART	
+ivc-koms13	User	Используется ЛАЭС_2 (Снежков)	
+ivc-koms14	User	с 21.06.17 в зд.777/2, пом.205-206	
+ivc-koms15	User	Используется ЛАЭС_2 (Снежков)	
+ivc-koms16	User	Используется ЛАЭС_2 (Снежков)	
+ivc-koms17	User	с 27.10.17 зд.609 OSART	
+ivc-koms19	User	с 21.06.17 в зд.777/2, пом.205-206	
+ivc-koms2	User	с 10.12.2018 по 19.12.2018 зд.777/2 п.304/2	
+ivc-koms20	User	с 27.10.17 зд.609 OSART	
+ivc-koms25	User	с 21.06.17 в зд.777/2, пом.205-206	
+ivc-koms26	User	с 21.06.17 в зд.777/2, пом.205-206	
+ivc-koms27	User	зд.61b п.227	
+ivc-koms28	User	с 27.10.17 зд.609 OSART	
+ivc-koms29	User	с 10.12.2018 по 19.12.2018 зд.777/2 п.304/2	
+ivc-koms3	User	с 21.06.17 в зд.777/2, пом.205-206	
+ivc-koms30	User	с 28.07.2020 по н.в. зд.777 п.232 Пичугина Т.А. т.52717	
+ivc-koms31	User	с 28.07.2020 по н.в. зд.777 п.232 Пичугина Т.А. т.52717	
+ivc-koms32	User	с 28.07.2020 по н.в. зд.777 п.232 Пичугина Т.А. т.52717	
+ivc-koms33	User	с 28.07.2020 по н.в. зд.777 п.232 Пичугина Т.А. т.52717	
+ivc-koms34	User	с 28.07.2020 по н.в. зд.777 п.232 Пичугина Т.А. т.52717	
+ivc-koms35	User	с 28.07.2020 по н.в. зд.777 п.232 Пичугина Т.А. т.52717	
+ivc-koms36	User	с 10.12.2018 по 19.12.2018 зд.777/2 п.304/2	
+ivc-koms37	User	с 10.12.2018 по 19.12.2018 зд.777/2 п.304/2	
+ivc-koms38	User	с 10.12.2018 по 19.12.2018 зд.777/2 п.304/2	
+ivc-koms4	User	с 10.12.2018 по 19.12.2018 зд.777/2 п.304/2	
+ivc-koms5	User	с 10.12.2018 по 19.12.2018 зд.777/2 п.304/2	
+ivc-koms6	User	с 21.06.17 в зд.777/2, пом.205-206	
+ivc-koms7	User	с 10.12.2018 по 19.12.2018 зд.777/2 п.304/2	
+ivc-koms8	User	с 21.06.17 в зд.777/2, пом.205-206	
+ivc-koms9	User	с 27.10.17 зд.609 OSART	
+ivc-mmv	User	Ленинградская АЭС, зд.380, пом.257	
+ivc-muv	User	зд.380 п.264 	
+ivc-vaatest	User	test	
+jur-aap	User	ЮР зд.445 п.335 т.5-59-07	
+jur-asv	User	ЮО зд.445 п.217 т.5-59-06	
+jur-eom	User	ЮО зд.445 п.335	
+jur-gpa	User	ЮО зд.445 п.335 т.53-68	
+jur-jea	User	ЮО зд.445 п. 217	
+jur-nes	User	зд.445 п.335 т.5-59-07	
+jur-saa	User	зд.445 п.335 т.55-37	
+jur-stv	User	ЮО зд.445 п.335	
+kazn-asd	User	Ленинградская АЭС-Авто, зд.61В, пом.210	
+kazn-bev	User	УЗ зд.АСКРО п.511	
+kazn-bva	User	зд.61b п.214	
+kazn-dga	User	Казначейство зд.61В п.205	
+kazn-dgn	User	зд.61b п.210 т. 5-11-24	
+kazn-dvg	User	Казначейство зд.445 п. 336 т.5-53-33	
+kazn-env	User	зд.61b п.205	
+kazn-gna	User	зд.445 п.207	
+kazn-kei	User	Казначейство зд.61в п.210 т.5-57-32	
+kazn-ken	User	Казначейство зд.61В п.202 т.5-58-95	
+kazn-kni	User	Ленинградская АЭС, зд.61В, пом.214	
+kazn-kos	User	Ленинградская АЭС, зд.АБК, пом.309	
+kazn-ksa	User	Казначейство зд.445 п.220	
+kazn-kza	User	ОКРиУДО зд.61b п.214 т.5-33-73	
+kazn-lov	User	зд.61В,п.217	
+kazn-lpg	User	зд.61в п.205 т.5-12-57	
+kazn-mov	User	Казначейство зд.445 п.208 т.5-52-57	
+kazn-nkn	User	ОКРиУДО зд. 61В п. 211	
+kazn-omi	User	ОКРиУДО зд.61b п.214 	
+kazn-pdu	User	ОКРиУДО зд. 61в п. 218 т. 5-24-39	
+kazn-pra	User	зд.61в п.217	
+kazn-psa	User	зд.445 п.207 т.5-52-99	
+kazn-res	User	Казначейства зд.445 п.207	
+kazn-rti	User	Казначейство зд.61В п.219	
+kazn-sea	User	зд. 61В, п. 211	
+kazn-shne	User	Казначейчтво зд.61В п.205 т.5-14-31	
+kazn-shnm	User	зд.61b п.205 т.5-14-31	
+kazn-sse	User	зд.445 п.207 т.5-52-99	
+kazn-vtv	User	Казначейство 61В зд.61В п. 202 т.5-58-95	
+kazn-zta	User	зд.61b п.205 т.5-53-61	
+kcentr	User		
+ko-aas	User	зд.602 п.506	
+ko-agn	User	КО зд. 602 п. 512	
+ko-ass	User	зд.602 п.508 т.55-10	
+ko-dea	User	зд.602 п.521 	
+ko-eoi	User	Ленинградская АЭС, зд.602, пом.519	
+ko-gik	User		
+ko-kli	User	КО зд.602 п.513 т.53-12 уволен	
+ko-knn	User	Ленинградская АЭС, зд.401, пом.837	
+ko-kvu	User	КТО, зд.602, п.519	
+ko-lgi	User	Ленинградская АЭС, зд.602, пом.506	
+ko-llu	User	зд. 602, к 506, номер БД 379, т. 54-33	
+ko-mai	User	Ленинградская АЭС, зд.602, пом.512	
+ko2-rsn	User	Ленинградская АЭС, зд.601, пом.741	
+ksa	User	ИВЦ зд.380 п.248 т.5-24-88	
+kscp_support	User	Консист-ОС рабочая группа КС ЦОПиУП	
+ksv	User	ИВЦ зд.445 п.333 т.55-321	
+kto	User	зд.602 п.507	
+kto-ala	User	Ленинградская АЭС, зд.602, пом.507	
+kto-bav	User	КТО зд.602 п.506 т.5-41-73	
+kto-bev	User	зд.602 п.506 т.5-12-99	
+kto-hms	User	КТО зд. 602 п. 519  т. 5-21-78	
+kto-itr	User	зд.602 п.513 т.5-16-20	
+kto-knm	User	зд.602 п.519 т.5-13-12	
+kto-kov	User	Ленинградская АЭС, зд.602, пом.516	
+kto-kta	User	зд.602 п.505 т.5-57-21	
+kto-lie	User	КТО зд.602 п.507 т.5-10-46	
+kto-lmv	User	КТО зд. 602 п.524 т.4-18-43	
+kto-maa	User	КТО зд.602 п.508/1 т.5-31-54	
+kto-mda	User	КТО зд.602 п.513	
+kto-mmr	User	зд.602 п.519 т.5-13-12	
+kto-msk	User	КТО зд.602 п.506 т.5-12-99	
+kto-mta	User	КТО зд.602 п.519 т.5-21-78 p	
+kto-pim	User	КТО зд.602 п.507	
+kto-pna	User	КТО зд.601 п.741 т.5-13-33	
+kto-pnv	User	зд.602 п.519 т.5-22-25	
+kto-sev	User	КТО зд.601 п.741 т.5-13-33	
+kto-shmv	User	КТО зд.602 п.519	
+kto-skv	User	КТО зд.602 п.508/1	
+kto-sva	User	КТО зд.602 п. 506	
+kto-vea	User	зд.602 п.506 т.5-12-99	
+kto-vsv	User	КТО зд.602 п.506 т.5-20-88	
+kto1-sev	User	КТО зд.602 п.516 	
+L_RTZ_PE_R	Security Group	Группа чтения документов Поддержка эксплуатации	
+L_RTZ_PE_W	Security Group	Группа администраторов папки Поодержка эксплуатации	
+lar-asa	User	Ленатомэнергоремонт зд.402а п.455	
+lar-baa	User	Ленатомэнергоремонт зд.52В п. 21	
+lar-bdg	User	Ленатомэнергоремонт зд.13В п.30/2	
+lar-bnk	User	Ленатомэнергоремонт ОРУ-330 п.202	
+lar-bnu	User	Ленатомэнергоремонт зд.401 п.70	
+lar-boa	User	Ленатомэнергоремонт зд.603 п.214	
+lar-bts	User	Ленатомэнергоремонт зд.402А п.455	
+lar-bvm	User	Ленатомэнергоремонт зд.603/3 п.220/3	
+lar-cgr	User	Ленатомэнергоремонт зд. 52В п. 17	
+lar-dla	User	зд.603 п.218/3	
+lar-eav	User	зд.52B п.22	
+lar-fks	User	Ленатомэнергоремонт зд.13в п.30/1	
+lar-gaa	User	зд.601 бл.С1 п.604	
+lar-gas	User	Ленатомэнергоремонт зд.401 п.70 т.5-11-04	
+lar-gmm	User	Ленатомэнергоремонт зд.402а п.455	
+lar-gun	User	Ленатомэнергоремонт зд.13в п.13/3	
+lar-ian	User	Ленатомэнергоремонт зд.601 п.23/2	
+lar-jai	User	зд.17 п.24/2	
+lar-jdl	User	Ленатомэнергоремонт зд.630 п.9	
+lar-kav	User	зд.601 п.114 т.5-16-18	
+lar-kea	User	Ленатомэнергоремонт зд.401 п.70	
+lar-kes	User	Ленатомэнергоремонт зд.402а п.455	
+lar-kgs	User	Ленатомэнергоремонт зд.57В п. 17	
+lar-krv	User	Ленатомэнергоремонт зд.402А п.455	
+lar-kta	User	Ленатомэнергоремонт зд.603/2 п.221	
+lar-kua1	User	Ленатомэнергоремонт зд.401 п.202	
+lar-kun	User	Ленатомэнергоремонт зд.603/2 п.218	
+lar-kvi	User	ЛенАЭР ул.Мира д.1 п.207	
+lar-kze	User	Ленатомэнергоремонт зд.401 п.70	
+lar-lsa	User	Ленатомэнергоремонт зд.603 п.218/1	
+lar-man	User	Ленатомэнергоремонт зд.602 п.316	
+lar-mem	User	Ленатомэнергоремонт зд.602 п.301	
+lar-mns	User	Ленатомэнергоремонт зд.52 п.17	
+lar-mog	User	Ленатомэнергоремонт зд.601 п.114	
+lar-mva	User	Атомэнергоремонт зд.602 п.315 т.5-18-18 	
+lar-mvb	User	зд.603/2 п.221	
+lar-mve	User	зд.401 п.167 т.5-31-16	
+lar-paa	User	зд.401 п.905/2-4 	
+lar-pam	User	зд.401 п.70	
+lar-pnv	User	Ленатомэнергоремонт зд.401 п.70	
+lar-pus	User	зд.17 п.24/3	
+lar-raa	User	Ленатомэнергоремонт зд.17 п.24/3	
+lar-rlp	User	Ленатомэнергоремонт зд.401 п.70	
+lar-shaa	User	Ленатомэнергоремонт зд.601 бл.С1 п.604	
+lar-shag	User	Ленатомэнергоремонт 13в п.20	
+lar-shgv	User	Ленатомэнергоремонт зд.601 п.114	
+lar-ssa	User	Ленатомэнергоремонт зд.603 п.204	
+lar-sss	User	Ленатомэнергоремонт зд.603/2 п.221	
+lar-ssv	User	Ленатомэнергоремонт зд.601 п.114	
+lar-svv	User	 «Ленатомэнергоремонт» гогод	
+lar-tag	User	Ленатомэнергоремонт зд.601 п. 44	
+lar-tiv	User	Ленатомэнергоремонт зд.17 п.24/4	
+lar-tvv	User	зд.401 п.70	
+lar-uvi	User	Ленатомэнергоремонт зд.603/2 п.221	
+lar-uvv	User	Ленатомэнергоремонт зд.17 п.24/2	
+lar-vav	User	Ленатомэнергоремонт зд.601	
+lar-vua	User	Ленатомэнергоремонт зд.401 п.905/2-4	
+lar-zov	User	Ленатомэнергоремонт зд.603/1 п. 218/2	
+lar1-kua	User	Ленатомэнергоремонт зд.601 п.44	
+lavto-dzi	User	АЭС-Авто зд.609 п.78	
+LN2	OrganizationalUnit		
+lpfo-reu	User	ЛПФО зд. 777 п. 213 т.5-20-55	
+lpfo-shon	User	ЛПФО зд.777 п.213	
+lpfo-tov	User	ЛПФО зд.777 п.213	
+lsa	User	зд.380 п.249 т.5-25-97	
+lsa1	User		
+MaxPatrol	User	ОИКТ зд.445 п. 219 т. 5-53-23	
+mcpp-vtp	User	ЛАЭС-2 ПО_МЦПП зд.UYH05R025 п. 81	
+men	User	ИВЦ зд.380 п.248 т.34-88	
+met-asa	User	зд.401 п.381/10 	
+met-dgn	User	зд.401 п.381 т.5-18-64	
+met-knk	User	зд.401 п.386	
+met-kov	User	ОМ зд. 401 п. 387/2	
+met-mvm	User	Ленинградская АЭС, зд.401, пом.387/1 Д	
+met-rnv	User	зд.601 п.727 т.5-11-59 	
+met-zvv	User	Ленинградская АЭС, зд.401, пом.387/2 Д	
+MPWindows	User		
+msch-ksm	User	ЦМСЧ зд.445 здравпункт 	
+npto	User		
+nsb-4	User	зд.601Д п.421/2 (БЩУ4,НСС2,НСБ4)	
+nsrc-2	User	РЦ зд.601 п.416 т.5-18-50	
+nss-1	User	Ленинградская АЭС, зд.601 Бл.Д, пом.421/2	
+nss-2	User	зд.601/д п.421/2  СТУ-2 БЩУ4,НСС2,НСБ4	
+nuv	User	зд.601 п.908 т. 4768	
+od-bmu	User	ОД зд.61В п.217 т.5-39-21	
+od-cpv	User	зд.381 п.214 т.5-30-78	
+od-dnv	User	ОД зд.61в п.201 т.5-54-67	
+od-kon	User	Ленинградская АЭС, зд.61В, пом.207	
+od-lja	User	зд.61b п.210 т.5-54-67	
+od-ltu	User	ОД зд. 61в п.211	
+od-mon	User	ОД зд.61В п.217	
+od-nmv	User	ОД зд.61В п.205 т.5-53-59 	
+od-nvg	User	ОД зд. 61В п. 201 т. 5-56-07	
+od-pma	User	ОД зд.61В п. 228	
+od-pnv	User	ОД зд.61В п.211	
+od-pvv	User	ЦЗ зд.1	
+od-ral	User	Ленинградская АЭС, зд.1 АСКРО, пом.425	
+od-rvv	User	зд.61b п.218 т.5-24-39	
+od-sam	User	ОД зд.61В п.211 т.5-54-12	
+od-ssv	User	ОД зд.61В п.210 т.50-45	
+odk_len	User	Чтение данных LDAP для ИС ОДК КЦ (не менять пароль)	
+odm-ask	User	ОДМиТК зд.601 п.201	
+odm-asv	User	Ленинградская АЭС, зд.401, пом.920	
+odm-bao	User	ОДМиТК зд. 401п.920	
+odm-bav	User	зд.401 п.911	
+odm-bim	User	ОДМиТК  зд.445 п.340 т.5-57-60 	
+odm-bra	User	ОДМиТК зд.401 п.923/1 т.5-12-74	
+odm-dai	User	ОДМиТК зд.401 п.923/2	
+odm-dob	User	ОДМиТК зд.401 п.512 т.5-11-06	
+odm-dva	User	ОДМиТК зд.401В п.911	
+odm-eiv	User	ОДМиТК зд.401 п.912	
+odm-jov	User	зд.401 п.920	
+odm-kds	User	ОДМиТК зд.401 п.923/2 т.5-12-41	
+odm-kis	User	ОДМиТК зд.401 п. 927 	
+odm-nes	User	ОДМиТК зд.401 п.923/1 	
+odm-peg	User	зд.401 п.919/4  т.5-12-67	
+odm-pia	User	зд.601 п.201 т.5-27-53	
+odm-psv	User	ОДМиТК зд.601 п.801/2	
+odm-rvg	User	ОДМиТК зд.401 п.920 т. 5-20-79	
+odm-sdd	User	зд.401 п.911	
+odm-shem	User	ОДМиТК зд.401 В п.920	
+odm-tvn	User	ОДМиТК зд.401 п.919/5 В	
+odm2-dva	User	ОДМиТК зд.601 п.201 С1	
+odm2-sdd	User	ОДМиТК зд.601 п.201 С1	
+odm2-tda	User	ОДМиТК зд.601 п.201 С1	
+odo-aov	User	ОДО зд.445 п. 243 т. 5-15-49	
+odo-baa	User	зд.445 п.245 т.5-30-56	
+odo-bnc	User	Ленинградская АЭС, зд.445, пом.243	
+odo-civ	User	ОДО зд.445 п.252	
+odo-dii	User	ОДО зд. 445 п. 243 	
+odo-info	User	зд.445 п.243 т.5-20-54	
+odo-inn	User	зд.445 п.243 т.5-30-53	
+odo-kvb	User	зд.445 п.245 т.5-53-60	
+odo-mev	User	зд.445 п.243 т.5-30-55	
+odo-rmv	User	зд.445 п.245 т.5-53-66	
+odo-shnn	User	Ленинградская АЭС, зд.445, пом.245	
+odo-sve	User	ОДО зд.445 п.245	
+oeb-das	User	Ленинградская АЭС, зд.445, пом.241	
+oeb-gng	User	ОЭБ зд.445 п.338	
+oeb-iao	User	ОЭБ зд.445 п.241 т.5-32-05	
+oeb-koa	User	зд.445 п.130	
+oeb-kon	User	ОЭБ зд.445 п. 241 т. 5-32-06	
+oeb-rmn	User	зд.445 п.241 т.5-53-63	
+oeb-tav	User	ОЭБ зд. 455 п. 241 т. 5-53-63	
+oeb-zsv	User	зд.445 п.241 т.5-32-06	
+oep-bja	User	ПЭО, зд.61В, п.209	
+oep-chev	User	ОЭПиТО зд.601В п.225 т.5-53-01	
+oep-ddm	User	Ленинградская АЭС, зд.61В, пом.225	
+oep-gnv	User	зд.445 п.229	
+oep-kab	User	зд.61B п.225	
+oep-ken	User	ОЭПиТО зд.61В п.214 т.52-57	
+oep-kov	User	ПЭО зд. 61В п.225 т.5-52-92	
+oep-lev	User	Ленинградская АЭС, зд.61В, пом.225	
+oep-ljv	User	Ленинградская АЭС, зд.61В, пом.215	
+oep-mdn	User	Мазуренко Диана Николаевна п.228/445	
+oep-mgn	User	зд.603 п.152	
+oep-pjn	User	ОЭПиТО зд.445 п.233 	
+oep-pou	User	зд.61в п.209 т.5-30-51	
+oep-saa	User	зд.445 п.229 т.5-54-99	
+oep-sekr	User	ПЭО зд.61В п..209	
+oep-shea	User	ОЭПиТО зд.61В п.225	
+oep-shev	User	зд.61B п.222 продлена 14.09.2021	
+oep-shol	User	зд.603 п.150	
+oep-sik	User	зд.603 п.152 т.53-86	
+oep-vla	User	зд.61В п.216 т.5-52-91 не блокировать вх.2769 от.12.11.2019	
+oep-vna	User	ОЭПиТО зд. 445 п. 228 т. 5-54-31	
+oep-voe	User	ОЭП зд.61в п.215 т.5-31-29	
+oikb-shsv	User	Ленинградская АЭС, зд.609, пом.208	
+oikob	User	ОИиКОБ зд.445 п.211	
+oikob-aep	User	Ленинградская АЭС, зд.609, пом.205	
+oikob-mnv	User	ОИиКОБ зд.609 п.205	
+oikt-chng	User	ОИКТзд.445 п.54	
+oikt-chnu	User	ОИКТ зд.445 п.14	
+oikt-dae	User	Ленинградская АЭС, зд.380, пом.252	
+oikt-fna	User	ОИКТ зд.445 п.23	
+oikt-hms	User	ОИКТ зд.428 п.292	
+oikt-kau	User	ОИКТ зд.609 п.117/1	
+oikt-kla	User	ОИКТ зд.601бл.Д п.425	
+oikt-ksn	User	ОИКТ зд.609 п.117/2	
+oikt-kua	User	ОИКТ зд.445 п.13	
+oikt-omp	User	ОИКТ зд.401 п.12	
+oikt-psi	User	ОИКТ зд.445 п.13	
+oikt-svi	User	ОИКТ зд.445 п.23	
+oikt-vto	User	Ленинградская АЭС, зд.380, пом.249	
+oikt-zbv	User	зд.402б п.453	
+oikt-zlv	User	ОИКТ зд.445 п.13	
+oikt-zti	User	ОИКТ зд.428 п.292	
+oimo-cpa	User	ОИМО зд.АСКРО п.322	
+oimo-gml	User	Ленинградская АЭС, зд.61В, пом.220	
+oimo-kti	User	ОИМО зд.АСКРО п.320	
+oimo-mie	User	Ленинградская АЭС-Авто, зд.61b, пом.221, Уволен	
+oimo-osg	User	ОИМО зд.АСКРО п.322	
+oimo-ske	User	ОИМО зд.АСКРО п.322	
+oimo-sol	User	ОИМО зд.61B п.226	
+oins-bai	User	зд.445 п.212 т.5-55-43	
+oins-giv	User	Ленинградская АЭС, зд.602, пом.305	
+oins-gos	User	Ленинградская АЭС, зд.Столовой, пом.	
+oins-idr	User	зд.445 п.212	
+oins-kdn	User	Ленинградская АЭС, зд.445, пом.212	
+oins-kki	User	Ленинградская АЭС, зд.401, пом.837/6	
+oins-kla	User	Ленинградская АЭС, зд.381, пом.202	
+oins-kmn	User	ОИОЭиРН зд.445 п. 212	
+oins-ksa	User	ОИНС зд. 445 п. 212 	
+oins-ovn	User	зд.401п.837/6	
+oins-tvv	User	Ленинградская АЭС, зд.401, пом.905/1-2	
+oio-dtu	User	зд.445 п.130	
+oitp-afs	User	зд.401 п.919-1 т.5-16-03	
+oitp-baa	User	ОИТПЭ зд.601 п.314	
+oitp-dan	User	Ленинградская АЭС, зд.401, пом.919/1	
+oitp-frg	User	зд.401 п.402/2 т.5-14-37	
+oitp-kav	User	ОИТПЭ зд.401 п.919/1 т.5-16-03	
+oitp-kem	User	зд.609 п.206 т.5-27-68	
+oitp-mpa	User	ОИТПЭ зд.401 п402/2 т .5-14-37	
+oitp-msv	User	ОИТПЭ зд. 401 п. 402/1 т. 5-14-46	
+oitp-nap	User	зд.401 п.402/1	
+oitp-oav	User	зд.601 п.521 т.5-14-45	
+oitp-onp	User	ОИТПЭ зд.609 п.206 т.5-46-59	
+oitp-oso	User	ОИТПЭ зд.401 п. 402/1	
+oitp-pmf	User	зд.601 п.314 тю5-15-30	
+oitp-pvv	User	Ленинградская АЭС, зд.601 Б2, пом.808	
+oitp-raa	User	ОИТПЭ зд. 602 п. 311 Б2 т. 5-14-45	
+oitp-rov	User	зд.609 п.115 т.5-13-97	
+oitp-sal	User	ОИТПЭ зд.601 п.521	
+oitp-ses	User	ОИТПЭ зд.445 п.334	
+oitp-sjs	User	зд.601 п.521	
+oitp-tkv1	User	ОИТПЭ зд.601 Б2 п.314	
+oitp-tsa	User	ОИТПЭ зд.401 п.919/1 т.5-16-03	
+oitp1-kaa	User	Ленинградская АЭС, зд.601 бл.Б2, пом.314	
+ojb-aea	User	зд.401 п.916 т.5-12-16	
+ojb-bim	User	ОЯБиН зд.401 п.923/1 т.52-47	
+ojb-bnd	User	зд.401 п.923/2 	
+ojb-bsn	User	Ленинградская АЭС, зд.428, пом.605	
+ojb-btp	User	зд.601 бл.В п.737 т.53-09	
+ojb-bvp	User	Ленинградская АЭС, зд.401, пом.920	
+ojb-can	User	зд.401 п.837/4 т.5-17-27 не бл .вх.520 	
+ojb-cev	User	зд.428 п.260 т.5-33-84 	
+ojb-chiv	User	ОЯБиН зд.428 п. 605 т. 5-11-81	
+ojb-chnv	User	ОЯБиН зд.401 п.916	
+ojb-cms	User	ОЯБиН зд.401 п.916	
+ojb-ddn	User	Ленинградская АЭС, зд.601, пом.605/2-3	
+ojb-dov	User	зд.445 п.336 т.5-33-14	
+ojb-dsv	User	ОЯБиН зд. 601 п. 737	
+ojb-fnn	User	Ленинградская АЭС, зд.401, пом.923/2 уволен	
+ojb-gad	User	ОЯБиН зд.401 п.837/4	
+ojb-hav	User	Ленинградская АЭС, зд.601, пом.301/1	
+ojb-hgb	User	ОЯБиН зд.601 п. 737 т. 5-13-09	
+ojb-ida	User	зд.401 п.916 т.5-16-71	
+ojb-kmn	User	зд.401 п.916 т.5-16-74	
+ojb-knn	User	Ленинградская АЭС, зд.428, пом.605	
+ojb-ksju	User	ОЯБиН зд.401 п.837/5 т.5-11-07	
+ojb-lsb	User	зд.445 п.336 т.5-16-18	
+ojb-mae	User	ОЯБиН зд.601 п.301 т.5-11-11	
+ojb-mdm	User	Ленинградская АЭС, зд.401, пом.912	
+ojb-msg	User	здю601 п.737 т.5-13-09	
+ojb-mvv	User	ОЯБиН зд.401 п.919 т.55-27	
+ojb-nem	User	зд.601 п.737 т.5-13-09	
+ojb-pai	User	Ленинградская АЭС, зд.401, пом.916	
+ojb-pan	User	ОЯБиН зд.428 п.605 т.51-81	
+ojb-pap	User	зд.401 п.927 т.52-38	
+ojb-pla	User	ОЯБиН зд.401 п.928 т.53-80	
+ojb-pvp	User	ОЯБиН зд.13 п.492/1	
+ojb-raa	User	ОЯБиН зд.601 п. 301/1	
+ojb-rds	User	ОЯБиН зд.401 п.912	
+ojb-rvo	User	ОЯБиН зд. 401 п. 837_4 т. 5-17-27 	
+ojb-saa	User	ОЯБиН зд.401 п.916 т.52-16 	
+ojb-san	User	зд.601 п.737	
+ojb-shav	User	зд.428 п.502 т.5-20-47	
+ojb-shma	User	зд.401 п.837/5 т.5-11-07	
+ojb-sio	User	зд.401 п.916 т.5-12-16	
+ojb-sss	User	ОЯБИН зд.401 п.916 т.5-12-16	
+ojb-tag	User	Ленинградская АЭС, зд.401, пом.916	
+ojb-tam	User	ОЯБиН зд.401 п.920 т.52-82	
+ojb-tda	User	Ленинградская АЭС, зд.401, пом.911	
+ojb-vpv	User	ОЯБиН зд.428 п.503	
+ojb-zla	User	ОЯБиН, зд.401	
+ojb-zns	User	зд.601 п.737в т.5-13-09	
+ojb1-pai	User	ОЯБиН зд.428 п.605	
+ojb2-mvv	User	ОЯБиН зд.601 п.737 т.5-13-09	
+ok-anu	User	зд.445 п.133/1	
+ok-bis	User	ОК зд.445 п.121	
+ok-eig	User	тел.54-84 зд.445 п.133 инженер ОК	
+ok-kmv	User	зд.445 п.133а т.53-30	
+ok-ksg	User	зд.445 п.124 т.5-57-69	
+ok-mev	User	тел.53-27 зд.445 п.121 начальник ОК	
+ok-piu	User	ОК зд.445 п. 117	
+ok-puv	User	ОК зд.445 п.133а т.5-57-21	
+ok-raa	User	ОК зд.445 п.133/1 т.5-53-53	
+ok-sek	User	ОК зд.445 п.121	
+ok-shtn	User	ОК (ОРП) зд.445 п.337  Блокирование учетных записей пользователей, не обращавшихся к ресурсам ИКС ЛАЭС	
+ok-teo	User	ОК зд.445 п. 135 	
+ok-tsv	User	ОК зд.445 п. 135 т.5-54-07	
+okb-bas	User	Ленинградская АЭС, зд.609, пом.208	
+okb-chva	User	зд.602 п.410 т.35-25	
+okb-jgv	User	Ленинградская АЭС, зд.609, пом.208	
+okb-kve	User	ОИиКОБ зд.609 п.205 т. 57-64 	
+okb-mev	User	зд.609 п.205	
+okb-zsn	User	зд.609 п.205 т.5-17-64	
+okk-pei	User	зд.602 п.410а ОКК т.51-83	
+okk-vsu	User	Ленинградская АЭС, зд.609, пом.208	
+okti-dia	User	ОКиТИ зд.381 п.201 т.5-17-17	
+okti-saa	User	Ленинградская АЭС, зд.401, пом.905/1-2	
+okti-smv	User	Ленинградская АЭС, зд.381, пом.201	
+ol-aau	User	ОЛ зд. 602 п. 115 	
+ol-gnn	User	ОЛ зд. 445 п. 336/2 т. 5-54-76	
+ol-ktv	User	ОЛ, зд.445, п.336/2	
+ol-pan	User	ОЛ зд. 602 п. 115	
+om-aae	User	ОМ зд.401 п. 445/1	
+om-aug	User	ОМ зд.602 п. 120 	
+om-bvn	User	ОМ зд.602 п. 120	
+om-cja	User	ОМ зд.445 п.214	
+om-iag	User	ОМ зд.601 С1 п.722	
+om-inv	User	Ленинградская АЭС, зд.401, пом.389/3 Д	
+om-klm	User	ОМ зд.401 п.445/1	
+om-kmn	User	зд.401 п.377/2 т.5-10-35	
+om-koa	User	зд.401, п.381, т.5-31-37	
+om-lav	User	ОМ зд.602 п.407	
+om-liis	User	ОМ зд.601 п.722	
+om-pkf	User	зд.401 п.422-1	
+om-pmp	User	зд.401 п.389/3	
+om-psa	User	зд.401 п.4221/1	
+om-psv	User	зд.401 п.381	
+om-rmv	User	Метрология зд.401 п.387/2 т.5-10-35	
+om-sau	User	ОМ зд.602 п. 407	
+om-tov	User	ОМ зд.401 п.387/2	
+om-vaa	User	ОМ зд.401 п.445 	
+om-vig	User	ОМ зд.601 п.727	
+om-zvb	User	ОМ зд.401 п. 389/3	
+omipr	User	зд.445 п.344	
+omipr-kav	User	ОМиПР зд.602 п.415	
+omipr-tda	User	ОМиПР зд.401 п.918/2	
+omips-dmi	User	ОМиПСС зд.401 п.918/2 т.5-15-96	
+omips-lsg	User	ОМиПСС зд. 401 п. 918/2 т. 5-36-09	
+omips-nsv	User	ОМиРСС зд.402б п.126 т.5-30-46	
+ompr-taa	User	ОМиПР зд.401 п.918/2 	
+omps-kev	User	ОМиПСС зд. 402б п. 128 т. 5-30-47	
+omps-kip	User	ОМиПСС зд. 445 п. 344 т. 5-53-56	
+omts-aon	User	ОМТО зд.445 п.341 т.36-85 	
+omts-chav	User	Ленинградская АЭС, зд.777/2, пом.415	
+omts-eov	User	зд.445 п.344	
+omts-gsa	User	УПТК зд.777/2 п.416	
+omts-ijv	User	зд.445 п.341 т.36-85	
+omts-ini	User	ОМТО УКИДМ зд.12 п.18 т. 5-12-81	
+omts-ksn	User	зд.445 п.339	
+omts-kti	User	ОМТО зд.445 п.348 т.36-85 	
+omts-llv	User	зд.777/2 п.417	
+omts-mtm	User	УПТК зд.12 п.16	
+omts-soa	User	ОМТС зд.777/2 п.402 т. 5-58-92 	
+omts-ubk	User	зд.12 п.17 т.51-49	
+omts-znp	User	ОМТО зд.445 п.333 т. 51-86	
+onpb-hog	User	зд.601 п.902/1 т. 5-21-08	
+onpb-klv	User	Ленинградская АЭС, зд.601 Бл.В, пом.738	
+onpb-lng	User	Ленинградская АЭС, зд.602, пом.319	
+onpb-shei	User	зд.602 п.238 т.5-19-34	
+ook-bva	User	зд.602 	
+ook-kom	User	зд.602 п.410 т.5-11-83  не блокировать не удалять служ.№494	
+ooot-bia	User	ООиОТ зд.445 п.228 т.5-54-31	
+ooot-eov	User	ООиОТ зд.445 п. 233	
+ooot-pnv	User	ООиОТ зд.445 п.229	
+ooot-rmk	User	ООиОТ зд.445 п.229 т.5-54-98	
+ooot-vnv	User	ООиОТ зд.602 п.150	
+oos-ava	User	ОООС зд.АСКРО  п.523	
+oos-kev	User	ОООС зд. 602 п. 403 5-34-35 	
+oos-tam	User	зд.1 аскро п.524 т.5-42-83	
+oos-tef	User	ОООС зд.1 АСКРО п.523	
+oos-vmm	User	ООС зд.381 п.221 т.5-51-82	
+oos-vns	User	ОООС зд.1 Аскро пом.524 т.5-42-84	
+oos-zea	User	зд.602 п.403	
+oot-aen	User	ООТ зд.601 п.510 т.5-47-20	
+oot-alk	User	ООТ эд.602 п.429	
+oot-bam	User	зд.601 п.510 т.5-18-80	
+oot-bea	User	зд.602 п.314 т.5-13-18 ув.п.	
+oot-bev	User	зд.601 п.511 т.5-17-21	
+oot-bla	User	зд.602 п.314	
+oot-chau	User	ООТ зд.602 п.429 т.5-20-48	
+oot-chlu	User	ООТ зд.602 п.208а т.5-13-54	
+oot-fds	User	зд.601 п.511 т.5-17-21	
+oot-fnv	User	ООТ зд.602 п.314 т.5-34-79	
+oot-gnt	User	зд.458 п.129/3	
+oot-gti	User	ООТ зд.601 п.510 т.  5-18-89	
+oot-ims	User	ООТ, зд.602. п.208, т.5-13-51	
+oot-jia	User	ООТиОТ зд.445 п.229	
+oot-kol	User	зд.445 п.229 т.5-54-97 не  блокировать	
+oot-kov	User	зд.602 п.428	
+oot-kto	User	ООТ зд.602 п.314а	
+oot-mns	User	ООТ зд.602 п. 419	
+oot-poa	User	зд.601 п. 511 т. 5-18-80	
+oot-shes	User	ООТ зд.601 п.510 т.5-18-80	
+oot-smv	User	Ленинградская АЭС, зд.602, пом.429	
+oot-suv	User	ООТ зд.601 С1 п.511	
+oovk-hos	User	ООВКиОС зд. 777/2 п. 313 т. 5-40-18	
+oovk-zev	User	ООВКиОС зд. 777/2 п. 313 т. 5-40-18	
+opb-ias	User	ОПБ зд.602 п. 238	
+opb-mas	User	зд.402а п.117 т.5-17-26  ждет компьютер 	
+oper-skc	User	т.37-13 зд.445 п.219 ИВЦ	
+oper1-skc	User		
+oppr-bap	User		
+oppr-chtb	User	зд.445 п.241 т.34-09	
+oppr-fmu	User	зд.401 п.837/1 т.56-96 ув.есть	
+oppr-gbm	User	ОППР зд.445 п.248	
+oppr-grs	User	ОППР зд.445 п.9 т.5-52-60	
+oppr-imv	User	зд.401 п.537/1т.5-24-09	
+oppr-jra	User	ОР ПСР зд.00UYD п.09R102	
+oppr-kaa	User	ОППР зд.445 п.44	
+oppr-kpv	User	зд.401 п.837	
+oppr-krv	User	зд.401 п.837 т.5-17-87	
+oppr-lav	User	Ленинградская АЭС, зд.445, пом.7	
+oppr-ldv	User	зд.00UYD п.09R13	
+oppr-men	User	Атомтрудресурсы-Нева зд.458 п.129/2  т.5-52-62	
+oppr-mog	User	зд.601 п.114 т.5-16-18	
+oppr-msa	User	Ленинградская АЭС, зд.601 Бл.С2, пом.215	
+oppr-msv	User	Ленинградская АЭС, зд.401 бл.В, пом.837/1	
+oppr-okb	User	Ленинградская АЭС, зд.445, пом.9	
+oppr-pea	User	Ленинградская АЭС, зд.601 Бл.С2, пом.п.215	
+oppr-res	User	ОППР зд.601 п.215	
+oppr-rnm	User	зд.401 п.837/1 т.5-17-87	
+oppr-rnn	User	ОППР зд.445 п.44	
+oppr-sem	User	ОППР зд.401 п.837/1 т.5-52-62	
+oppr-shos	User	ОППР зд.401 п.837/1 т.5-17-87	
+oppr-tis	User	зд.401 п.837/1 т.5-52-60	
+oppr-tvf	User	зд.401 п.837/1 ОППР т. 57-87	
+oppr-viv	User	зд. 445, п.9, т. 5-52-60	
+oppr-zaa	User	зд.609 п.208 т.5-26-82	
+oppr1-msv	User	зд.401 п.837/1	
+orb-baa	User	ОРБ зд.601 п.616	
+orb-bvv	User	Ленинградская АЭС, зд.601 Бл.В, пом.620	
+orb-cdk2	User	ОРБ зд.601 п.617/В т.5-18-17	
+orb-glv	User	ОРБ зд.602 п.422/2	
+orb-iaa	User	ОРБ зд.601 п. 621 т.5-19-99	
+orb-kav	User	зд.601 п.612В	
+orb-kes	User	зд.601 пю609	
+orb-kov	User	ОРБ зд.601 п.622	
+orb-kua	User	ОРБ зд.401 п.371/2	
+orb-kvv	User	ОРБ зд.601 п.613	
+orb-lsa	User	ОРБ зд.401 п.370	
+orb-mau	User	ОРБ зд.672р п.361 п. 5-35-66	
+orb-mku	User	зд.401 п.553	
+orb-mnk	User	ОРБ зд.401 п.553 	
+orb-pda	User	Ленинградская АЭС, зд.401, пом.370	
+orb-pom	User	Ленинградская АЭС, зд.601 Бл.В, пом.637	
+orb-sdk672	User	ОРБ зд.672Р п. 332	
+orb-sov	User	ОРБ зд.401 п. 549 т. 5-11-73	
+orb-tnv	User	зд.1 Аскро п.615 т.5-42-61	
+orb-vau	User	ОРБ зд.660 п. 504 	
+orb-vdk	User	Ленинградская АЭС, зд.401, пом.370	
+orb-zdv	User	зд.1 п.403	
+orb-znn	User	зд.601 п.621 т.5-19-99	
+orp-bau	User	ОРП зд.445 п.337	
+orp-lab	User	зд.445 п.337	
+orp-tes	User		
+orpsr-sev	User	зд.445 п.328	
+ort-cga	User	зд.602 п.411	
+ort-ela	User	Ленинградская АЭС, зд.602, пом.411/1	
+ort-fan	User	ОРТ зд.602 п.411/1	
+ort-gek	User	ОРТ зд.445 п.335 т. 56-48	
+ort-gkv	User	Ленинградская АЭС, зд.401, пом.913	
+ort-gns	User	ОРТ зд.602 п.411-2 т.5-27-34	
+ort-kaa	User	Ленинградская АЭС, зд.602, пом.411	
+ort-kai	User	зд.401 п.913 т.5-27-34	
+ort-klb	User	ОРТ зд.445 п.337 т.34-64 	
+ort-maa	User	ОРТ зд.601 п.805/1 т. 36-78	
+ort-mam	User	зд.601 п.415/1	
+ort-sik	User	ОРТ зд.602 п.411/1	
+ort-ssl	User	зд.601 п.703	
+ort-zua	User	ОРТ зд.401 п.913	
+ort2-pan	User	Ленинградская АЭС, зд.601, пом.704/2	
+ort2-psa	User	зд.601 п.705/2 т.56-38	
+ort2-pvn	User	Ленинградская АЭС, зд.601, пом.805/1	
+ort2-tvv	User	зд.602 п.806 т.5-36-88	
+ort2-ugu	User	зд.601 п.804/4 	
+ort2-vsv	User	ОРТ зд.601 п. 704	
+orz-dnn	User	ОРЗ зд.445 п.9	
+orz-hdv	User	ОРЗ зд.445 п. 9	
+osart-kae	User	Ленинградская АЭС, зд.609, пом.151/2	
+osart-svv	User	Ленинградская АЭС, зд.609, пом.206	
+osart-vdk	User	зд.609 п.151/2	
+osart-zsv	User	зд.609 п.151/2	
+osr-civ	User	Ленинградская АЭС, зд.445, пом.240	
+osr-gvv	User	ОСР зд.445 п.135	
+osr-hmv	User	ОСР зд.445 п.240 т.5-32-41	
+osr-kaa	User	Ленинградская АЭС, зд.445, пом.133/2	
+osr-pnl	User	Ленинградская АЭС, зд.СКК, пом.223	
+osr-stv	User	ОСР зд.445 п. 240	
+osr-taa	User	зд.445 п.135	
+osr-tna	User	ОСР зд.445 п.135	
+otb-eia	User	Ленинградская АЭС, зд.601, пом.620	
+otb-gvv	User	ООТиТБ зд.601 п.646 т.54-68	
+otb-idk1	User	ИДК 1-ой очереди	
+otb-idk2	User	ИДК 2-ой очереди	
+otb-slv	User	зд.602 п.314/a	
+otb-sma	User	зд.601 п.645 т.5-17-65	
+otb-sop	User	ООТиТБ зд.401 п.543 т.51-72	
+otb-ssv	User	Ленинградская АЭС, зд.1, пом.611	
+otb-svn	User	ОРБ зд.445 п.213	
+otb-tli	User	ОТБиТБ зд.601 п. 648	
+otb-veb	User	ЦРБ зд.1 п.606 т.5-42-02	
+otb-zae	User	Тел. 5-42-01 зд.001 п.402	
+otb-zmv	User	ООТиТБ зд.401 п. 549 т. 5-71-73	
+otb-zon	User	Ленинградская АЭС, зд.401, пом.554	
+otb-zsa	User	Ленинградская АЭС, зд.602, пом.422/2	
+otb1-ns	User	Ленинградская АЭС, зд.401, пом.394	
+otb1-oper	User	ОТБ зд.401 п.394 т.5-57-66	
+otd-aae	User	зд.601 п.319 т.5-12-80	
+otd-aov	User	ОТД зд.601 п.310 т.5-13-22	
+otd-bsp	User	Ленинградская АЭС, зд.401, пом.919/9	
+otd-bvv	User	зд.601 п.310 т.5-13-22	
+otd-den	User	зд.601 п.302/1 т.5-16-31	
+otd-hai	User	зд.601 п.319 т.5-12-80	
+otd-isp	User	ОТДДиТК зд.601 п.310/2 т.5-13-22	
+otd-jka	User	Ленинградская АЭС, зд.401, пом.919./9	
+otd-kaa	User	ОТД зд.601 С1 п.302/1 т.5-16-31	
+otd-kae	User	ОТДДиТК зд.601 п.310 С2 т.5-13-22	
+otd-kdg	User	Ленинградская АЭС, зд.601, пом.302/1	
+otd-kkh	User	Ленинградская АЭС, зд.601 бл.С2, пом.319	
+otd-kpn	User	зд.602 п.415 т.5-14-06	
+otd-kse	User	ОТД зд.401 п.919/9	
+otd-lvs	User	ОТД зд.601 п.302-1 С1 т.5-16-31 	
+otd-mse	User	ОТД зд.601 п.302/1	
+otd-nap	User	зд.601 п.302	
+otd-ndu	User	Ленинградская АЭС, зд.601, пом.811	
+otd-rev	User	ОТД зд.601 С2 п.319	
+otd-rvs	User	Ленинградская АЭС, зд.401, пом.912	
+otd-sdv	User	зд.401 п.923 т.5-12-41	
+otd-viu	User	Ленинградская АЭС, зд.401, пом.923/1	
+otd-vuv	User	ОТД зд.601 C1 п.302/1	
+otd-zsv	User	ОДМиТК зд.401 п.920 т.5-20-80	
+oti-aia	User	ОТИ зд.445 п.212	
+oti-lgv	User	ОТИ зд.602 п.147 т.54-56  не бл.ОДИЦ	
+oti-pav	User	Ленинградская АЭС, зд.381, пом.201	
+oti-ziv	User	ОТИ зд.602 п.147 т.54-56 	
+oti-ziv-int	User		
+otipb-fav	User	ОТИиПБ зд.602 п. 147 т.5-22-48	
+otipb-kiv	User	Ленинградская АЭС, зд.381, пом.202	
+otipb-kuv	User	ОТИиПБ зд.602 п. 147	
+otipb-mpb	User	Ленинградская АЭС, зд.381, пом.201	
+otipb-mvg	User	Ленинградская АЭС, зд.602, пом.306	
+otipb-pns	User	ОТииПБ зд.602 п.147	
+otipb-ran	User	Ленинградская АЭС, зд.601, пом.806/2	
+otipb-ran1	User	ОТИиПБ зд.381 п.201	
+otipb-shav	User	зд.381 п.202	
+otipb-skv	User	зд.381 п.202	
+otipb-soi	User	зд.381 п.201 т.5-17-17	
+otipb-zov	User	зд.602 п.147 т.5-22-48	
+ouk-gti	User	зд.602 п.410а	
+ouk-ssa	User	зд.602 п.410а ЛАЭС-2	
+our-aav	User	Ленинградская АЭС, зд.401, пом.837/1	
+our-kos	User	зд.445 п.248	
+ove-kmp	User	Ленинградская АЭС, зд.602, пом.504	
+ove-krn	User	Ленинградская АЭС, зд.602, пом.504	
+ove-lsn	User	Ленинградская АЭС, зд.602, пом.504	
+ove-mng	User	Ленинградская АЭС, зд.602, пом.504	
+ove-snn	User	ОВЭ зд.602 п. 504	
+oves-dsi	User	зд.601 п.319 т.52-80	
+oves-dtv	User	зд.445 п.202	
+oves-imu	User	ОМиВЭС зд.609 п.21	
+oves-iuv	User	ОМиВЭС зд.445 п.203	
+oves-kse	User	зд.445 п.203 т.5-58-33	
+oves-mev	User	ОМиВЭС зд.609, п.216	
+oves-nav	User	ОМиВЭС зд. 445 п. 203 т. 5-46-60	
+oves-rau	User	Ленинградская АЭС, зд.445, пом.203	
+oves-rok	User	ОВП зд.609 п.210 т.37-32	
+oves-sek	User	зд.445 п.202 т.5-59-42	
+oves-shta	User	зд.609 п.208	
+oves-soa	User	ОВП ЗД.609 п.209/2 т.37-66	
+oves-stu	User	ОМиВЭС зд.609 п.212	
+oves-vav	User	Ленинградская АЭС, зд.609, пом.209	
+ovnb-kan	User	Ленинградская АЭС, зд.445, пом.313	
+oyk-emi	User	ОУК зд.602 п.410а	
+oyk-kte	User	ОУК зд.602 п.403 т.5-34-35	
+oyr-bdi	User	зд.601 п.310 т.5-14-06	
+oyr-fav	User	зд.401 п.402/1 т.5-14-46	
+oyr-gvs	User	ОУР зд.601 бл.С-2 п.215	
+oyr-kda	User	ОУРС зд.601 п 310	
+oyr-oav	User	ОУРС зд. 602 п. 415 т. 5-14-06	
+oyr-pra	User	ОУР зд.401 п.837/1	
+oyr-shis	User	зд.601 п.319 т.5-12-80	
+oyr-vpv	User	ОУР зд.601 п.215	
+oyr1-kaa	User	ОУР зд.57В п. 2 	
+ozgt-kli	User	зд.445 п.136	
+ozgt-kne	User	ОЗГТ зд.445 п.134	
+ozgt-rtm	User	ОЗГТ зд.445 п.134 т.5-59-66	
+ozgt-vuv	User	ОЗГТ зд.445 п.246	
+ozi-pmm	User	зд.445 п.303	
+ozi-rkk	User	зд.445 п.303 т.5-59-92	
+p445a349	User	МФУ приемная директора	
+pan-adm	User	зд.445, 609, ОИКТ, т.55-321	
+pb-kai	User	ИВКОПБ зд. 601 п. 601/2 т. 5-11-16	
+pb-muv	User	ИВКОПБ зд.602 п.238 т.2-85-01 	
+pb-puv	User	зд.602 п.206 т.57-26	
+pb-ssv	User	ИВКОПБ зд.602 п.206 т.57-26	
+pb-ve	User	зд.601 п.403/2 ИВКОПБ т.51-67	
+pd-aab	User	зд.445.п.231	
+pd-syg	User	зд.445 п.138 т.5-54-08	
+pd-syg1	User	АТУ зд.445 п.346 т.5-55-95	
+peo-eev	User	ПЭО  зд. 61в п. 225 	
+peo-fga	User	ПЭО зд.61B п.215	
+peo-kap	User	ПЭО зд.61в п.215 	
+peo-ken	User	зд.61в п.225 т.5-53-01	
+peo-kin	User	ПЭО эд.61В п.215	
+peo-loa	User	зд.61b п.225 т.5-31-41	
+peo-mlv	User	ПЭО зд.61В п.216	
+peo-nos	User	ПЭО зд.61В п.225 т.5-31-41	
+pev	User	зд.602 п.409 т.50-17	
+pk-eia	User	Ленинградская АЭС, зд.СКК, пом.223	
+pk-ivv	User	Ленинградская АЭС, зд.СКК, пом.223	
+pk-kll	User	Ленинградская АЭС, зд.445, пом.120	
+pk-lvn	User	Ленинградская АЭС, зд.445, пом.201	
+pk-pai	User	Ленинградская АЭС, зд.445, пом.201	
+pk-ptn	User	Ленинградская АЭС, зд.445, пом.120	
+pk-sgv	User	Ленинградская АЭС, зд.445, пом.120	
+pmt1-nss	User	зд.777 ПМТ-1 	
+pmt2-nss	User	зд.777 ПМТ-2	
+ppath-pna	User	Ленинградская АЭС, зд.800, пом.305	
+ppben	User	зд.380 т.5-27-72	
+ppgtc	User	ЦБ зд.445 п.219 т.5-37-13	
+ppivc-gaa	User	ОИКТ зд.445 п. 333 т.5-20-57	
+ppkop-kup	User	СП "Копанское" п.2 т.2-31-40	
+ppksv	User	ОИКТ, аварийная учетная запись	
+pplar-kia	User	ул.Мира д.1 т.7-30-28	
+pplav	User	ОИКТ, аварийная учетная запись	
+pplsa	User		
+PPO_DOC_W	Security Group	\\FS-LAES\ППО ЛАЭС\Документы ППО	
+pppev	User	зд.380 п.264	
+pppvi	User	директор	
+pprvc-lva	User	"Копанское" реаб.востановит.центр	
+ppsepp	User	ОИКТ, зд.380, т.5-26-29	
+ppskk	User		
+ppsyg	User	ОДО, зд.445, т.55595	
+ppvsv	User		
+ppzgipto	User	АТУ зд.445 п.326 т.5-58-00	
+Printer FS-LAES	OrganizationalUnit		
+Printer S-PRINT	OrganizationalUnit		
+profkom	User	Профком зд.445 п. 120	
+psa-dev	User	Ленинградская АЭС, зд.609, пом.206	
+psa-nig	User	Ленинградская АЭС, зд.609, пом.206	
+psr-kra	User	ОР ПСР зд.445 п.328	
+psr-vns	User	зд.00uyd	
+ptk-aea	User	зд.777/2 п.406 т.5-37-76	
+ptk-ara	User	Ленинградская АЭС, зд.12, пом.4	
+ptk-atn	User	зд.777/2 п.406 т.5-37-93	
+ptk-baa	User	зд.777/2 п.405 т. 5-11-76	
+ptk-bav	User	зд.777/2 п.401 т.5-59-81	
+ptk-bovp	User	зд.12 п.15 т.5-14-02	
+ptk-bsi	User	УПТК зд.777/2 п.414 	
+ptk-bsv	User	УПТК зд.12 п. 18 т.5-12-81	
+ptk-bvp	User	УПТК зд. 12 п. 18 т. 	
+ptk-chas	User	УПТК зд.777/2 п.418 т.5-39-05	
+ptk-coi	User	зд.12 п.17 т.5-46-49	
+ptk-dmg	User	зд.12 п.28p	
+ptk-dmn	User	зд.12 п.28	
+ptk-drm	User	Ленинградская АЭС, зд.777/2, пом.414	
+ptk-eoa	User	УПТК зд.777/2 п.405 т.5-14-49	
+ptk-etu	User	УПТК зд.12 п.26	
+ptk-fev	User	УПТК зд.777/2 п.418 т.5-35-53	
+ptk-fib	User	УПТК зд.12 п.18 т.5-12-81	
+ptk-fmf	User	УПТК зд.12 п20	
+ptk-geo	User	зд.12 п.17	
+ptk-gis	User	УПТК зд.12 п. 20 т. 5-41-02	
+ptk-gna	User	УПТК зд.777/2 п.403 т.5-59-82	
+ptk-gnn	User	зд.777/2 п.418 т.5-37-76	
+ptk-gon	User	зд.777/2 п.405 т.5-53-73	
+ptk-gzs	User	зд.777/2 п.406 т.5-59-82	
+ptk-iav	User	УПТК зд.777/2 п.418 т.5-35-59	
+ptk-igk	User	УПТК зд.777/2 п.417	
+ptk-iov	User	Ленинградская АЭС, зд.12, пом.19	
+ptk-kaa	User	зд.777/2 п.405	
+ptk-kav	User	УПТК зд.777/2 п.415	
+ptk-kea	User	УПТК зд.777/2 п.417	
+ptk-ken	User	УПТК зд.777/2 п. 418	
+ptk-kis	User	УПТК зд.777/2 п.412	
+ptk-kjb	User	зд.777/2 п.417	
+ptk-kla	User	УПТК зд.12 п.21 т.5-14-79	
+ptk-klp	User	зд.12 п.18 т.5-11-49	
+ptk-klv	User	зд.777/2 п.414 т.5-10-75	
+ptk-ksv	User	Ленинградская АЭС, зд.12, пом.1	
+ptk-ktv	User	зд.777/2 п.416 т.5-53-73	
+ptk-kva	User	УПТК  зд.777/2 п. 414	
+ptk-kvv	User	зд.777/2 п.406 т.5-19-38	
+ptk-lmo	User	зд.777/2 п.416 т.5-53-84	
+ptk-lva	User	зд.12 п.13 т.2-44-89	
+ptk-lvb	User	зд.17 п.20	
+ptk-mmv	User	УПТК зд. 777/2 п.406	
+ptk-moe	User	зд.777/2 п.416 т.5-10-47	
+ptk-mra	User	УПТК зд.12 п.3	
+ptk-mus	User	УПТК зд.777/2 п.406	
+ptk-nnv	User	УПТК зд. 777/2 п. 418 т. 2-49-05	
+ptk-oma	User	УПТК зд.777/2 п.416 т.5-53-86	
+ptk-pev	User	зд.12 п.28	
+ptk-sev	User	зд.777/2 п.416 т.5-53-73	
+ptk-shaa	User	УПТК зд.777/2 п.416	
+ptk-shen	User	УПТК зд.777/2 п.405 т.5-53-99	
+ptk-shvs	User	УПТК зд.777/2 п. 418	
+ptk-siv	User	УПТК зд.777/2 п.418 т.5-37-76	
+ptk-slv	User	УПТК зд. 777/2 п. 405 т. 5-53-96	
+ptk-sov1	User	зд.777/2, п.405	
+ptk-ten	User		
+ptk-tga	User	Ленинградская АЭС, зд.1 АСКРО, пом.424	
+ptk-tna	User	зд.12 п.2 т.5-54-50	
+ptk-vgv	User	УПТК зд.777/2 п. 403 т. 5-58-92	
+ptk-vkm	User	УПТК зд.12 п.3 т.5-14-29	
+ptk-vmg	User	УПТК зд.12 п.21 т.5--14-79	
+ptk-zmp	User	УПТК зд.12 п. 16	
+ptk-zmv	User	УПТК зд.777/2 п.216 т.5-53-84	
+ptk-zmv-int	User		
+ptk-znv	User	ЛАЭС-2 УПТК зд.777/2 п.416	
+ptk-zuu	User	777/2 g/406	
+ptk1-kna	User	Ленинградская АЭС, зд.777/2, пом.407	
+ptk1-mov	User	УПТК зд.12 п.15 т.5-14-79	
+ptk1-sov	User	зд.777/2 п.407 т.5-53-90	
+pto-aav	User	зд.402б п.511 т.5-12-01	
+pto-bsa	User	зд.401 п.837/4  т.57-27	
+pto-cae	User	ПТО зд.602 п.110	
+pto-dnv	User	ПТО зд.602 п. 109	
+pto-eel	User	ПТО зд.602 п.110 	
+pto-evv	User	ПТО зд.61В п. 227 	
+pto-gia	User		
+pto-gim	User		
+pto-gka	User	зд.602 п.110	
+pto-kli	User	зд.602 п.214 т.5-14-86	
+pto-lma	User	зд.602 п.111 т.5-54-70	
+pto-lmv	User	ПТО зд.445 п. 52-01 т.52-01 п. 302	
+pto-mab	User	ПТО зд.445 п.302 т.52-01	
+pto-miv	User	зд.602 п.109	
+pto-msv	User	ПТО зд.602 п.108/3	
+pto-mum	User	ПТО зд.445 п.302	
+pto-nom	User	зд.602 п.109	
+pto-oov	User	ПТО зд.445 п. 326	
+pto-peu	User	зд.602 п.110 т.5-54-65	
+pto-rva	User	ПТО зд. 445 п. 302	
+pto-sap	User	зд.602 п.109 т.5-20-63	
+pto-sau	User	ПТО зд. 602 п. 109 т. 5-20-63	
+pto-see	User	зд.602 п.108 т.5-54-79	
+pto-sen	User	зд.405 п.302 	
+pto-sham	User	зд.402b п.511 т.5-12-01	
+pto-shav	User	Ленинградская АЭС, зд.445, пом.311	
+pto-shuv	User	зд.445 п.326	
+pto-ttl	User	ПТО зд.445 п.326 т.52-01	
+pto-zii	User	ПТО зд.445 п. 317 т. 5-59-97	
+pus-askro	User	Консист-ОС зд.445 п. 333	
+rc-aai	User	РЦ зд.402/Б САОР п.411	
+rc-aiv	User	РЦ зд.402 п.209	
+rc-avs	User	РЦ зд.445 п.206	
+rc-brg	User	Ленинградская АЭС, зд.402 УПАК, пом.507	
+rc-bsv	User	зд.401 п.905/1 т. 5-10-22	
+rc-bvv	User	РЦ-1 зд.601 С-1 п.111	
+rc-cel	User	РЦ зд.402б п.131 т.5-13-24 	
+rc-dik	User	Ленинградская АЭС, зд.402, пом.505	
+rc-eua	User	445 п.206 т. 55-38	
+rc-eus	User	зд.601 п.659 т.5-17-10	
+rc-gaa	User	зд.401 п.715	
+rc-gav	User	РЦ зд.402а п.106/1 т.5-19-77 	
+rc-gcn3	User	РЦ зд.601 п. 317/1 т. 5-18-63	
+rc-gpo	User	Ленинградская АЭС, зд.402 УПАК, пом.506	
+rc-grm	User	РЦ зд.445	
+rc-gve	User	РЦ зд.401 п.905/2-7 т. 5-10-87	
+rc-gvv	User	Ленинградская АЭС, зд.401, пом.905/1-5.6	
+rc-iav	User	РЦ зд.428 п.288/1	
+rc-jue	User	РЦ зд.420а п.320	
+rc-kas	User	РЦ зд.402Б_САОР п.131	
+rc-kav1	User	Ленинградская АЭС, зд.402б САОР, пом.412	
+rc-kiv	User	Ленинградская АЭС, зд.402/Б САОР, пом.411	
+rc-kiv-int	User		
+rc-kke	User	РЦ зд.401 п.507а	
+rc-knv	User	Ленинградская АЭС, зд.428, пом.252/2	
+rc-kun	User	Ленинградская АЭС, зд.402 УПАК, пом.502/2	
+rc-kva	User	РЦ зд.402Б_СОАР п.131	
+rc-kve	User	Ленинградская АЭС, зд.428, пом.406	
+rc-kvg	User	РЦ-1 зд.401 п. 905/1-5	
+rc-kvj	User	Ленинградская АЭС, зд.428, пом.п.289/2	
+rc-kvs	User	Ленинградская АЭС, зд.402 УПАК, пом.506	
+rc-lmp	User	Ленинградская АЭС, зд.428, пом.289/2	
+rc-lsa	User	РЦ зд.428 п.322 т. 5-19-04	
+rc-lsl	User	зд.428 п.104/2 т.5-10-39	
+rc-lui	User	зд.402б п.129	
+rc-lvi	User	Ленинградская АЭС, зд.402 УПАК, пом.507	
+rc-mav	User	РЦ зд.401 п.821	
+rc-mea	User	зд.420 п.115 т.5-11-54	
+rc-mlv	User	РЦ зд.445 п.205 т.5-59-46 не блокировать служ.№591	
+rc-nan	User	Ленинградская АЭС, зд.401, пом.715	
+rc-pmv	User	Зд.402А, п.320, т.5-14-52	
+rc-pnv	User	РЦ зд.402б п.131 т.5-13-24	
+rc-pon	User	Ленинградская АЭС, зд.428, пом.15	
+rc-pse	User	РЦ зд.402 УПАК п.403	
+rc-rvb	User	Ленинградская АЭС, зд.402, пом.209	
+rc-sal	User	РЦ зд.402 п.320 т.5-14-52	
+rc-sha	User	Ленинградская АЭС, зд.401, пом.905/2-8	
+rc-shdv	User	зд.428 п.322	
+rc-shiv	User	РЦ зд.402б п.136 т.5-13-24 не блокировать служебка в работе переход на ЛАЭС-2	
+rc-shna	User	РЦ зд.401 п.505 т.5-15-04	
+rc-shov	User	Ленинградская АЭС, зд.401 УПАК, пом.403	
+rc-shsn	User	Ленинградская АЭС, зд.402 УПАК, пом.404	
+rc-shss	User	САОР зд.402Б п.412	
+rc-shvl	User	Ленинградская АЭС, зд.401, пом.511	
+rc-svb	User	Ленинградская АЭС, зд.402, пом.505	
+rc-svn	User	Ленинградская АЭС, зд.428, пом.289/1	
+rc-tav	User	Ленинградская АЭС, зд.428, пом.608	
+rc-tee	User	зд.420 п.115/2	
+rc-tsa	User	ЦХОЯТ зд.428 п.508	
+rc-tvv	User	Ленинградская АЭС, зд.601 А-2, пом.815	
+rc-vvv	User	РЦ зд.401 п.115	
+rc-zlb	User	зд.445 п.206	
+rc-ztr	User	зд.401 п.403 т.5-37-18	
+RC_DOJIGANIE_ADM	Security Group		
+RC_DOJIGANIE_R	Security Group		
+RC_DOJIGANIE_W	Security Group		
+rc1-cz1	User	зд.401 п.617	
+rc1-itv	User	РЦ зд.401 п.403 т.5-5-30-30	
+rc1-kam	User	РЦ зд.428 п.508	
+rc1-kkg	User	РЦ зд.401 п.715 т.5-14-54	
+rc1-ksa	User	зд.402 а п.320 	
+rc1-lsa	User	Ленинградская АЭС, зд.402б САОР, пом.412	
+rc1-ns	User	Ленинградская АЭС, зд.401, пом.522/2	
+rc1-ppr	User	зд.445 п.206	
+rc1-rsa	User	зд.601 п.730/1 бл.А2	
+rc1-sne	User	РЦ зд.401 п.403 т.51-53	
+rc1-urr2	User	зд.601 п.730/1 бл.А2	
+rc1-zsp	User	зд.601 п.702/1 бл.С2	
+rc2-aas	User	Ленинградская АЭС, зд.601 С-2, пом.712	
+rc2-aes	User	РЦ зд.401 п. 905	
+rc2-ava	User	Ленинградская АЭС, зд.601 Б-2, пом.315	
+rc2-bab	User	зд.601 п.727/1 т.5-18-53	
+rc2-biv	User	зд.601 п.507 т.5-17-49	
+rc2-bsi	User	Ленинградская АЭС, зд.601 бл.Б2, пом.513	
+rc2-bsp	User	зд.601 п.317 т.5-18-63	
+rc2-buu	User	Ленинградская АЭС, зд.601 бл.С-2, пом.224, Уволен	
+rc2-chaa	User	РЦ-2 зд.601 п.512 Б2	
+rc2-csb	User	зд.601 п.815 т.5-18-21	
+rc2-daa	User	зд.601 п.410 т.5-18-10	
+rc2-dan	User	РЦ зд.601 п.712 т.5-15-14	
+rc2-dev	User	РЦ2 зд.601 п.523	
+rc2-emm	User	зд.601 п.120 т.5-17-59	
+rc2-esn	User	Ленинградская АЭС, зд.401, пом.905-1/5,6	
+rc2-evs	User	РЦ-2 зд.601 п.712	
+rc2-gab	User	РЦ-2 зд.601 п. 712	
+rc2-gav	User	зд.601 п.507	
+rc2-gazproekt	User	РЦ зд.601 п.704/1	
+rc2-gpv	User	зд.601 п.712 т.5-24-69	
+rc2-gso	User	РЦ зд.601 п.712 С2 т. 5-24-69	
+rc2-gva	User	зд.601 п.220 т.5-16-99	
+rc2-hsn	User	зд.601 п.512/1 Б2 т.55-20	
+rc2-hvi	User	зд.601 п.806/2 C2 	
+rc2-iaa	User	РЦ-2 зд.601 п. 521	
+rc2-kae	User	РЦ-2 зд.601 п.518	
+rc2-kav	User		
+rc2-kdn	User	РЦ зд.601 п.712/1 С-2 т. 5-24-69	
+rc2-keg	User	РЦ зд.601 п.712 т.5-15-14	
+rc2-ken	User	зд.601 п.512 т.5-58-16	
+rc2-ken1	User	РЦ-2 зд.601 п.521	
+rc2-kev	User	РЦ-2 зд.601 п.416	
+rc2-kim	User	Ленинградская АЭС, зд.601 С-2, пом.712	
+rc2-kks	User	Ленинградская АЭС, зд.601 Б-2, пом.312/1	
+rc2-kov	User	Ленинградская АЭС, зд.601 Бл.С-1, пом.401/1	
+rc2-ksn	User	Ленинградская АЭС, зд.601 С-2, пом.806/2	
+rc2-lav	User	РЦ-2 зд.601 п.712	
+rc2-leb	User	зд.601 п.410	
+rc2-lmi	User	Ленинградская АЭС, зд.601 С-2, пом.806/3	
+rc2-lvs	User	Ленинградская АЭС, зд.601, пом.739/1	
+rc2-mdv	User	РЦ зд.601 п.312/1 т.5-16-37	
+rc2-mne	User	Ленинградская АЭС, зд.601 бл.С1, пом.401/1	
+rc2-nav	User	РЦ2 зд.601 бл.С-2 п.712	
+rc2-oppr	User	зд.601 п.410/1	
+rc2-ova	User	Ленинградская АЭС, зд.601 Б-2, пом.523	
+rc2-pav	User	РЦ зд.601 п. 712 	
+rc2-pig	User	зд.602 п.303 т.57-14	
+rc2-pii	User	Ленинградская АЭС, зд.601 Б-2, пом.523, Уволен	
+rc2-psl	User	зд.601 п.507 т.5-17-49	
+rc2-rro	User	зд.601 п.712/1	
+rc2-sar	User	РЦ зд.601 п.416 	
+rc2-sas	User	Ленинградская АЭС, зд.601 Б-1, пом.521	
+rc2-sbv	User	Ленинградская АЭС, зд.601 бл.Б1, пом.315	
+rc2-shaa	User	РЦ зд.601 п.416	
+rc2-shev	User	зд.601 п.409 т.5-46-57	
+rc2-shev-int	User		
+rc2-shrv	User	зд.60 п.410/1	
+rc2-snt	User	зд.601 п.631 т.5-18-97	
+rc2-sorzm4	User	РЦ зд.601 п.701 т.5-17-80	
+rc2-spi	User	Ленинградская АЭС, зд.601 Бл.С1, пом.424	
+rc2-ssv	User	зд.601 п.507 т.5-61-27	
+rc2-sui	User	зд.601 п.513 т.5-15-20	
+rc2-svu	User	РЦ2 зд.601 С2  п.806/3_VCЦК	
+rc2-tai	User	Ленинградская АЭС, зд.601 С-2, пом.712	
+rc2-tav	User	Ленинградская АЭС, зд.601 Б2, пом.513, Уволен	
+rc2-uaa	User	РЦ зд 601 п.712.1 т.34-69	
+rc2-urreactora	User	РЦ  зд.601а1-727/1	
+rc2-vap	User	Ленинградская АЭС, зд.601 бл.С-2, пом.806/2	
+rc2-vies	User	Ленинградская АЭС, зд.601 С-1, пом.416	
+rc2-vnv	User	зд.601 п.652 т.5-18-87	
+rc2-vvv	User	зд.601 п.806-3 т.5-18-18	
+rc2-zei	User	РЦ-2 зд.601 п.712	
+rc2-zrv	User	зд.601 А2 п.520 т.53-88	
+rc2-zva	User	зд.601 п.401 т.5-18-73	
+rc2-zvv	User	РЦ-2 зд.601 п.712	
+rd-eng	User	УЭО зд.445 п.306 т.35-96	
+rdd	User	зд.445 п.219	
+rzc096	User	ОРБ зд.601 п. санпропускник	
+rzc105	User	ОРБ зд.601 санпропускник	
+s35-web	User	Доменная запись для запуска веб-узла S35 (Казанцев - т.5-53-21)	
+sap-hcm12	User	зд.777 для обучения	
+sap-hcm13	User	зд.777 для обучения	
+sap-hcm14	User	зд.777 для обучения 	
+sap-hcm2	User	зд.777 для обучения	
+sap-hcm3	User	зд.777 для обучения	
+sap-hcm4	User	зд.777 для обучения	
+sap-hcm5	User	зд.777 для обучения	
+sap-hcm6	User	зд.777 для обучения	
+sap-hcm7	User	зд.777 для обучения	
+sap-hcm8	User	зд.777 для обучения	
+sap-hcm9	User	зд.777 для обучения 	
+sap27	User	зд.61b п.104	
+sap28	User	зд.61b	
+sap29	User	61b	
+sb-aas	User	СБ зд.445 п.140	
+sb-baa	User	зд.13b п.46 т.5-17-76	
+sb-beo	User	СБ зд.13В п.13	
+sb-bov	User	зд.445 п.125 т.5-59-27	
+sb-bvm	User	СБ зд.445 п.131	
+sb-cak	User	СБ зд.13В п.4	
+sb-dea	User	зд.777 п.319 т.5-11-33	
+sb-dvo	User	зд.445 п.123	
+sb-fai	User	Ленинградская АЭС, зд.1 АСКРО, пом.312	
+sb-gae	User	зд.445 п.123 т.5-59-36	
+sb-gas	User	СБ зд.672Р п.322	
+sb-gev	User	зд.777/1 п.319 т.5-40-21	
+sb-jgl	User	Ленинградская АЭС, зд.445, пом.125	
+sb-ken	User	Ленинградская АЭС, зд.13В, пом.43	
+sb-kun	User	СБ зд.13В п.11 т.5-17-76	
+sb-kus	User	СБ зд.445 п.123	
+sb-kuv	User	СБ зд.13В п.4	
+sb-lmm	User	СБ зд.13В п.13	
+sb-lov	User	зд.13 п.45	
+sb-mdv	User	СБ зд.777 п. 319 т 5-11-33	
+sb-mes	User	СБ зд.13В п. 43	
+sb-mev	User	СБ зд.492/1 п.206	
+sb-mia	User	зд.13В п.4 т.5-19-56	
+sb-mmv	User	СБ зд.13В п.12	
+sb-moe	User	СБ зд.777 п.319	
+sb-oou	User	СБ зд.13B п.3	
+sb-paa	User	зд.445 п.125	
+sb-pav	User	зд.445 п.140 т.5-19-56	
+sb-psy	User		
+sb-pti	User	зд.445 п.23	
+sb-rrv	User	СБ зд.13В п.3	
+sb-sag	User	зд.13 B п.8 т.5-18-19	
+sb-sdv	User	СБ зд.777/1 п.319	
+sb-seu	User	СБ зд.777 п. 319 т. 5-11-33	
+sb-shab	User	СБ зд.445 п.309 т.54-82	
+sb-shma	User	СБ зд. 13в п. 2а	
+sb-shur	User	зд.13 п.11 т.5-19-61	
+sb-sne	User	СБ зд.445 п.129	
+sb-srn	User	СБ зд.13В п.12	
+sb-ssv	User	СБ зд.777 п.319	
+sb-svp	User	СБ зд.13В п.11	
+sb-taa	User	СБ зд.13В п.2	
+sb-tdp	User	Ленинградская АЭС, зд.1 АСКРО, пом.325	
+sb-tnv	User	СБ зд.13В п. 2	
+sb-tvn	User	зд.777 п.319 т.5-11-33	
+sb-tvv	User	СБ зд.5 п.1	
+sb-upv	User	СБ зд. 13в п. 11  т. 5-59-67	
+sb-uskud	User	зд.601 п.312 т.5-22-43	
+sb-vuv	User	СБ зд. 13в п. 43  т. 5-20-51	
+sb-zav	User	СБ зд.13 п.11 т.5-19-61	
+sb-zhag	User	СБ зд.777/1 п. 319	
+sb-zpv	User		
+sb-ztl	User	зд.13b п.43 т.5-17-36	
+scala-strag	User	ОИКТ зд.601	
+scr	User	зд.445 п.321	
+sekr-atv	User	Секретариат зд.445	
+sekr-buh	User	Бух.зд.61В п.111 т.5-59-48	
+sekr-cev	User	Секретариат зд.445 п.329 т.5-53-14	
+sekr-cnn	User	Секретариат зд.445 п.329 т.5-32-52	
+sekr-kiv	User	Секретариат зд.445 п.346	
+sekr-mms	User	Секретариат зд.445 п.329 т.5-31-48	
+sekr-oov	User	Секретариат зд.445 	
+sekr-pvv	User	Секретариат зд.445 п.329 т.5-58-16	
+sepp	User	ИВЦ зд.380 т.36-29	
+sgu	User	зд.380 п.249 т. 5-25-96	
+sh-sku	User	зд.12 п.3 перехов в ЦТАИ	
+si	User	т.37-13 зд.445 п.219 ИВЦ	
+skk-ste	User	СКК  к.32 т.2-48-36	
+skok-yg	User	Ленинградская АЭС, зд.445, пом.346	
+snto-fai	User	СНТО зд.Аскро п.312	
+snto-gaa	User	СНТО зд.АСКРО п. 325 т. 5-43-44	
+snto-pui	User	СНТО зд.Аскро п.325	
+snto-shae	User	Ленинградская АЭС, зд.1 АСКРО, пом.325	
+snto-shms	User	СНТО зд. АСКРО п. 325	
+snto-tdp	User	СНТО Аскро п.325	
+sovet-veteran	User	Совет Ветеранов АСКРО зд.1 п.231	
+sovet-veteran1	User	Совет Ветеранов зд. АСКРО п. 231	
+spk-bls	User	ЛАЭС-Копанское	
+spk-bnp	User	Копанское(к1_ медиколечебный) п.240	
+spk-bva	User	СП Копанское СКК п.210	
+spk-cie	User	СП «Копанское» 2-31-40	
+spk-exam	User	Копанское	
+spk-ksn	User	СП Копанское ЗСК п.18	
+spk-rev	User	СП Копанское СПК п.18	
+spk-vem	User	СП Копанское ЗСК п.18	
+stu1-bia	User	зд.402б п.216 т.5-58-57	
+stu1-bsf	User	Ленинградская АЭС, зд.402Б, пом.217	
+stu1-gim	User	зд.402б п.217	
+stu1-jau	User	СТУ-1 зд.401 п.392/2 СТУ-1 т.5-13-19	
+stu1-kad	User		
+stu1-kau	User	Ленинградская АЭС, зд.402б, пом.216	
+stu1-kku	User	СТУ-1 зд.401 п.392/2 СТУ-1 т.5-13-19	
+stu1-kvi	User	СТУ-1 зд.401 п.392/2 СТУ-1 т.5-13-19	
+stu1-mmv	User	СТУ зд. 401 п.211/2	
+stu1-pni	User	СТУ-1  зд. 401 п. 211 тел. 5-10-15	
+stu1-rga	User	СТУ-1 зд.401 п.392/2 СТУ-1 т.5-13-19	
+stu1-rpa	User	зд.401 п.392/3	
+stu1-rtg	User	СТУ зд.401 п.211/2 т.5-10-15	
+stu1-sav	User	СТУ-1	
+stu1-ssg	User	СТУ-1 зд.402Б_САОР п.217 т.5-11-92	
+stu1-teh	User	СТУ-1 зд.402б п.217 т. 5-13-61 	
+stu1-tehnic1	User	СТУ-1 зд.401 п.211/2	
+stu1-upak	User	СТУ1 зд. 401 п. 211/2	
+stu1-vt	User	зд.402б п.217	
+stu1-zau	User	СТУ-1 зд.401 п.392/2 СТУ-1 т.5-13-19	
+stu2-avz	User	СТУ-2  НСС	
+stu2-bsv	User	СТУ-2 зд.601 С1 п.444 т.47-95	
+stu2-chsa	User	СТУ-2 НСС	
+stu2-dnv	User	СТУ-2 зд.601 п. 421/1/2	
+stu2-fin	User	Ленинградская АЭС, зд.601бл.С2, пом.309	
+stu2-kai	User	СТУ-2 НСС	
+stu2-kav	User	СТУ-2 зд.601 п. 421/2	
+stu2-khds	User	зд.601 п.815	
+stu2-kvb	User	СТУ-2 зд.601 п.421/1/2	
+stu2-lsm	User	зд.601 п.445 т.5-53-75	
+stu2-pia	User	зд.601 п.431 т.5-12-11	
+stu2-pmf	User	СТУ-2 зд.601 п. 421/1/2	
+stu2-psv	User	СТУ-2 зд.601 п.437/3 т. 47-15 не блокировать вх. 809 от 03.04.2018	
+stu2-pve	User	СТУ2 зд.601 п.445	
+stu2-sav	User	СТУ-2 зд.601 п. 421/1/2	
+stu2-sh3	User	зд.601 п.421/1 т.5-44-29	
+stu2-sh4	User	зд.601 п.421/1 т.5-44-29	
+stu2-tech1	User	зд.601 п.431 отв.5-12-11	
+stu2-tech2	User	СТУ2 зд. 601 п. 431	
+stu2-tech21	User	СТУ2 зд.601 п. 431	
+stu2-tech3	User	зд.601 п.431 т.5-12-11	
+stu2-tech4	User	СТУ2 зд.609 п. 511/1	
+stu2-tech5	User	Оперативный персонал  СТУ-2 зд.609 п. 151/2	
+SUBSTIT_W	Security Group	\\s9\Weber\Human_resource\OK\SUBSTIT	
+sv-tvm	User	Ленинградская АЭС, зд.1 АСКРО, пом.227	
+tai	User	ТАИ зд.445 п.218 т.5-57-00	
+tai-aaa	User	ТАИ зд.401 п.214 	
+tai-aav	User	зд.402b п.415 т.5-12-02	
+tai-aav-int	User		
+tai-aeg	User	ТАИ зд. 402б п. 336 т. 5-30-85	
+tai-aiv	User	ТАИ зд.601 п. 415/2 т. 5-45-94	
+tai-asu	User	Ленинградская АЭС, зд.601, пом.413/1	
+tai-ava	User	ТАИ зд.601 п.416/1-1 т. 5-45-96	
+tai-avb	User	Ленинградская АЭС, зд.602, пом.408/2	
+tai-avs	User	ЦТАИ зд.401 п.646	
+tai-baa	User	зд.401 п.648 т.5-13-40	
+tai-bas	User	ЦТАИ зд.672р п. 356	
+tai-bav	User	зд.401 п.389/1 т.5-21-46	
+tai-beb	User	зд.401 п.644 т.56-35	
+tai-bmg	User	зд.601 п.315	
+tai-bmn	User	Ленинградская АЭС, зд.660, пом.320	
+tai-bmp	User	ТАИ зд.601, бл.Д,  пом.416/1-1 т. 5-45-96	
+tai-bna	User	ТАИ зд.402б п.340 т.5-27-92	
+tai-boa	User	зд.601 п.414 т.5-18-98	
+tai-bon	User	Ленинградская АЭС-Авто, зд.445, пом.218	
+tai-bsv	User	зд.602 п.406 т.52-87	
+tai-bsw	User	Ленинградская АЭС, зд.401, п.389/3-3	
+tai-buv	User	зд.401 п.390/1-7 т.5-21-45	
+tai-bva	User	зд. 601, п. 415/1, п. 415/3	
+tai-cai	User	Ленинградская АЭС-Авто, зд.401, пом.652	
+tai-cav	User	зд.401 п.390/1 т.5-21-46	
+tai-chve	User	зд. 401, п. 646, т. 5-11-37	
+tai-csv	User	Ленинградская АЭС, зд.402Б, пом.334	
+tai-daa	User	Ленинградская АЭС, зд.402б, пом.344	
+tai-das	User	ТАИ зд.601 п.414/1	
+tai-ddv	User	зд.602	
+tai-dia	User	Ленинградская АЭС, зд.401, пом.542	
+tai-dik	User	ТАИ зд.402б п.134 т.5-12-65	
+tai-esa	User	ТАИ зд.660 п.702	
+tai-fao	User	Ленинградская АЭС, зд.601 Бл.С1, пом.430	
+tai-fsn	User	ТАИ зд.601 п. 415/4 т. 5-46-77	
+tai-gav	User	ТАИ зд.401 п.389/3-2	
+tai-gia	User	Ленинградская АЭС, зд.701, пом.203	
+tai-gvv	User	ТАИ зд.401 п.214	
+tai-hsa	User	ТАИ зд.402Б п.415	
+tai-ial	User	зд.601 п.415 т.5-46-79 переход ЛАЭС-2 ЭЦ	
+tai-iau	User	зд. 401, п. 718/1	
+tai-iav	User	Ленинградская АЭС, зд.601 бл.Д, пом.415/2	
+tai-isz	User	Ленинградская АЭС, зд.601 бл.C2, пом.314	
+tai-iva	User	зд.602 п.408/1 т.5-46-17	
+tai-ivn	User	Ленинградская АЭС, зд.402Б, пом.134	
+tai-ivs	User	Ленинградская АЭС, зд.401, пом., Уволен	
+tai-kab	User	ТАИ зд.401 п.364 т.5-15-31	
+tai-kag	User	ТАИ зд.601 п. 414/2	
+tai-kao	User	ТАИ зд.601 п.416/1-1 т.5-45-96	
+tai-kas	User	ЦТАИ зд.430а п.221	
+tai-kav	User	зд.601 п.428	
+tai-kba	User	зд.401 п.649 	
+tai-kdo	User	Ленинградская АЭС, зд.660, пом.612	
+tai-kev	User	Ленинградская АЭС, зд.601, пом.414/1	
+tai-kia	User	ТАИ зд. 601 п.415/1 т. 5-46-05	
+tai-kig	User	зд.401	
+tai-kiv	User	ЦТАИ зд.401 п. 214	
+tai-kma	User	Ленинградская АЭС, зд.401, пом.649	
+tai-kvi	User	ТАИ зд.401	
+tai-lan	User	Ленинградская АЭС, зд.401, пом.648	
+tai-lbp	User	ТАИ зд.601 бл.С1, п.428	
+tai-lia	User	ТАИ зд.401 п.363	
+tai-mas	User	зд.601 п.418 т.5-45-87	
+tai-mau	User	ТАИ зд.601 п.721	
+tai-mea	User	ТАИ зд.401 п.657/а т.52-03	
+tai-mgv	User	ТАИ зд.402Б п.339 т.5-21-91	
+tai-mnm	User	ТАИ зд.401 п. 210/2	
+tai-msk	User	ТАИ зд.601 п.414/1 т.5-45-92	
+tai-msl	User	ТАИ зд. 601 Д п. 414/1 т. 5-13-38	
+tai-mva	User	зд.672р п.299 т.5-30-23	
+tai-nap	User	Ленинградская АЭС, зд.401, пом.390/3.3	
+tai-olb	User	Ленинградская АЭС, зд.601, пом.415/4	
+tai-paa	User	зд.401 п.648 т.5-13-40	
+tai-pam	User	ТАИ зд.601 Д п.413.1 т.53-38	
+tai-pav	User	зд.401 п.369	
+tai-pgv	User	ТАИ зд.401 п.388/1	
+tai-pia	User	зд.402 Б п.343	
+tai-pnn	User	зд.401 п.657 А т.52-03	
+tai-psm	User	Ленинградская АЭС, зд.402Б, пом.414	
+tai-puaa	User	зд.401 п.369 	
+tai-pvv	User	Ленинградская АЭС, зд.601, пом.414/1	
+tai-rdy	User	зд.601 п.414/1 т.5-45-95	
+tai-rsa	User	ТАИ зд.402А п.106	
+tai-rva	User	ТАИ зд.401 п.542 т.5-11-63	
+tai-sas	User	Ленинградская АЭС, зд.601, пом.415/3-2	
+tai-sau	User	ТАИ зд.401 п.363/2 	
+tai-sav	User	ТАИ зд.401 п. 390/1-2 т. 5-14-88	
+tai-sdivt1	User	зд.401 п.390/2 	
+tai-sdivt2	User	зд.601	
+tai-sei	User	Ленинградская АЭС, зд.601 бл.С1, пом.429	
+tai-sev	User	Ленинградская АЭС, зд.401, пом.364	
+tai-shav	User	зд.602 п.412 т.51-30  	
+tai-shli	User	ТАИ зд.701 п.202	
+tai-shmg	User	Ленинградская АЭС, зд.672Р, пом.349	
+tai-shms	User	зд.401 п.210/2 т.5-11-50	
+tai-shvn	User	Ленинградская АЭС, зд.401, пом.654	
+tai-shvv	User	ЦТАИ зд.672р п.355	
+tai-sia	User	ТАИ зд.428 п.293 т.5-33-63	
+tai-sk3	User	ТАИ зд.601 Д п.415/1 т.5-13-38	
+tai-sk4	User	зд.601 п.415/3	
+tai-sku	User	ЦТАИ зд. 401 п.388/1	
+tai-slu	User	ТАИ зд.445 п.218 т.52-85  	
+tai-sme	User	зд.601 п.415/1-1 т.5-45-93	
+tai-ssv	User	зд.601 п.416/2	
+tai-stv	User	ТАИ зд.601 п. 414	
+tai-sug	User	Ленинградская АЭС, зд.601 бл.С1, пом.429	
+tai-svp	User	ТАИ зд.601 п.415/2 т.5-45-75	
+tai-tev	User	зд.401 п.364	
+tai-umg	User	ТАИ зд.401 Д п.366 т.51-17	
+tai-van	User	ТАИ зд.602 п.404 т.	
+tai-vas	User	ТАИ зд.672р п.355 т.5-33-76	
+tai-vme	User	зд.601 п.414 т.5-18-98	
+tai-vnv	User	ТАИ зд. 401 п.. 389/3-2	
+tai-xrm	User	зд.601 п.413 т.5-52-76	
+tai-zaa	User	ТАИ зд.401 п.645	
+tai-zgv	User	ТАИ зд.420 п.5 т. 5-34-59	
+tai-zvo	User	Ленинградская АЭС, зд.402б, пом.344	
+tai1-aaa	User	зд.601 пю739/2 	
+tai1-bas	User	зд.401 п.369	
+tai1-bmg	User	ТАИ зд. 700 п. 215	
+tai1-bvv	User	Ленинградская АЭС, зд.660, пом.336	
+tai1-das	User	Ленинградская АЭС, зд.402б, пом.339	
+tai1-dav	User	зд.402б п.339 т.5-27-91	
+tai1-dsa	User	ТАИ зд.348 (ФОС2) п.1	
+tai1-ies	User	ТАИ зд.401 п. 368/2	
+tai1-kev	User	зд.401 п.214 т.5-11-18	
+tai1-kis	User		
+tai1-ksa	User	ТАИ зд.700 п.215	
+tai1-lns	User	зд401 п.389/1 т.36-16	
+tai1-mvv	User	зд.601 п.430 т.5-45-72	
+tai1-ns	User	ЦТАИ зд.401В п.368/1	
+tai1-paa	User	зд.602 п.408	
+tai1-rsa	User	РЦ зд.401 п.659	
+tai1-rva	User	ЦТАИ зд.401 п.652	
+tai1-sau	User	ТАИ зд.401 п.210/2 т.5-11-50	
+tai1-sev	User	зд.420п.4 т.5-36-59	
+tai1-sns2	User	зд.401 п.364	
+tai1-snu	User	Ленинградская АЭС, зд.401, пом.648	
+tai1-svi	User	Ленинградская АЭС, зд.402б, пом.414	
+tai1-svv	User	зд.402б п.339 т.5-2791	
+tai2-ada	User	ТАИ здю601 п. 515-т. 5-18-24	
+tai2-asn	User	ТАИ зд.601 п. 419/2 т. 5-18-55	
+tai2-baa	User	зд.601 п.412/3	
+tai2-bav	User	ТАИ зд.601 п.709 т.58-96	
+tai2-bev	User	Ленинградская АЭС-Авто, зд.602, пом.406	
+tai2-boa	User	зд.601 п.429 т.5-52-76	
+tai2-bud	User	зд.601 п.718 т.5-17-60	
+tai2-dan	User	ТАИ зд. 601 п.623 т. 5-18-82	
+tai2-dds	User	зд.601 п.415	
+tai2-dga	User	зд.602 п.412 т.5-11-30	
+tai2-fsa	User	Ленинградская АЭС, зд.402б, пом.337	
+tai2-gav	User	ТАИ зд.601 п.618 т.5-12-19	
+tai2-gmg	User	зд.601 п.739 т.5-10-00	
+tai2-gsi	User	зд.601 п.618	
+tai2-hii	User	ТАИ зд.601 п.718 т.5-17-60	
+tai2-hvv	User	ТАИ зд.601 п.315 т.5-12-86	
+tai2-iau	User	Ленинградская АЭС, зд.601 Бл.С1, пом.720	
+tai2-ies2	User	ТАИ зд. 601 п. 418/1 т. 5-56-87	
+tai2-iis	User	Ленинградская АЭС, зд.601 бл.С1, пом.717	
+tai2-kaa	User	Ленинградская АЭС, зд.402Б, пом.335	
+tai2-kav	User	зд.601 п.618 т.5-121-9	
+tai2-keo	User	зд.601 п.414 т.5-45-72	
+tai2-kig	User	ЦТАИ зд.601 Бл.С1, пом.428	
+tai2-krs	User	Ленинградская АЭС, зд.672P, пом.356	
+tai2-kta	User	ТАИ зд.601 п.720 т.5-21-21	
+tai2-map	User	Ленинградская АЭС, зд.601 бл.С2, пом.617/1	
+tai2-mbn	User	зд.601 п.415	
+tai2-mev	User	ТАИ зд.601 п. 418/1 т. 51855	
+tai2-mis	User	зд.601 п.622 т.5-14-28	
+tai2-ns	User	ЦТАИ зд.601 Д п.419/1а	
+tai2-pma	User	зд.601 п.719 т.5-17-70	
+tai2-psv	User	ТАИ зд.601 п. 623 т. 5-18-82	
+tai2-rzm	User	ТАИ зд.601 С2 п.515	
+tai2-sam	User	ТАИ зд.602 п.412а т.5-11-30	
+tai2-sav	User	ТАИ зд.601 п.415/1	
+tai2-sfs	User	ТАИ зд.601 п.315 т.52-86	
+tai2-shvv	User	ТАИ зд.601 п.301/5 т.5-11-43	
+tai2-siv	User	ТАИ зд.601 п.717/2 т.5-11-70	
+tai2-ssv	User	ТАИ зд.601 С2 п.619 т.5-17-03	
+tai2-uav	User	ТАИ зд.601 п.609 С-2 т.5-17-12	
+tai2-vdu	User	ТАИ зд.601 п.739/2	
+tai2-vtv	User	Ленинградская АЭС, зд.601 бл.С2, пом.315	
+tai2-vvv	User	зд.601 п.620 т.5-17-04	
+tai2-zgv	User	зд.601 п.721 т.5-17-79	
+tai2-zjs	User	ТАИ зд.601 п.315 т.5-12-86	
+tc-aav	User	ТЦ зд.401 п.73а	
+tc-asu	User	ТЦ зд.401 п.72 Г т.5-16-55	
+tc-avv	User	Ленинградская АЭС, зд.701, пом.213	
+tc-bav	User	зд.401 п.72	
+tc-dgu	User		
+tc-dmg	User	ТЦ зд.401 Г п.74	
+tc-fao	User	зд.445 п.103 т.5-15-05	
+tc-geo	User	ТЦ зд.401 п.74	
+tc-gnm	User	ТЦ зд.401 п.72 т.5-16-55	
+tc-ieb	User	ТЦ зд.401 п.74 т.55-82 	
+tc-kah	User	ТЦ зд.701 п.212	
+tc-kea	User	Ленинградская АЭС, зд.601, пом.44/1	
+tc-kgl	User	ТЦ зд.401 п.71а	
+tc-khil	User	Ленинградская АЭС, зд.701, пом.207	
+tc-kki	User	ТЦ зд.401 Г п. 71а  	
+tc-kmi	User	Ленинградская АЭС, зд.401, пом.72	
+tc-kov	User	Ленинградская АЭС, зд.601, пом.44/10	
+tc-kvv	User	ТЦ зд.700 п. 101 т. 5-10-14	
+tc-loa	User	Ленинградская АЭС, зд.701, пом.213	
+tc-lov	User	Ленинградская АЭС, зд.401, пом.73	
+tc-mam	User	Ленинградская АЭС, зд.401, пом.693	
+tc-mgv	User	зд.445 п.230a т.5-13-28	
+tc-mka	User	зд.401 п.72	
+tc-mmu	User	ТЦ зд. 401 п. 72	
+tc-msn	User	Ленинградская АЭС, зд.445, пом.103	
+tc-msv	User	Ленинградская АЭС, зд.601, пом.26/10	
+tc-nstu	User	ТЦ зд.700 п.302 (НСТУ Щит упр)	
+tc-nstu1	User	более 3-х месяцев – отсутствия использования учетной записи	
+tc-nvv	User	Ленинградская АЭС, зд.701, пом.216	
+tc-paa	User	Ленинградская АЭС, зд.401, пом.74	
+tc-pvu	User	ТЦ зд.700 п.215	
+tc-sav	User	зд.401 п.70 	
+tc-shaa	User	Ленинградская АЭС, зд.401, пом.72	
+tc-shlv	User	Ленинградская АЭС, зд.401, пом.71а	
+tc-shva	User	Ленинградская АЭС, зд.601 Бл.С1, пом.302/2	
+tc-tma	User	зд.401 п.94 переход в др. цех ЭЦ	
+tc-uaa	User	ТЦ зд.601 Г п.43	
+tc-umu	User	ТЦ зд. 401 Г п. 73а т.  5-14-62	
+tc-zae	User	ТЦ зд.401 п.71 т.5-15-98	
+tc-zsu	User	ТЦ зд.401 бл.Г п.72	
+tc1-koa	User	Ленинградская АЭС, зд.701, пом.214	
+tc1-msv	User	ТЦ зд.401 Г п.72	
+tc1-ns	User	ЛАЭС зд.401 бл.Г п..51	
+tc1-nsn	User	Ленинградская АЭС, зд.401, пом.74А	
+tc1-tfu	User	ТЦ зд.401 п.ТФУ	
+tc2-avd	User	зд.601 п.302/2  т.5-15-24	
+tc2-bav	User	зд.601 п.44/10	
+tc2-brv	User	Ленинградская АЭС, зд.601, пом.44/10	
+tc2-cda	User	Ленинградская АЭС, зд.445, пом.226	
+tc2-iov	User	Ленинградская АЭС, зд.445, пом.103	
+tc2-kea	User	ТЦ зд.601 п.45/11	
+tc2-kga	User		
+tc2-kif	User	Ленинградская АЭС, зд.445, пом.103	
+tc2-kva	User	ТЦ зд. 601 п. 408 т. 5-16-29	
+tc2-mai	User	ТЦ зд. 601 Г п. 44/10а т. 5-19-36	
+tc2-ns2	User	Ленинградская АЭС, зд.601, пом.	
+tc2-nsk	User	зд.601 п.44	
+tc2-rma	User	Ленинградская АЭС, зд.601, пом.45/11	
+tc2-saa	User	Ленинградская АЭС, зд.601, пом.408/3	
+tc2-saa1	User	ТЦ зд.601 п.408/3 	
+tc2-sav1	User	ТЦ зд.601 п.408/1 т.5-21-34	
+tc2-sav2	User	ТЦ зд.601 п.44/10 т.5-19-36	
+tc2-shav	User	ТЦ зд. 601 п. 44/10 т. 5-19-64	
+tc2-shvn	User	ТЦ зд.601 п.44/10	
+tc2-smto	User	зд.601 п.42	
+tc2-tfu	User	зд.601 п.ТФУ 	
+tc2-uav	User	ТЦ зд.601 Г п.44/10а	
+tc2-vmv	User	ТЦ зд.601 п.408/3 т.5-46-28	
+tc2-zdv	User	зд.601 п.41	
+tc2-zug	User	зд.601 п.408/1	
+test-ff	User	Тестовый пользователь ForeFront	
+test-int	User	Не удалять! (для тестирования прямого доступа в интернет)	
+test-ivc-vaa	User	test-ivc-vaa	
+test_citr	User	test_citr	
+test_mail	User	Для тестирования системы Exchange	
+test10-1	User	зд.380 п.220	
+test2spbox	User	ОИКТ зд.445 п.219	
+tip-kmv	User	зд.380 п.106 т.5-10-89	
+tip-operator	User	Типография зд.380 п.138	
+trc-aav	User	Ленинградская АЭС, зд.777, пом.119/1	
+trc-aep	User	УТЦ зд.777 п. 233	
+trc-aim	User	зд.777 п.272 т.5-10-59	
+trc-amv	User	УТЦ зд.777 п. 284	
+trc-asf	User	зд.777 п.319 пишут сл.	
+trc-avn	User	Ленинградская АЭС, зд.777/2, пом.213	
+trc-bag	User	УТЦ зд.777 п. 241	
+trc-bea	User	Ленинградская АЭС, зд.777, пом.115	
+trc-bms	User	Ленинградская АЭС, зд.777, пом.132/2, Уволен	
+trc-bmv	User	УТЦ, зд.777 п.257	
+trc-boi	User	зд.777 п.257/1 т.5-26-36	
+trc-bsf	User	УТЦ зд.777 п.254/1	
+trc-bvv	User	УТЦ зд.777/2 п.315	
+trc-chmv	User	УТЦ, зд.777 п.241, т.5-21-35	
+trc-comp1	User		
+trc-comp10	User		
+trc-comp11	User		
+trc-comp12	User		
+trc-comp13	User		
+trc-comp14	User		
+trc-comp15	User		
+trc-comp16	User		
+trc-comp17	User		
+trc-comp18	User		
+trc-comp19	User		
+trc-comp2	User	зд.777 	
+trc-comp20	User		
+trc-comp21	User		
+trc-comp22	User		
+trc-comp23	User		
+trc-comp3	User	зд.777	
+trc-comp4	User	зд.777	
+trc-comp5	User	зд.777	
+trc-comp6	User	зд.777	
+trc-comp8	User		
+trc-comp9	User		
+trc-deb	User	зд.777 п.258	
+trc-dlu	User	УТЦ зд.777 п. 314 т. 5-10-42	
+trc-eis	User	зд.777 п.223 т.5-16-65	
+trc-epa	User	Ленинградская АЭС, зд.777, пом.244	
+trc-esf	User	зд.777/2 п.315 т.5-54-25	
+trc-esv	User	УТЦ, зд.777, п.279	
+trc-fas	User	УТЦ зд. 777 п. 323	
+trc-fas2	User	УТЦ зд.777 п.323	
+trc-flu	User	Ленинградская АЭС, зд.777, пом.287	
+trc-fsv	User	Ленинградская АЭС, зд.777, пом.254	
+trc-fte	User	УТЦ зд.777 п. 316 т. 5-13-31	
+trc-ftv	User	УТЦ зд.777 п. 241 т.5-11-35	
+trc-fva	User	УТЦ зд.777  п.246	
+trc-gsa	User	777, пом.253, т. 5-15-73	
+trc-gsb	User	УТЦ зд.777 п.245 т.5-14-05	
+trc-gvm	User	УТЦ, зд.777 п.246, 5-26-98	
+trc-ian	User	зд.777, п.247	
+trc-imm	User	ЛПФО зд.777/1 п.215 т.5-53-32	
+trc-jgp	User	УТЦ зд.777/2 п.315 т.5-54-36	
+trc-jvv	User	Ленинградская АЭС, зд.777, пом.244	
+trc-kap	User	УТЦ зд.777 п.284	
+trc-kas	User	зд.777 п.247 т.5-14-05	
+trc-kav	User	УТЦ зд.777 п.104	
+trc-kdv	User	зд.777, п.251/1,т.55606	
+trc-kias	User	зд.777 п.238 т.5-40-69	
+trc-kmv	User	УТЦ зд.777 п.257 т.5-26-36	
+trc-ksi	User	зд.777 п.270 т.5-16-12	
+trc-ksl	User	Ленинградская АЭС, зд.777, пом.254	
+trc-kva	User	УТЦ, зд.777, п.239/1, т.5-26-20	
+trc-kvu	User	Ленинградская АЭС, зд.777/2, пом.316	
+trc-kye	User	зд.777 п.104	
+trc-lov	User	УТЦ зд. 777 п. 284 т. 5-19-30	
+trc-lua	User	УТЦ зд. 777/2 п.218 5-54-36	
+trc-lvi	User	зд.777, п.106, т.53719	
+trc-lvu	User	УТЦ зд.777 п.115/1	
+trc-mev	User	зд.777 п.241	
+trc-mia	User	УТЦ, зд.777/1 пом.201	
+trc-mog	User	Ленинградская АЭС, зд.777, пом.244	
+trc-mou	User	УТЦ зд. 777 п. 214 	
+trc-mrn	User	УТЦ зд.777 п.241	
+trc-msa	User	Ленинградская АЭС, зд.777, пом.315	
+trc-msb	User	Ленинградская АЭС, зд.777, пом.206	
+trc-mtg	User	УТЦ зд.777 п. 223 т. 5-12-51	
+trc-mva	User	УТЦ зд.777 п.313 т.54-05	
+trc-nia	User	УТЦ зд. 777 п. 330 т. 5-16-23 	
+trc-nom	User	УТЦ зд.777 п.237  ЛАЭС-АВТО	
+trc-nva	User	УТЦ  зд. 777 п. 253 т. 5-72-91 	
+trc-nvn	User	зд.777, п.119/1, т.5135	
+trc-nvv	User	ЛПФО зд.777 п. 216	
+trc-oin	User	зд.777 п. 218  т. 5-53-32	
+trc-ovn	User	Ленинградская АЭС, зд.777, пом.106	
+trc-pau	User	зд.777	
+trc-pav	User	зд.777 п.270 т.5-1612	
+trc-pi	User	Ленинградская АЭС, зд.777, пом.104	
+trc-pln	User	Ленинградская АЭС, зд.777/2, пом.314	
+trc-pms	User	УТЦ зд.777 п.223 т.5-16-65	
+trc-pod	User	зд.777 п.254 т.5-56-06	
+trc-psa	User	зд.777, п.223	
+trc-pta	User	Ленинградская АЭС, зд.777, пом.223	
+trc-puv	User	УТЦ ЛАЭС-777-257/2	
+trc-pvp1	User	Ленинградская АЭС, зд.777, пом.249	
+trc-rdb	User	УТЦ зд.777 п.233 т. 5-72-79	
+trc-rem	User	УТЦ зд.777 п.316 т.5-13-31	
+trc-rmb	User	УТЦ, зд.777 п.324	
+trc-roa	User	зд.777 п.241 т.5-11-35	
+trc-sab	User	зд.777 п.222	
+trc-sak	User	УТЦ зд.777/2 п.315 т.5-54-25	
+trc-san	User	зд.777/2, п.216	
+trc-sav	User	зд.777 п.313	
+trc-sda	User	ЛПФО зд.777 п.218 т.5-53-32	
+trc-seg	User	УТЦ зд.777 п.327/1	
+trc-shav	User	УТЦ зд.777 п.223	
+trc-sheg	User	Ленинградская АЭС, зд.777, пом.130/1	
+trc-shlv	User	зд.777, п.273, т.51251	
+trc-shnv	User	зд.777, п.273, т.52114	
+trc-shui	User	УТЦ зд.777 п.322	
+trc-shva	User	зд.777, п.253, т.51059	
+trc-shyv	User	УТЦ зд.777 п. 253/2 т. 5-15-73	
+trc-sin	User	Ленинградская АЭС, зд.777, пом.257/1	
+trc-siv	User	зд.777 п.323 т.5-40-78	
+trc-slvm	User	Зам.главного инженера по работе с персоналом зд.777 п.282 52-33 	
+trc-smu	User	зд.777 п.115 т. 52143	
+trc-ssi	User	Ленинградская АЭС, зд.777/2, пом.203	
+trc-sua	User	УТЦ зд.777 п.244	
+trc-suv	User	Ленинградская АЭС, зд.777, пом.322	
+trc-svln	User	зд.777, п.241	
+trc-svn	User	Ленинградская АЭС, зд.777, пом.271	
+trc-tva	User	Ленинградская АЭС, зд.777, пом.253	
+trc-tvn	User	УТЦ зд.777 п.327	
+trc-vnv	User	Ленинградская АЭС, зд.777, пом.212	
+trc-vov	User	зд.777 п.319	
+trc-vvv	User	зд.777 п.222 т.5-21-12	
+trc-zav	User	Ленинградская АЭС, зд.777, пом.286	
+trc-zub	User	зд.777, п.270, т.51612	
+Truskov Vladimir	User	Здание: зд.601, бл.С1	
+uios-atv	User	УОИС зд.777/2 п.317	
+uios-env	User	УИОС зд.777/2  п.317	
+uios-geo	User	Ленинградская АЭС, зд.777/2, пом.301а	
+uios-ked	User	зд.1 Аскро п.230 т.5-42-73	
+uios-rda	User	УИОС зд.1(АСКРО) п.232	
+uks-bak	User	зд.381 п.324	
+uks-bav	User	УКС зд.381 п.101	
+uks-bov	User	УКС зд.381 п.327 т.2-27-50	
+uks-bpa	User	зд.381 п.217	
+uks-btv	User	УКС зд. 381 п. 107 	
+uks-bub	User	зд.381 п.310	
+uks-bvv	User	УКС зд.381 п. 104 п. 5-51-71	
+uks-csa	User	Ленинградская АЭС, зд.381, пом.301	
+uks-dtn	User	зд.381 п.111	
+uks-gau	User	Ленинградская АЭС, зд.381, пом.320	
+uks-gll	User	Ленинградская АЭС, зд.381, пом.305	
+uks-imr	User	УКС зд.381 п. 313	
+uks-jnv	User	Ленинградская АЭС, зд.381, пом.307	
+uks-kdv	User	УКС зд.381 п. 101 	
+uks-kiv	User	зд.381 п.329 	
+uks-kmk	User	зд.381 п.105	
+uks-koi	User	УКС зд.381 п.306 	
+uks-kos	User	зд.381 п.104	
+uks-ksn	User	Ленинградская АЭС, зд.381, пом.104	
+uks-ktm	User	Ленинградская АЭС, зд.381, пом.312	
+uks-lea	User	зд.381 п.306	
+uks-lms	User	УКС зд.381 п.101	
+uks-lnb	User	УКС зд. 381 п. 381 переход в УЗ	
+uks-mai	User	Ленинградская АЭС, зд.381, пом.313	
+uks-mav	User	зд.381 п.101	
+uks-mav1	User	зд.381 п.113	
+uks-meu	User	УКС зд.381 п.217 т.5-51-99	
+uks-mip	User	зд.381 п.324	
+uks-oeg	User	зд.381 п.322	
+uks-pmv	User	зд.381 п.115	
+uks-sdi	User	УКС зд.381 п.321	
+uks-sea	User	УКС зд.381 п.5-51-94 	
+uks-sev	User	зд.381 п.324	
+uks-shev	User	Ленинградская АЭС, зд.381, пом.313	
+uks-shus	User	УКС зд.381 п.325	
+uks-shvs	User	Ленинградская АЭС, зд.381, пом.107	
+uks-sil	User	зд.381 п.103	
+uks-tit	User	зд.381 п.104 т.5-51-71	
+uks-tiv	User	УКС зд.381 п. 310 	
+uks-unp	User	Ленинградская АЭС, зд.381, пом.309	
+uks-vtd	User	Ленинградская АЭС, зд.381, пом.322	
+uks-zip	User	УКС зд. 381 п. 101 т. 5-51-45	
+uks-zoa	User	УКС зд.381п.306	
+uks-zov	User	УКС зд.381 п.324	
+user	User		
+user-k	User	Пользователь с ограниченными правами для инф. киосков	
+User Int	OrganizationalUnit		
+UTC	OrganizationalUnit		
+uz-aiv	User	зд.381 п.223	
+uz-cmn	User	УЗ зд.1 АСКРО п.412	
+uz-cnn	User	УЗ зд.АСКРО п.310	
+uz-fei	User	УЗ зд.АСКРО п.425	
+uz-kgn	User	УЗ зд.1 АСКРО п.511 т.5-43-28	
+uz-lnb	User	УЗ зд. АСКРО п. 509	
+uz-mes	User	УЗ зд. ЛАЭС-1(АСКРО) п.509	
+uz-mtv	User	Ленинградская АЭС, зд.1 АСКРО, пом.622	
+uz-pam	User	УЗ зд.1 АСКРО п. 509	
+uz-ptn	User	УЗ АСКРО п.509	
+uz-saa	User	УЗ зд.381 п. 255	
+uz-shlm	User	УЗ зд.1 АСКРО п.609	
+uz-shov	User	зд.381 п.214 	
+uz-ymv	User	ЛАЭС-1(АСКРО)	
+vao	User	Комиссия ВАО зд.609 п.215	
+VCENT67	Computer	vcent67.ln.rosenergoatom.ru	
+vcenter	User	Служебная учетная запись для MaxPatrol SIEM	
+virus-test	User	зд. 445 п.219	
+vniiaes	User	АО "ВНИИАЭС"зд.428 п.297/1	
+vph-chen	User	ВПЧ-72 зд.370 п.3 т.5-17-01	
+vph-disp	User	ПСЧ 72 зд.370 п.9	
+vph-fan	User	ВПЧ-72 зд.370 п. 6 т. 2-28-01	
+vph-gsg	User	Ленинградская АЭС, зд.601, пом.542/2	
+vph-gso	User	зд.401 п.445/3	
+vph-inspect1	User	ВПЧ-72 зд.401 п.445	
+vph-jaa	User	ВПЧ-72 зд.370 п.10 т.5-14-27	
+vph-kvu	User	ЛАЭС-370ВПЧ-1 	
+vph-muv	User	ВПЧ78 зд.370 п.5	
+vph-odd	User	зд.370 п.13 т.5-17-01	
+vph-shdn	User	ВПЧ78 зд.370 п.6	
+vph-stv	User	ПСЧ 72 зд.370 п.43	
+vph-ten	User	Ленинградская АЭС, зд.370, пом.2	
+vph1-gsg	User	впч-72 зд.370 п.6 т.5-16-95	
+vsv	User	ИВЦ, зд.380, пом.5, тел.5-37-69.	
+wcons-info	User	"КОНСИСТ-ОС" зд.381 п. 206	
+Wlist Groups	OrganizationalUnit		
+wmc-uve	User	ВАО АЭС-МЦ зд.1 АСКРО  п.207	
+zairova-na	User	Секретариат ЛАЭС-1( АСКРО) п.621	
+zdef	User	АТУ зд.445 п.221 т. 5-59-71	
+zdef-sek	User	Ленинградская АЭС-Авто, зд.445, пом.221	
+zdfb-sekr	User	Секретарь ЗДРиФЗ зд.445 п.308	
+zdk-sekr	User	Секретариат зд.445 п.119	
+zdov-sek	User	Секретариат зд.445 п.138	
+zdov-sekr	User	секретарь ЗДОВ зд. 445 п. 210 т. 5-57-59	
+zdov1	User	Сл.дир. зд.445 п.210 т.5-59-75	
+zdrfz	User	зд.445 п.308 т.5-59-90	
+zdup	User	зд.445 п.119 т.5-59-76	
+zgi-aan	User	зд.445  зам.гл.инж.по рек. и продл.срока экспл.	
+zgi-gvg	User	Зам.главного инженера по инженерной поддержке зд,445 п.312 т.5-59-00	
+zgieks	User	СТУ-2 зд.601 б.С1	
+zgieks-2	User	Ленинградская АЭС, зд.601 бл.С1, пом.403/1	
+zgieto	User	АТУ зд. 445 п. 328	
+zgijb	User	зд.445 	
+zgipto	User	АТУ, зд.445 п.326 , т.5-58-00	
+zgir	User	АТУ зд.445 п.322 т.5-57-03	
+zkf	User	МО ИВЦ зд.380	
+znss-1	User	СТУ1 зд.401Д п.392/1 (БЩУ1)	
+znss-2	User	зд.401Д п. 392/3 (БЩУ2,НСБ2)	
+znss-3	User	НСБ-3 зд.601 п.421/1 Д	
+znss-4	User	зд.601 п.421/2 более 3-х месяцев – отсутствия использования учетной записи	
+zp-post1	User	Здравпункт1 зд.445 п.108	
+zp-post2	User	Здравпункт 2   ЛАЭС-609-170  ув. п	
+zp-smu	User	Здравпункт зд.609 п. 198 т.5-18-03	
+zp-sov	User	здравпункт зд.609 п.170 т.5-18-03	
+zpupd1	User	зд.445а	
+zpupd10	User		
+zpupd2	User	ГОиЧС зд.445 п.32	
+zpupd3	User	зд.445а п.303 т.5-57-06	
+zpupd4	User	зд.445	
+zpupd9	User	ОЧС, 445А, 0035, 55095, 51100

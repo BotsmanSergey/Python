@@ -363,6 +363,14 @@ with open('text.txt', 'r') as inf:
 
 os.path.join('.', 'dirname', 'filename.txt') # подключаемый модуль позволяющий переделывать путь к файлу в разных ОС --> './dirname/filename.txt'
 
+
+import codecs# for reading cirilic and other
+ 
+with codecs.open('file.txt', encoding='utf-8') as fin:
+    line = next(fin)
+    print type(line)
+    print line.strip()
+
 # ЗАПИСЬ В ФАЙЛ
 
 with open('text.txt', 'w') as out:
