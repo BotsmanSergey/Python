@@ -16,13 +16,24 @@ x y or and not
 1 1 1  1   0
 # по порядку вычисления not and or
 
+10 > 2 and 10 > 9         # True
+10 > 2 and 10 > 11        # False
+10 > 2 or 10 > 11         # True
+10 > 2 and not 10 > 11    # True
+not (10 > 2 or 10 > 11)   # False
+
+
 a = 10
 print(10<=a<100)-->True
 print('*', end='') # печать символа без переноса на следующюю строку
 
+a = [1, 2, 3]
+print(*a)-->1 2 3
+
+
 if (x=1):
     print(1)
-elif (x=2)
+elif (x=2):
     print(2)
 else:
     print(3)
@@ -31,6 +42,9 @@ len('abcdef') --> 6
 '\n' #символ перевода строк
 '\t' #символ табуляции
 # # комментарий
+'''
+multi-line comments
+'''
 
 while i < 5: # оператор выполняющий цикл пока выполняется устловие
 a, b = input().split() # сохраняет и разделяет пользовательский ввод
@@ -82,6 +96,10 @@ print(next(z)) --> (0, 1)
 
 
 # STRING
+
+#преобразование в строку
+a = len(input())*60
+print(str(a//100)+' р. '+str(a%100)+' коп.')
 
 # строки не изменяемы
 genome = 'ATTG'
@@ -143,7 +161,7 @@ dna[1:-1] --> 'TTCGGAGC'
 dna[1:-1:2] --> 'TCGG'
 dna[::-1] --> 'TCGAGGCTTA'
 
-# СПИСКИ
+# СПИСКИ LIST
 students = [] # пустой список
 students = ['olya', 'seriy', 'pasha'] # заполненный список
 for student in students:
@@ -155,6 +173,12 @@ students += ['Katya'] или students.append('Katya') # students += 'Katya' пр
 students.insets(1, 'Boris') # вставляет элемент между 0 и 1 элементами
 students.remove('Boris') # удаляет первое вхождение элемента 'Boris'
 del students[0] # удаляет нулевой элемент
+list.pop([i]) # Удаляет i-ый элемент и возвращает его. Если индекс не указан, удаляется последний элемент
+list.index(x, [start [, end]]) # Возвращает положение первого элемента со значением x (при этом поиск ведется от start до end)
+list.count(x) # Возвращает количество элементов со значением x
+list.copy() # Поверхностная копия списка
+list.clear() # Очищает список
+
 
 # поиск элементов в списке
 if 'ivan' in students:
