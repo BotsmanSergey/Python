@@ -22,9 +22,51 @@ x y or and not
 10 > 2 and not 10 > 11    # True
 not (10 > 2 or 10 > 11)   # False
 
+#True = 1, False = 0
+print(True + True + True - False)-->3
+print(True + (False / True))-->1.0
 
-a = 10
-print(10<=a<100)-->True
+#сокращения
+if flag: #if flag == True:
+if not flag: #if flag == False:
+
+#Для приведения других типов данных к булеву существует функция bool(), работающая по следующим 
+# соглашениям:
+#строки: пустая строка — ложь (False), непустая строка — истина (True);
+#числа: нулевое число — ложь (False), ненулевое число (в том числе и меньшее нуля) — истина (True);
+#списки: пустой список — ложь (False), непустой — истина (True).
+print(bool('Beegeek'))-->True
+print(bool(17))-->True
+print(bool(['apple', 'cherry']))-->True
+print(bool())-->False
+print(bool(''))-->False
+print(bool(0))-->False
+print(bool([]))-->False
+
+isinstance() #функция для проверки соответствия типа объекта какому-либо типу данных
+print(isinstance(3, int))-->True
+print(isinstance(3.5, float))-->True
+print(isinstance('Beegeek', str))-->True
+print(isinstance([1, 2, 3], list))-->True
+print(isinstance(True, bool)-->True
+print(isinstance(3.5, int))-->False
+print(isinstance('Beegeek', float))-->False
+
+type()#function позволяющая получить tipe указанного в качестве аргумента объекта
+print(type(3))--><class 'int'>
+print(type(3.5))--><class 'float'>
+print(type('Beegeek'))--><class 'str'>
+print(type([1, 2, 3]))--><class 'list'>
+print(type(True))--><class 'bool'>
+print(type(None)--><class 'NoneType'>
+
+if var is None:#Проверка на None 
+if var == None:#Проверка на None, оператор "==" менее предпочтителен
+
+print(None == None)-->True
+
+#функции, не возвращающие значений, на самом деле возвращают значение None
+
 print('*', end='') # печать символа без переноса на следующюю строку
 
 a = [1, 2, 3]
@@ -170,15 +212,45 @@ for student in students:
 # можно явно исменять список: 
 students[0] = 'Olya'
 students += ['Katya'] или students.append('Katya') # students += 'Katya' прибавит 5 элементов в список
+list1 = list2 + list3 # сложение списков
+list.extend(list2) #сложение списков
 students.insets(1, 'Boris') # вставляет элемент между 0 и 1 элементами
 students.remove('Boris') # удаляет первое вхождение элемента 'Boris'
 del students[0] # удаляет нулевой элемент
+----
+numbers = [10, 20, 30, 40]
+del numbers[0:6]
+print(numbers)-->[]#out of range не наступает
+-------
 list.pop([i]) # Удаляет i-ый элемент и возвращает его. Если индекс не указан, удаляется последний элемент
 list.index(x, [start [, end]]) # Возвращает положение первого элемента со значением x (при этом поиск ведется от start до end)
 list.count(x) # Возвращает количество элементов со значением x
 list.copy() # Поверхностная копия списка
 list.clear() # Очищает список
+list.reverse() # инвертирует порядок следования значений в списке, то есть меняет его на противоположный
+list.split() # разбивает строку на слова, используя в качестве разделителя последовательность пробельных символов, символ табуляции (\t) или символ новой строки (\n)
+list.join() # собирает строку из элементов списка, используя в качестве разделителя строку, к которой применяется метод.
 
+numbers = [4, 8, 12, 16, 34, 56, 100]
+numbers[1:4] = [20, 24, 28]
+print(numbers)-->[4, 20, 24, 28, 34, 56, 100]
+
+#list copy
+letters = ['a', 'b', 'c', 'd']
+new_letters1 = letters.copy()
+new_letters2 = letters[:]
+new_letters3 = list(letters)
+
+#max and min
+words = ['xyz', 'zara', 'beegeek']
+print(max(words))-->zara
+
+list1 = [[1, 7, 12, 0, 9, 100], [1, 7, 90], [1, 10]]
+list2 = [['a', 'b'], ['a'], ['d', 'p', 'q']]
+print(min(list1))-->[1, 7, 12, 0, 9, 100]
+print(max(list1))-->[1, 10]
+print(min(list2))-->['a']
+print(max(list2))-->['d', 'p', 'q']
 
 # поиск элементов в списке
 if 'ivan' in students:
@@ -210,8 +282,13 @@ a = [i * i for i in range(5)] --> [0, 1, 4, 9, 16]
 a = [[1,2],[3,4]]
 a = [1][1] --> 4
 
-a = [[0] * n for i in  range(n)]
-a = [[0 for j in range(n)] for i in range(n)]
+my_list = ['Python', [10, 20, 30], ['Beegeek', 'Stepik!']]
+print(my_list[2][-1][-1])-->!
+
+a = [[0] * m for i in  range(n)] 
+b = [[0 for j in range(m)] for i in range(n)] #same as
+c = [[0] * m for _ in range(n)] #same as, можно ставить "_" если i не будет использована
+d = [[0] * m ] * n # !!!! так нельзя, ссылка будет одна и таже
 
 # ФУНКЦИИ
 
@@ -276,7 +353,7 @@ def f():
     def check(word):
         nonlocal ok_status # для использования переменных на уровень или несколько выше видимости выше
             for vowel in vowels:
-                if vowerl in word:
+                if vowel in word:
                     return = False
             ok_status = False
             return False
