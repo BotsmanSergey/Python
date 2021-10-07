@@ -8,6 +8,7 @@ int(-2.3) --> -2
 floal(5) --> 5
 type(7) --> int # вычесление типа
 s = int(input('Введите данные')) # ждет данные от пользователя и переводит в int и сохраняет в s
+type(s) -->int
 
 x y or and not
 0 0 0  0   1
@@ -59,6 +60,9 @@ print(type('Beegeek'))--><class 'str'>
 print(type([1, 2, 3]))--><class 'list'>
 print(type(True))--><class 'bool'>
 print(type(None)--><class 'NoneType'>
+s = "asdf"
+print(type(s))--><class str>
+print(type(int))--><class type>
 
 if var is None:#Проверка на None 
 if var == None:#Проверка на None, оператор "==" менее предпочтителен
@@ -118,7 +122,7 @@ x = [-2, -1, 0, 1, 2]
 y = [i*i for i in x]
 print(y) --> [4, 1, 0, 1, 4]
 
-y = [i*i for i in x if i > 0]
+y = [i*i for i in x if i > 0] # with if
 print(y) --> [1, 4]
 
 
@@ -135,6 +139,8 @@ z =((x, y) for x in range(3) for y in range(3) if y >= x) # если кругл�
 print(z) --> generator object
 print(next(z)) --> (0, 0)
 print(next(z)) --> (0, 1)
+
+
 
 
 # STRING
@@ -212,7 +218,7 @@ for student in students:
 # можно явно исменять список: 
 students[0] = 'Olya'
 students += ['Katya'] или students.append('Katya') # students += 'Katya' прибавит 5 элементов в список
-list1 = list2 + list3 # сложение списков
+list1 = list2 + list3 # сложение списков не путать с append
 list.extend(list2) #сложение списков
 students.insets(1, 'Boris') # вставляет элемент между 0 и 1 элементами
 students.remove('Boris') # удаляет первое вхождение элемента 'Boris'
@@ -289,6 +295,58 @@ a = [[0] * m for i in  range(n)]
 b = [[0 for j in range(m)] for i in range(n)] #same as
 c = [[0] * m for _ in range(n)] #same as, можно ставить "_" если i не будет использована
 d = [[0] * m ] * n # !!!! так нельзя, ссылка будет одна и таже
+
+# КОРТЕЖИ(TUPLE)
+
+# не изменяемы, быстрее чем списки, можно использовать в качестве ключей словаря,
+#  удобно если зотим сделать что-то не изменяемое
+# не имеют метода index, но имеют in
+# Кортежи поддерживают:
+# доступ к элементу по индексу (только для получения значений элементов);
+# методы, в частности index(), count();
+# встроенные функции, в частности len(), sum(), min() и max();
+# срезы;
+# оператор принадлежности in;
+# операторы конкатенации (+) и повторения (*).
+
+info = ('a', 0, False, (4, 5, 6), [])
+g = (5) # это не кортеж
+g = (5,) # это кортеж
+g = () # пустой картеж
+info[3:4] # срезы в кортежах это новый кортеж
+g =([1, 3]) # списки внутри 
+
+#list to tuple
+str_list = ['один', 'два', 'три']
+str_tuple = tuple(str_list)
+print(str_tuple)-->('один', 'два', 'три')
+str_list = list(str_tuple)
+print(str_list)-->['один', 'два', 'три'] # tuple to list
+
+# проверка на пустоту
+tuples = [(), (), ('',), ('a', 'b'), (), ('a', 'b', 'c'), (1,), (), (), ('d',), ('', ''), ()]
+non_empty_tuples = [i for i in tuples if len(i)>0]
+
+
+is_target_node = False
+node = 'Node1'
+if (node == 'Node1' or node == 'Node2' or node == 'Node3')
+    is_target_node = True
+# сократим-->
+node = 'Node1'
+is_target_node = (node == 'Node1' or node == 'Node2' or node == 'Node3')
+# сократим используя кортеж
+node = 'Node1'
+is_target_node = node in ('Node1', 'Node2', 'Node3')
+
+# присваивание кортежу
+f, s, *c, l = [1, 2, 3, 4, 5, 6, 7]  # *c--> [3, 4, 5, 6]
+
+# передача dict to function argument
+d = {'a': 1, 'b': 2}
+def foo(a, b):
+    pass
+foo(**d)
 
 # ФУНКЦИИ
 
@@ -462,7 +520,7 @@ with open('text.txt', 'r') as inf:
 
  
 
-os.path.join('.', 'dirname', 'filename.txt') # подключаемый модуль позволяющий переделывать путь к файлу в разных ОС --> './dirname/filename.txt'
+
 
 
 import codecs# for reading cirilic and other
@@ -521,6 +579,16 @@ foo() # импорт всех функций
 from my_module import foo as my_foo
 my_foo() # импор функции из модуля и назначение ей особого имени
 
+# Модуль os
+os.path.join('.', 'dirname', 'filename.txt') # подключаемый модуль позволяющий 
+# переделывать путь к файлу в разных ОС --> './dirname/filename.txt' или '.\dirname\filename.txt'
+os.path.dirname(path) # возвращает имя директории пути path
+os.path.abspath(path) # возвращает нормализованный абсолютный путь.
+__file__ # возвращает путь к файлу
+print(os.path.dirname(os.path.abspath(__file__))) # выведет один и тот же путь как из интерпритатора
+# так и из среды разработки
+
+
 # Модуль sys показывает список аргументов командной строки
 # запуск через cmd 
 python file.py
@@ -577,34 +645,7 @@ print(a<20) --> [True Folse Folse]
 # Библтотека matplotlib # построение графиков
 conda install matplotlib
 
-# КОРТЕЖИ
 
-# не изменяемы, быстрее чем списки, можно использовать в качестве ключей словаря
-# не имеют метода index, но имеют in
-
-info = ('a', 0, False, (4, 5, 6), [])
-g = (5) # это не кортеж
-info[3:4] # срезы в кортежах это новый кортеж
-
-is_target_node = False
-node = 'Node1'
-if (node == 'Node1' or node == 'Node2' or node == 'Node3')
-    is_target_node = True
-# сократим-->
-node = 'Node1'
-is_target_node = (node == 'Node1' or node == 'Node2' or node == 'Node3')
-# сократим используя кортеж
-node = 'Node1'
-is_target_node = node in ('Node1', 'Node2', 'Node3')
-
-# присваивание кортежу
-f, s, *c, l = [1, 2, 3, 4, 5, 6, 7]  # *c--> [3, 4, 5, 6]
-
-# передача dict to function argument
-d = {'a': 1, 'b': 2}
-def foo(a, b):
-    pass
-foo(**d)
 
 # УСЛОВИЯ
 if foo == True:
@@ -730,32 +771,58 @@ class MyClass:
     a = 10
     def func(self):
         print('Hello')
-print(MyClass.a) # MyClass.a отребут класса MyClass
-print(MyClass.func) #  MyClass.func отребут класса MyClass
+    def drive():
+        print('Go Go Go')
+print(MyClass.a) # MyClass.a атрибут класса MyClass
+print(MyClass.func) #  MyClass.func атрибут класса MyClass
 # в отличии от функций тело класса исполняется в момент определения самого класса и за ним закрепляется определенный namespace
+print(MyClass.__dict__) # show attributes and other info of class
+print(getattr(MyClass, 'a', 100))--> 10 #show attribute 'a' (quotes is necessary), 100 - return value, if attribute 'a' does not exist(не существует)
+#100 - not necessary attrebute
+MyClass.b = 'something' #in MyClass added attribute 'b' wint value 'something'
+setattr(MyClass, 'c', 200) #in Myclass added attribute 'c' with value 200
+del MyClass.a #deleting attribute 'a'
+delattr(MyClass, 'b') #deleting attribute 'b'
+#functions
+MyClass.drive() --> Go Go Go #скобки это оператор вызова
+MyClass.drive-->#show link
+getattr(MyClass, 'drive')-->#show link
+getattr(MyClass, 'drive')()-->Go Go Go
+hasattr(MyClass, 'name')-->True/False
 
 # OBJECT OF CLASS
 
 class MyClass:
     a = 10
-    def func(self):
+    def func(self): #self - общепринятое название(можно заменить на любое другое),
+        #when instance run func of class he вставляет youself за место self
+        #по этому MyClass.func - запуститься, а a.func - выдаст ошибку так как будет передан аргумен в виде instance
         print('Hello')
 x = MyClass() # x is instance(экземпляр) of class MyClass. MyClass() it's constructor of class MyClass
 print(type(x))
 print(type(MyClass))
+b = MyClass()
+print(MyClass.__dict__) #show all attributes
+print(b.__dict__ ) #show empty list
+b.a = 20
+print(b.__dict__) #show attribute 'a'
+del b.a 
+print(b.a)-->10 #if we don't have attribute in instance of class, Python search attribute in class and parents
+
+
 
 
 class Counter:
     pass # when hollow(empty) class
 Counter -->class object
-x = Counter # x is instant object
+x = Counter() # x is instant object
 x.count = 0
 x.count += 1
 
 
 class Counter:
     def __init__(self):  # a function __init__ принимает ещё не существующий instance(экземпляр) self
-        self.count = 0 # к ещё не существующему instance, add атрибут
+        self.count = 0 # к ещё не существующему instance, add attribute
 Counter
 x = Counter()
 print(x.conut) --> 0
@@ -772,7 +839,25 @@ print(x.conut) --> 0
 x.count += 1
 
 # METHOD
+class Cat:
+    def voice():
+        print('mao')
+bob = Cat()
+bob.voice()--> #вызовет ошибку так как в def voice() нет аргумента, а показано что был передан один аргумент
+print(Cat.voice) #покажет что это функция
+print(Cat.voice) #покажет что это метод
+#метод это таже функция, но у класса, метод привязан к конкретному обьекту, а функция не с кем не связана
+#в функцию в классе(в метод), при вызове её от экземпляра передается сам экземпляр 'voice(bob)'
 
+class Cat:
+    def voice(*args): # *args - any quantity of arguments
+        print('mao', *args)
+jim = Cat()
+jim.voice()-->mao (<__main__.Cat Object at 0x5234534534>,)#main - this file, 0x124232532 - place in storege
+
+
+#__init__
+#чтобы не add attribute thought func, we can add attribute when initing instance
 class Counter:
     def __init__(self):  
         self.count = 0
@@ -780,14 +865,42 @@ class Counter:
         self.count += 1
     def reset(self):
         self.count = 0
-# Counter
-x = Counter()
+x = Counter()#in this moment adding attribute count in instance, хотя функция __init__ на прямую не вызывалась
+#если в __init__ добавить больше арибутов (__init__(self, name)) то получим конструктор
 x.inc --> 1
 print(x.count)
 Counter.inc(x) -->2 # Тоже самое что и x.inc строчкой выше (Bound Method(связанный метод))
 print(x.count)
 x.reset()-->0
 print(x.count)
+
+#dry (don't repeat youself)
+class Point:
+    list_points = []
+    def __init__(self, x, y):
+        self.change(x, y)
+        Point.list_pints.append(self) #для обращения к аттрибутам класса необходими указывать сласс
+        #даже если функция внутри класса
+    def change(self, x, y):
+        self.x = x
+        self.y = y
+    def go_home(self):
+        self.change(0, 0)
+
+#моносостояние for instance
+#when при changing or adding attribute in one instance происходит changing all instance 
+class Cat:
+    def __shared_attr = {
+        'breed': 'pers'
+        'color': 'black'
+    }
+    def __init__(self):
+        self.__dict__ = __shared_attr
+a = Cat()
+b = Cat()
+a.breed = 'pers'
+print(b.bread)--> pesr
+
 
 # VARIABLE OF CLASS
 
@@ -1387,7 +1500,7 @@ print(match) --> span = (0, 3) , match = "abc" # span - координаты п�
 pattern = r"((abc)|(test|text)*)"
 string = "testtext"
 match = re.match(pattern, string)
-print(match) --> span = (0, 3) , match = "abc"
+print(match) --> span=(0, 8), match='testtext'
 print(match.groups()) --> ('testtext', None, 'text')  #сперва показана группа в скобках (abc|(test|text)*, потом abc, затем test|text (показан text т.к. это последнее вхождение)
 print(match.group(0)) -->testtext # по умолчанию так же 0 (print(match.group()))
 print(match.group(1)) -->testtext
