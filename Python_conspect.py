@@ -1,3 +1,8 @@
+from typing import Counter
+
+from Test.test import BankAccount
+
+
 cd #выбор дирректории
 python # запуск интерпритатора 
 quit #выход из интерпритатора
@@ -403,21 +408,152 @@ def check(word):
     ok_status = False
     return False
 
+#bild in - встроенное пространство имен, внутри него файл example.py c Глобальной областью видимости (global), внутри функций локальная область видимости (local)
+
 # NONELOCAL VARIABLE
 
 def f():
     ok_status = True
-    vowels = ["a", "u", "i", "e", "o"]
-    def check(word):
-        nonlocal ok_status # для использования переменных на уровень или несколько выше видимости выше
-            for vowel in vowels:
-                if vowel in word:
-                    return = False
-            ok_status = False
-            return False
+    def t():
+        nonlocal ok_status #идет обращение на уровень(или несколько(пока не найдет нужную переменную)) 
+        #выше локальной функции  
+        ok_status = False
+    s()
+    print(ok_status)
 
-f()
-print(ok_status) --> NameError
+f()-->False
+print(ok_status) --> NameError #так как данной переменной нет в глобальном пространстве имен
+
+#ЗАМЫКАНИЯ CLOSURE
+#1
+def main_func(name):
+    n = name
+    def inner_func():
+        print('Hello', name)#что бы происходило замыкание необходимо использовать переменную из внешней функции
+    
+    return inner_func#мы передаем саму функцию а не ееё результат по этому без скобок
+v = main_func('Vasya') #y ссылаеться на main_func('Vasya')
+v() --> Hello Vasya
+s = main_func('Sveta')
+s() --> Hello Sveta
+v() --> Hello Vasya #переменные сохраняются как в экземплярах класса это и называеться замыкание
+
+#2
+def adder(value):
+    def inner(a):
+        return (value + a)
+    return inner
+a2 = adder(2)
+a2(5)-->7
+a2(10)-->12
+a5 = adder(5)
+a5(10) -->15
+
+#3
+def counter():
+    count = 0
+    def inner():
+        nonlocal count
+        count += 1
+        return count
+    return inner
+q = counter()
+q() --> 1
+q() --> 2
+r = counter()
+r() --> 1
+r() --> 2
+q() --> 3
+
+#4
+def averege_numbers():
+    summa = 0
+    count = 0
+    def inner(number):
+        nonlocal summa
+        nonlocal count
+        summa = summa + number
+        count += 1
+
+        return summa / count
+    
+    return inner
+a = average_numbers()
+a(100) -->100
+a(200) -->150
+
+#5
+from datetime import datetime
+def timer():
+    start = datetime.now()
+    def inner():
+        return datetime.now() - start
+    return inner
+r = timer()
+r() #веренет разницу между перевым и последним вызовом
+
+#6 передача функциив качестве параметра
+def add(a + b):
+    return a + b
+def counter(func):
+    count = 0
+    def inner(*args, **kwargs):
+        nonlocal count
+        count += 1
+        print (f"Функция {func.__name__} вызывалась {count} раз")
+        return func(*args, **Kwargs)
+    return inner
+q = counter(add)
+q(10, 20) --> 30 Функция add вызывалась 1 раз
+q(3, 4) --> 7 Функция add вызывалась 2 раз
+
+#DECORATOR декораторы
+def decorator(func):
+    def inner(*args, **kwargs): # желательно всегда вставлять такие конструкции для параметров
+        #в виде *args, **kwargs так как мы за ранее не знаем сколько будет параметров у функции 
+        # которую мы будем декорировать
+        print('start decorator...')
+        func(*args, **kwargs)
+        print('finish decorator...')
+
+        return inner
+
+def say(name, surname):
+    print('hello', name, surname)
+
+say = decorator(say)#now func working different
+say('Vasya', 'Ivanov') --> start decorator...\n hello Vasya Ivanov \n finish decorator...
+
+#2
+def header(func):
+    def inner(*args, **kwargs):
+        print('<h1>')
+        func(*args, **kwargs)
+        print('</h1>')
+        return inner
+
+def table(func):
+    def inner(*args, **kwargs):
+        print('<table>')
+        func(*args, **kwargs)
+        print('</table>')
+        return inner
+
+
+def say(name, surname):
+    print('hello', name, surname)
+
+say = table(header(say))# обернули в 2 decorators
+say('Vasya', 'Ivanov') --> <table><h1>hello Vasya Ivanov <\h1><\table>
+
+#2a
+#same as
+@table
+@header # '@table' and '@header' same as 'say = table(header(say))'
+def say(name, surname):
+    print('hello', name, surname)
+say('Vasya', 'Ivanov') --> <table><h1>hello Vasya Ivanov <\h1><\table>
+
 
 
 # МНОЖЕСТВА
@@ -901,6 +1037,83 @@ b = Cat()
 a.breed = 'pers'
 print(b.bread)--> pesr
 
+#public protected privated attr and methods
+#public _protected __privated
+#_protected - никак не защищает "_" просто общепринятое обозначение
+class BankAccount:
+
+    def __init__(self, name, balance, passport):
+        self.__name = name
+        self.__balance = balance
+        self.__passport = passport
+    
+    def print_public_data(self):
+        self.__print_pvivate_data()
+
+    def print_protected_data(self):
+        print(self.__name, self.__balance, self.__passport)
+
+account1 = BankAccount()
+account1.__name -->Error
+account1.__print_private_data() --> Error
+account1.print_public_data #так можно
+print(dir(account1)) #show all attr and private attr
+account1._BankAccount.__print_private_data() #и так он показывает защищенные атрибуты
+#по сути Python не защищает ничего
+
+#property getter setter delete
+class BankAccount:
+
+    def __init__(self, name, balance):
+        self.name = name
+        self.__balance = balance
+    
+    def get_balance(self):
+        return self.__balance
+
+    def set_balance(self, value):
+        if not isinstance(value, (int, float)):
+            raise ValueError('Баланс должен быть числом')
+        self.__balance = values
+    
+    def delete_balance(self):
+        del self.__balance
+    
+    balance = property(fget = get_balance, fset = set_balance, fdel = delete_balance)
+    # short name for using func
+a = BankAccount()
+a.balance #вызов get_balance
+a.balance = 100 #вызов set_balance
+del a.balance #вызов delete_balance
+
+#decorator property
+#избавлеяет от двойной функциональности
+class BankAccount:
+
+    def __init__(self, name, balance):
+        self.name = name
+        self.__balance = balance
+    
+    @property #1 превращаем нашу функцию в свойство путем декорирования
+    def my_balance(self):#1 change name to my_balance
+        return self.__balance
+
+    @my_balance.setter #2 property of my_balance (то что был getterom (#1))
+    def my_balance(self, value):
+        if not isinstance(value, (int, float)):
+            raise ValueError('Баланс должен быть числом')
+        self.__balance = value
+    
+    @my_balance.deleter
+    def my_balance(self):
+        del self.__balance
+
+p = BankAccount('Tod', 900)
+p.my_balance --> 900 # скобки не нужны так как это свойства  
+p.my_balance = 901
+p.my_balance --> 901
+del p.my_balance
+p.my_balance --> Error
 
 # VARIABLE OF CLASS
 
