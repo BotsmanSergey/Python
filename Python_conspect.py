@@ -1,6 +1,16 @@
-from typing import Counter
+from typing import AsyncIterable
 
-from Test.test import BankAccount
+
+Ctrl + / #Быстро добавить комментарий
+Ctrl + G #Перейти к строке под номером
+Alt + ↑ / ↓ #Поменять строку местами с соседними
+Shift + Alt + ↓ / ↑ #Дублировать строку
+Ctrl + Shift + \ #Перейти к парной скобке
+Shift + Alt + F #Отформатировать документ (pep8)
+F12 #Перейти к объявлению переменной
+Alt + Z #Включить/выключить перенос слов
+Ctrl + K Z #Включить дзен-режим
+https://nikomedvedev.ru/other/vscodeshortcuts/hotkeys.html
 
 
 cd #выбор дирректории
@@ -1115,6 +1125,144 @@ p.my_balance --> 901
 del p.my_balance
 p.my_balance --> Error
 
+#2
+class Money():
+    def __init__(self, dollars, cents):
+        self.total_cents = dollars * 100 + cents
+
+    @property
+    def dollars(self):
+        return self.total_cents//100
+
+    @dollars.setter 
+    def dollars(self, dollars):
+        if isinstance(dollars, int) and dollars >= 0:
+            self.total_cents = dollars*100 + self.total_cents%100
+        else: print('Error dollars')
+
+    @property
+    def cents(self):
+        return self.total_cents%100
+
+    @cents.setter 
+    def cents(self, cents):
+        if isinstance(cents, int) and 100 > cents >= 0:
+            self.total_cents = self.total_cents//100*100 + cents
+        else: print('Error cents')
+
+    def __str__(self): # __str__ change return of instance
+        return f"Ваше состояние составляет {self.total_cents//100} долларов {self.total_cents%100} центов"
+Bill = Money(101, 99)
+print(Bill)  --> Ваше состояние составляет 101 долларов 99 центов
+print(Bill.dollars, Bill.cents)  --> 101 99
+
+#Вычисляемые Property
+class Square:
+    def __init__(self, s):
+        self.__side = s
+        self.__area = None
+    
+    @property
+    def side(self):
+        return self.__side
+    
+    @side.setter
+    def side(self, value):
+        self.__side = values
+        self.__area = None #when change side, area change to None
+    
+    @property #for more comfortable call to area do it to property
+    def area(self):
+        if self.__area is None: # что бы не вычеслять area каждый раз, а только в первый раз
+            print('calculate area')
+            self.__area = __side**2
+        return self.__area
+a = Square(5)
+a.area -->calculating area 25
+a.area --> 25
+a.side = 6
+a.area -->calculating area 36
+a.area -->36
+
+#staticmethod and classmethod
+class Example:
+    def hello():
+        print(hello) #работае только при вызове от класса
+    
+    def instance_hello(self):
+        print(f'instance_hello {self}') #работает только при вызове от instance
+
+    @staticmethod
+    def static_hello():
+        print(f'static_hello') #работает ото всех
+    
+    @classmethod
+    def class_hello(cls): #работает ото всех, cls - class, и от instance и от class в cls попадает class
+        print(f'class_hello {cls}')
+
+Example.hello() --> hello
+a = Example
+a.hello() --> Error
+Example.instance_hello() --> Error
+a.instance_hello() --> instance_hello < a >
+Example.static_hello() --> static_hello
+a.static_hello() --> static_hello
+Example.class_hello()--> class_hello <class Example>
+a.class_hello()--> class_hello <class Example>
+
+#способы обращения к переменным/методам класса
+#1 если два файла в одной папке
+import file1
+Example.method1()
+2#
+class DepatrtmentIT:
+    PYTHON_DEV = 4
+    GO_DEV = 3
+    REACT_DEV =2
+    def info(self):
+        print(self.PYTHON_DEV, self.GO_DEV, self.REACT_DEV)
+    def info2(self):
+        print(DepatrtmentIT.PYTHON_DEV, DepatrtmentIT.GO_DEV, DepatrtmentIT.REACT_DEV)
+    @property
+    def info_prop(self):
+        print(self.PYTHON_DEV, self.GO_DEV, self.REACT_DEV)
+    @classmethod
+    def info_class(cls):
+        print(cls.PYTHON_DEV, cls.GO_DEV, cls.REACT_DEV)
+    @staticmethod
+    def info_static():
+        print(DepatrtmentIT.PYTHON_DEV, DepatrtmentIT.GO_DEV, DepatrtmentIT.REACT_DEV)
+
+#включения сеттора при инициализации
+from string import digit #digit - it is just list of digit
+class User:
+
+    def __init__(self, login, password):#так как сеттер и переменная называются одинаково
+        # во время инициализации происходит проверка пароля через сеттер
+        self.login = login
+        self.password = password
+    @property
+    def password(self):
+        print('getter called')
+        return self.password
+    @staticmethod
+    def is_include_number(password):#just checing(проверка) to having digit in pass
+        for digit in didgits:
+            if digit in password:
+                return True
+        return False
+    @password.setter
+    def password(self, value):
+        print('setter called')
+        if not isinstance(value, str):
+            raise TypeError('Password not the string')
+        if len(value)<4:
+            raise ValueError('Pass is too short, need min 4 simbols')
+        if len(value)>12:
+            raise ValueError('Pass is too long, need max 12 simbols')    
+        if not User.is_include_number(value):
+    
+
 # VARIABLE OF CLASS
 
 class Song:
@@ -1131,6 +1279,143 @@ song2 = Song ("Neuromonah", "Holodno")
 song2.add_tags("Russian", "Drum")
 print(song2.tags) --> "Americana" "Country" "Russian" "Drum" # все добавилось в tags = [] так как не объявлен атрибут self.tegs и интерпритатор ищет его в классе
 таково бы не случилось если ракоментировать self.tags = [] и закоментировать tags = []
+#MAGIC METHOD
+#__repr__ and __str__
+class Lion():
+    def __init__(self, name):
+        self.name = name
+    def __repr__(self):#заменяет обычное отображение класса в том числе и для разработчиков, если нет
+        return f'The object Lion - {self.name}' 
+    def __str__(self):#заменяет обычное отображение класса в print() and str()
+        return f'Lion - {self.name}'
+a = Lion('alex')
+a #__repr__
+str(a) #__str__
+print(a) #__str__
+
+#__len__ and __abs__
+class Otrezok:
+    def __init__(self, point1, point2):
+        self.x1 = point1
+        self.x2 = point2
+
+    def __len__(self): #setting for comand 'len()'
+        return abs(self)
+
+    def __abs__(self):# setting for comand 'abs()'
+        return abs(self.x2 - self.x1)
+
+a = Otrezok(4, 8)
+len(a) --> 4 #show 4, таким образом мы настроили work function len of our class
+
+
+#__add__,__radd__,__mul__,__rmul__,__sub__,,__truediv__
+#сложение, умножение, вычитание, деление. #r - тажа операция, но с заменой слагаемых/мнжителей местами
+class BankAccount:
+    def __init__(self, name, balance):
+        self.name = name
+        self.balance = balance
+
+    def __add__(self, other):
+        print('__add__ calc')
+        if isinstance(other, BancAccount): #проверяем если складываем с такимже классом
+            return self.balance + other.balance
+        if isinstance(other, (int, float)):
+            return self.balance + other
+        raise NotImplemented
+    
+    def __radd__(self, other):
+        print('__radd__ call')
+        return self+other
+r = BankAccount('Ivan', 200)
+r+12 #run comand r.__add__(12)
+12+r #run comand r.__radd__(12) #с начала Python пытаеться вызвать команду __add__ и когда это не получаеться он меняет слогаемые местами и вызывает команду __radd__
+
+#2 передача обьекта а не числа
+class BankAccount:
+    def __init__(self, name, balance):
+        print('New obj init')
+        self.name = name
+        self.balance = balance
+
+    def __add__(self, other):
+        print('__add__ calc')
+        if isinstance(other, BancAccount): 
+            return self.balance + other.balance
+        if isinstance(other, (int, float)):
+            return BankAccount(self.name, self.balance + other) #возвращаемь новый созданный обьект
+        raise NotImplemented
+t = BankAccount('Ivan', 200)
+d = t + 30 #now we able to do so. 'd' is new obj
+
+#методы сравнения
+# __eq__ == (equal)
+# __ne__ != (not equal)
+# __lt__ < (less than)
+# __le__ <= (less euqal)
+# __gt__ >
+# __ge__ >=
+
+class Rectangle:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    @property
+    def area(self):
+        return self.a * self.b
+    
+    def __eq__(self, other):
+        if isinstance(other, Rectangle):
+            return self.area == other.area
+        
+    def __lt__(self, other):
+        if isinstance(other, Rectangle):
+            return self.area < other.area
+
+    def __le__(self, other):
+        return self.__eq__(other) or self.__lt__(other)
+
+a = Rectangle(1, 2)
+b = Rectangle(1, 2)
+a == b --> True
+b > a --> True #хоть мы и не делали __gt__, Python пробует перевернуть a < b и такая функция есть
+#но нужно что бы второй аргумент тоже имел функцию a.__lt__(b).
+b != a --> False # not (b == a) , __ne__ можно не реализовывать
+b >= a --> True # a <= b 
+
+
+
+#__eq__ and __hash__
+#если переопределяем eq то нужно переопределить и hash, так как по умолчанию hesh от ссылки, а ты её переопределяем
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def __eq__(self, other):
+        return isinstance(other, Point) and self.x == other.x and self.y = other.y
+    def __hash__(self):
+        return hash((self.x, self.y))
+p1 = Point(3, 4)
+p2 = Point(3, 4)
+p3 = Point(6, 7)
+p1 == p2 --> True
+hash(p1) == hash(p2) --> True
+p1 == p3 --> False
+hash(p1) == hash(p3) -->False
+
+#__bool__
+class Point:
+    class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+    def __len__(self): #так как bool([])-->False и т.д. Bool ориентируеться по len, и парой len достаточно. Если bool не определен то он идет в len
+        return abs(self.x - self.y)
+    def __bool__(self):
+        return self.x != 0 or self.y != 0
+bool(Point(3, 4))-->True 
+bool(Point(0, 0))-->False
 
 # НАСЛЕДОВАНИЕ CLASS
 
