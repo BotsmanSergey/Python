@@ -1,4 +1,4 @@
-from typing import AsyncIterable
+from typing import AsyncIterable, Counter
 
 
 Ctrl + / #Быстро добавить комментарий
@@ -169,18 +169,22 @@ genome = 'ATTG'
 for c in genome:
     print(c)   # проход по строке
 
+#f string
+print(f'genome = {gemome}')--> genome = ATTG
+
 genome = 'ATTG'
 print(genome.count('T')) # считает сколько T в genome 
 
 s='aTGcc' p='cc'
+s.title()#all first simbol is big
 s.upper() --> 'ATGCC'
 s.lower() --> 'atgcc'
-s.count(p) --> 1 # количество не пересекающихся вхождений
-s.find(p) --> 3
+s.count(p) --> 1 # количество не пересекающихся вхождений, s.count(p, 3, 4) - 3 and 4 is position for search
+s.find(p) --> 3 #retun only first position of simbols or -1, s.find(p, 3, 5) -3 and 5 is position for seaech
 s.rfind(p)#см выше, только проверка идет справа
 s.find('A') --> -1 #  не входит
 if 'TG' in s:-->True #проверка вхождения в строку
-s.replace('c', 'C') --> 'aTGCC'
+s.replace('c', 'C') --> 'aTGCC'# s.replace ('c', 'C', 2) - max 2 first replace
 s.index("TG")-->1 #index of first вхождения or ValueError
 s.startswith("The man in black") # проверка начинается ли строка с данного набора символов, функция может принемать кортеж
 s.endswith(".png")# см. выше, только проверяет окончание строки
@@ -188,11 +192,16 @@ s.split() # разделение по пробелу или заданному �
 s.strip() # clear simbols("\t", " ")
 s.rstrip()# clear right side
 s.lstrip()# clear left side
-
+s.isalpha()# строка состоит только из букв
+s.isdigit()# проверяет состоит ли строка только из цифр
+s.rjust(10, '0' ) #делает строку равную длинне 10, а свободное место заполняет '0' или пробелами по дефолту
+s.ljust(10) # см выше, два символа для заполнения передовать нельзя
 
 s = 'agTtcAGtc'
 genome.upper().count('gt'.upper()) --> 2 # с начала поднимает s, потом поиск поднятого gt
 
+w ='Ivanov Ivon Ivanovich'
+w = ','.join.(w.split())-->'Ivanov,Ivan,Ivanovich'
 
 x = r"hello\nworld" #raw
 print(x)-->hello\nworld
@@ -1262,6 +1271,76 @@ class User:
             raise ValueError('Pass is too long, need max 12 simbols')    
         if not User.is_include_number(value):
     
+#__call__
+# '()' - оперератор вызова
+#7 видов вызываемых(callable) объектов в Python
+# 1 вызываемые функции len() abs() int() и т д
+# 2 callable method a = [1, 2, 3] a.sort()
+# 3 собственные функции def
+# 4 classes Cat()
+# 5 instance is not callable, but we might inicialising method __call__
+class Cat:
+    def __call__(self, *args, **kwargs):
+        print('may')
+bob = Car()
+print(callable(bob))-->True
+bob()--> 'may'
+# 6 method of classes
+# 7 function-generator
+def f():
+    n = 0
+    while True:
+        yield n
+        n += 1
+print(callable(f))--> True
+
+#__call__
+#избавляемся от замыкания
+class Counter:
+    def __init__(self):
+        self.counter = 0
+        self.summa = 0
+        sefl.length = 0
+    def __call__(self, *args, **kwargs):
+        self.counter += 1
+        self.summa += sum(args)
+        self.length = += len(args)
+        print(f'Наш экземпляр вызывался {self.counter} раз')
+    def averege(self):
+        return self.summa /self.length
+r = Counter()
+r(2, 4, 5, 6) # тепер можно вызавать таким образом instance
+r.average()
+#избавляемся от декорирования
+from time import perf_counter
+class Timer:
+    def __init__(self, func):
+        self.fn = func
+    def __call__(self, *args, **kwargs):
+        start = perf_counter()
+        print(f'call function {self.fn.__name__}')
+        result = self.fn(*args, **kwargs)
+        finish = pers_counter()
+        print(f'функция отработала за {finish - start}')
+        return result
+#@Timer    
+def fact(n):
+    pr = 1
+    for i in range(1, n + 1):
+        pr *= 1
+    return pr
+
+def fib(n):
+    if n<=2:
+        return 1
+    return fib(n-1) + fib(n-2)
+
+fact = Timer(fact) #либо можно было поставить декоратор @Timer
+fact(7)-->5040
+
+fib = Timer(fib)
+fib(20)
+Timer(fib)(7) #декорируем и сразу вызываем с аргументом, сама фунция фиб здесь не задекорирована, задекорирован только ее вызов
 
 # VARIABLE OF CLASS
 
