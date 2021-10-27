@@ -1,3 +1,5 @@
+from _typeshed import SupportsLenAndGetItem
+from collections import namedtuple
 from typing import AsyncIterable, Counter
 
 
@@ -943,7 +945,11 @@ MyClass.drive() --> Go Go Go #скобки это оператор вызова
 MyClass.drive-->#show link
 getattr(MyClass, 'drive')-->#show link
 getattr(MyClass, 'drive')()-->Go Go Go
-hasattr(MyClass, 'name')-->True/False
+hasattr(MyClass, 'name')-->True/False #show есть ли такой attribute(var or method) in MyClass
+
+class A:
+    if hasattr(self, '__init__'):
+        self.__init__()
 
 # OBJECT OF CLASS
 
@@ -1271,78 +1277,10 @@ class User:
             raise ValueError('Pass is too long, need max 12 simbols')    
         if not User.is_include_number(value):
     
-#__call__
-# '()' - оперератор вызова
-#7 видов вызываемых(callable) объектов в Python
-# 1 вызываемые функции len() abs() int() и т д
-# 2 callable method a = [1, 2, 3] a.sort()
-# 3 собственные функции def
-# 4 classes Cat()
-# 5 instance is not callable, but we might inicialising method __call__
-class Cat:
-    def __call__(self, *args, **kwargs):
-        print('may')
-bob = Car()
-print(callable(bob))-->True
-bob()--> 'may'
-# 6 method of classes
-# 7 function-generator
-def f():
-    n = 0
-    while True:
-        yield n
-        n += 1
-print(callable(f))--> True
 
-#__call__
-#избавляемся от замыкания
-class Counter:
-    def __init__(self):
-        self.counter = 0
-        self.summa = 0
-        sefl.length = 0
-    def __call__(self, *args, **kwargs):
-        self.counter += 1
-        self.summa += sum(args)
-        self.length = += len(args)
-        print(f'Наш экземпляр вызывался {self.counter} раз')
-    def averege(self):
-        return self.summa /self.length
-r = Counter()
-r(2, 4, 5, 6) # тепер можно вызавать таким образом instance
-r.average()
-#избавляемся от декорирования
-from time import perf_counter
-class Timer:
-    def __init__(self, func):
-        self.fn = func
-    def __call__(self, *args, **kwargs):
-        start = perf_counter()
-        print(f'call function {self.fn.__name__}')
-        result = self.fn(*args, **kwargs)
-        finish = pers_counter()
-        print(f'функция отработала за {finish - start}')
-        return result
-#@Timer    
-def fact(n):
-    pr = 1
-    for i in range(1, n + 1):
-        pr *= 1
-    return pr
 
-def fib(n):
-    if n<=2:
-        return 1
-    return fib(n-1) + fib(n-2)
 
-fact = Timer(fact) #либо можно было поставить декоратор @Timer
-fact(7)-->5040
-
-fib = Timer(fib)
-fib(20)
-Timer(fib)(7) #декорируем и сразу вызываем с аргументом, сама фунция фиб здесь не задекорирована, задекорирован только ее вызов
-
-# VARIABLE OF CLASS
+# extend
 
 class Song:
     tags = []
@@ -1358,6 +1296,7 @@ song2 = Song ("Neuromonah", "Holodno")
 song2.add_tags("Russian", "Drum")
 print(song2.tags) --> "Americana" "Country" "Russian" "Drum" # все добавилось в tags = [] так как не объявлен атрибут self.tegs и интерпритатор ищет его в классе
 таково бы не случилось если ракоментировать self.tags = [] и закоментировать tags = []
+
 #MAGIC METHOD
 #__repr__ and __str__
 class Lion():
@@ -1496,7 +1435,175 @@ class Point:
 bool(Point(3, 4))-->True 
 bool(Point(0, 0))-->False
 
-# НАСЛЕДОВАНИЕ CLASS
+#__call__
+# '()' - оперератор вызова
+#7 видов вызываемых(callable) объектов в Python
+# 1 вызываемые функции len() abs() int() и т д
+# 2 callable method a = [1, 2, 3] a.sort()
+# 3 собственные функции def
+# 4 classes Cat()
+# 5 instance is not callable, but we might inicialising method __call__
+class Cat:
+    def __call__(self, *args, **kwargs):
+        print('may')
+bob = Car()
+print(callable(bob))-->True
+bob()--> 'may'
+# 6 method of classes
+# 7 function-generator
+def f():
+    n = 0
+    while True:
+        yield n
+        n += 1
+print(callable(f))--> True
+
+#__call__
+#избавляемся от замыкания
+class Counter:
+    def __init__(self):
+        self.counter = 0
+        self.summa = 0
+        sefl.length = 0
+    def __call__(self, *args, **kwargs):
+        self.counter += 1
+        self.summa += sum(args)
+        self.length = += len(args)
+        print(f'Наш экземпляр вызывался {self.counter} раз')
+    def averege(self):
+        return self.summa /self.length
+r = Counter()
+r(2, 4, 5, 6) # тепер можно вызавать таким образом instance
+r.average()
+#избавляемся от декорирования
+from time import perf_counter
+class Timer:
+    def __init__(self, func):
+        self.fn = func
+    def __call__(self, *args, **kwargs):
+        start = perf_counter()
+        print(f'call function {self.fn.__name__}')
+        result = self.fn(*args, **kwargs)
+        finish = pers_counter()
+        print(f'функция отработала за {finish - start}')
+        return result
+#@Timer    
+def fact(n):
+    pr = 1
+    for i in range(1, n + 1):
+        pr *= 1
+    return pr
+
+def fib(n):
+    if n<=2:
+        return 1
+    return fib(n-1) + fib(n-2)
+
+fact = Timer(fact) #либо можно было поставить декоратор @Timer
+fact(7)-->5040
+
+fib = Timer(fib)
+fib(20)
+Timer(fib)(7) #декорируем и сразу вызываем с аргументом, сама фунция фиб здесь не задекорирована, задекорирован только ее вызов
+
+#полиморфизм - это когда методы и атрибуты у разных классов называються одинакого и их можно прогонять через цикл и так далее
+
+#__getitem__,__setitem__ and __delitem__ - настройка оператора '[]'
+class Vector:
+    def __init__(self, *args):
+        self.values = args
+    def __repr__(self):
+        return str(self.values)
+    def __getitem__(self, item):
+        if 0<=item<len(self.values):
+            return self.values[item]
+        else:
+            raise IndexError('Indeks out of range in our collection')
+    def __setitem__(self, key, value):
+        if 0<=key<len(self.values):
+            self.value[key] = value
+        else:
+            raise IndexError('Indeks out of range in our collection')
+    def __delitem__(self, item):
+        if 0<=key<len(self.values):
+            del self.value[key]
+        else:
+            raise IndexError('Indeks out of range in our collection')
+v6 = Vector(5, 34, 43)
+v6[2]-->43
+v6[1] = 3
+v6-->[5,3,43]
+del v6[0]
+v6-->[3, 43]
+
+#__iter__ and __next__
+a = [1, 2, 3]
+b = iter(a) #сказали какой объект итерировать #same as b = a.__iter__(a)
+next(b)-->1 #same as b.__next__()
+next(b)-->2
+next(b)-->3
+next(b)-->StopIteration #Пройтись по объекту можно только один раз
+
+#1
+class Student:
+    def __init__(self, name, surname, marks):
+        self.name = name
+        self.surname = surname
+        self.marks = marks
+    def __getitem__(self, item): #не основной способ реализации итерации(не работает если есть __iter__), (не рекомендуется)
+        return self.name[item]
+    def __iter__(self):
+        print('call iter student')
+        self.index = 0 #нужно для next
+        return self # полная итерация и с ней надо реализовать __next__                                                
+        #return iter(self.name) - если вставить это то у строки реализован итер будет за счет 'str' и метод next не нужен
+    def __next__(self):
+        if self.index >= len(self.name):#проверяем что индекс не вышел за границы
+            raise StopIteration
+        letter = self.name[self.index] #если вставить сразу в return то будет пропущенна первый элемент
+        self.index += 1
+        return letter
+igor = Student('Igor', 'Nikolaev', [3, 4, 5, 6, 7])
+for i igor:
+    print(i)
+#2
+class Marks:
+    def __init__(self, values):
+        self.value = values
+    def __iter__(self):
+        print('call iter marks')
+        self.index = 0
+        return self
+    def __next__(self):
+        print('call next marks')
+        if self.index >= len(self.value):
+            raise StopIteration
+        letter = self.value[self.index] 
+        self.index += 1
+        return letter
+class Student:
+    def __init__(self, name, surname, marks):
+        self.name = name
+        self.surname = surname
+        self.marks = marks
+    def __iter__(self):
+        print('call iter student')
+        self.index = 0 #нужно для next, при каждом новом вызове приходит в изначальное положение
+        return iter(self.marks)                                                
+    def __next__(self):
+        print('call next students')
+        if self.index >= len(self.name):#проверяем что индекс не вышел за границы
+            raise StopIteration
+        letter = self.name[self.index] #если вставить сразу в return то будет пропущенна первый элемент
+        self.index += 1
+        return letter
+m = Marks([3, 4, 5, 6, 7])
+igor = Student('Igor', 'Nikolaev', m)
+for i in igor:
+    print(i)
+
+# НАСЛЕДОВАНИЕ(EXTEND) CLASS
+# extend(расширяет) иначе говоря class a(b) - класс b расширяет класс а
 
 class DerivedClassName (Base1, Base2, Base3): # Base1..3 классы от которых идет наследование
 
@@ -1528,9 +1635,61 @@ isinstance(x, A) --> True # isinstance проверяет является ли 
 isinstance(x, B) --> True
 isinstance(x, object) --> True
 isinstance(x, str) --> False
-print(A.mro()) # от method resolution order, показывает порядок перебора классов в множественном наследовании 
+print(A.mro()) # от method resolution order, показывает порядок перебора классов в множественном наследовании
 
+#Расширение стандартных классов
+#так как все наследуеться(extend) от object то если dir(object) то можно увидеть все его методы, а значит они все есть и у всех subclasses тоесть у всех
+class NewInt(int):
+    def repeat(self, n=2):
+        return int(str(self)*n)
+    def to_bin(self):
+        return int(bin(self)[2:]) #bin is function for transcript in to binary
+print(NewInt())
+a = NewInt(9)
+print(a.repeat())  # печатает число 99
+d = NewInt(a + 5)
+print(d.repeat(3)) # печатает число 141414
+b = NewInt(NewInt(7) * NewInt(5))
+print(b.repeat())
+print(b.to_bin()) # печатает 100011 - двоичное представление числа 35
 
+#Overriding
+class Person:
+    def __init__(self, name):
+        print('init Person')
+        self.name = name
+    def breathe(self):
+        print('Person breathe')
+    def walk(self):
+        print('Person walk')
+    def combo(self):
+        self.breathe()
+        self.walk()
+class Doctor(Person):
+    def breathe(self):
+        print('Doctor breathe')
+    def __str__(self):
+        return f"Doctor {self.name}"
+p = Person('Adam')-->init Person
+d = Doctor('John')-->init Person #если метода нет в классе, то поиск идет в родительском
+p.combo()-->Person breathe \n Person walk
+d.combo()-->Doctor breathe \n Person walk #так как метода combo в subclass нет он ищет в родительском, но сам метод combo ищет с начала методы в основном класе хоть и сам находиться с родительском
+
+#Extending расширение класса
+class Person:
+    def combo(self):
+        if hasattr(self, 'breathe')# for Person is not running
+            self.breathe()
+class Doctor(Person):
+    def breathe(self): #method breathe extending(расширяет) class Doctor
+        print('Doctor breathe')
+p = Person('Adam')
+d = Doctor('John')
+p.combo()
+d.combo()
+
+#supper
+#superclass - родительский класс
 class EvenLengthMixin:
     def even_length(self):
         return len(self) % 2 == 0
@@ -1543,6 +1702,47 @@ ml = MyList([1, 2, 4, 17])
 z = ml.pop() --> Last value is 17
 print(z) --> 17
 print(ml) --> [1, 2, 4]
+
+#2 избавляемся от дублирования
+class Person():
+    def __init__(self, name, surname):
+        self.name = name
+        self.surname = surname
+        self.age = 50
+class Doctor(Person):
+    def __init__(self, name, surname, age):
+        super().__init__(name, surname) #should running method supperclass first, becouse attr maight be override
+        self.age = age
+
+#Multiple extend (множественное наследование), __mpo__
+class Doctor:
+    def graduate(self):
+        print('Ура, я отучился на доктора')
+    def can_build(self):
+        print('Я доктор, я тоже умею строить, но не очень')       
+class Builder:
+    def graduate(self):
+        print('Ура, я отучился на строителя')
+    def can_build(self):
+        print('Я строитель, я умею строить')   
+class Person(Doctor, Builder): #first method search in main class after первый по порядку наследования
+    def graduate(self):
+        print('Посмотрим, кем я стал')
+        super().graduate()
+        Builder.graduate(self) # так можно обратиться к методу не попавшему в наследование
+s = Person()
+s.graduate()--> Посмотрим, кем я стал/Ура, я отучился на доктора/Ура, я отучился на строителя #
+print(Person.__mro__)--> (<class '__main__.Person'>, <class '__main__.Doctor'>, <class '__main__.Builder'>, <class 'object'>) #__mpo__ - show порядок inheritance (наследования)
+
+#Add atrib to instance
+class Doctor_proto:
+    def __init__(self, x):
+        self.x = x
+x = Doctor_proto(5)
+x.q = 8
+print(x.q)-->8
+
+#slots - ограничение на add attrib
 
 
 # EXCEPTIONS
@@ -2322,3 +2522,24 @@ root = etree.fromstring(res.text, parset)
 
 for element in root.iter("a"):
     print(element, element.attrib)
+
+#FOR СОБЕСЕДОВАНИЯ
+def something():
+    try:
+        return print(1)
+    finally:
+        return print(2)
+somothing()-->2
+
+#2
+def something():
+    yield print(1)
+    yield print(2)
+somothing()-->ничего не выведет
+for i in something():
+    print(i)-->1\n None \n 2\n None
+#3
+1 + 1/3 + 2/3 = 1,9999 # к 1 + 0,33333 + 0,666666
+1/3 + 2/3 + 1 = 2# 3/3 + 1
+#4
+await asinh
