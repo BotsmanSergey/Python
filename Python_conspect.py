@@ -32,6 +32,28 @@ x y or and not
 0 1 1  0   1
 1 0 1  0   0
 1 1 1  1   0
+
+# БИРТОВЫЕ ОПЕРАТОРЫ
+# Бинарное И (&)
+# Проводит побитовую операцию and над двумя значением. Здесь бинарная 2 — это 10, а 3 — 11. Результатом побитового and является 10 — бинарная 2. Побитовое and над 011(3) и 100(4) выдает результат 000(0).
+print(2&3)-->2
+print(3&4)-->0
+# Бинарное ИЛИ (|)
+# Проводит побитовую операцию or на двух значениях. Здесь or для 10(2) и 11(3) возвращает 11(3).
+print(2|3)-->3
+# Бинарное ИЛИ НЕТ (^)
+# Проводит побитовую операцию xor (исключающее или) на двух значениях. Здесь результатом ИЛИ НЕ для 10(2) и 11(3) будет 01(1).
+print(2^3)-->1
+# Инвертирующий оператор (~)
+# Он возвращает инвертированные двоичные числа. Другими словами, переворачивает биты. Битовая 2 — это 00000010. Ее инвертированная версия — 11111101. Это бинарная -3. Поэтому результат -3. Похожим образом ~1 равняется -2
+print(~-3)-->2
+# Бинарный сдвиг влево (<<)
+# Он сдвигает значение левого операнда на позицию, которая указана справа. Так, бинарная 2 — это 10. 2 << 2 сдвинет значение на две позиции влево и выйдет 1000 — это бинарная 8
+print(2<<2)-->8
+# Бинарный сдвиг вправо (>>)
+print(3>>2)-->0
+print(3>>1)-->1
+
 # по порядку вычисления not and or
 
 10 > 2 and 10 > 9         # True
@@ -1735,15 +1757,53 @@ s.graduate()--> Посмотрим, кем я стал/Ура, я отучилс
 print(Person.__mro__)--> (<class '__main__.Person'>, <class '__main__.Doctor'>, <class '__main__.Builder'>, <class 'object'>) #__mpo__ - show порядок inheritance (наследования)
 
 #Add atrib to instance
-class Doctor_proto:
+class Doc:
     def __init__(self, x):
         self.x = x
-x = Doctor_proto(5)
+x = Doc(5)
 x.q = 8
 print(x.q)-->8
 
-#slots - ограничение на add attrib
+#__slots__ - ограничение на add attrib, __sizeof__ - show size
+#operation with slots run more faster and take less memory
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+class Point_slots:
+    __slots__ = ('x', 'y') #перечисляем что можно add to instance
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+s = Point(3, 4)
+print(s.__sizeof__(), s.__dict__.__sizeof__())_--> 16 52 #show size instance and his dict
+d = Point_slots(3, 4)
+print(d.__sizeof__()) --> 16 # instance with slots don't have a dict
+d.x --> 3 #get
+d.x = 5 #set
+del d.x #delete
+d.x = 6 #add
+d.q --> Error #for other attrib
 
+#Slots property inheritance
+class Restangle:
+    __slots__ = '__weidth', 'heigth'
+    def __init__(self, a, b):        
+        self.weidth = a #так как мы обращаемся к prorerty которое задекорировано вызывается width.setter, тоесть на прямую к __width мы не обращаемся
+        self.heigth = b
+    @property    
+    def weidth(self):
+        return self.__weidth
+    @weidth.setter
+    def weidth(self, value):
+        print('setter called')
+        self.__weidth = value
+class Square(Restangle): 
+    __slots__ = 'color' # в потомке достаточно разрешить только новые переменные
+    #__slots__ = tuple() #для просто запрета добовления всех других переменных
+    def __init__(self, a, b, color):
+        super().__init__(a, b)
+        self.color = color
 
 # EXCEPTIONS
 
@@ -1757,7 +1817,58 @@ except ZeroDivisionError:
     print("ZeroDivisionError :-(") # we can make several exception 
 
 print ("I can natch")
-# if in function have error, then function return - None
+# if i:n function have error, then function return - None
+
+
+#catch all exception
+#1
+try:
+    1/0
+except:
+    print('Error')
+#2
+try:
+    1/0
+finally:
+    print('end')
+
+#else and try
+try:
+    1/0
+except:
+    print('Error')
+else: print('None error') #run if don't have exception
+finally:
+    print('end')
+
+#alias for except
+try:
+    1/0
+except ZeroDivisionError as ERR: #ERR our alias
+    print('Error')
+#2
+try:
+    [1, 2, 3][15]
+except (KeyError, IndexError) as ERR: #one alias for two exception
+    print(f'Logging error: {ERR}, {repr(ERR)}') --> Logging error: list index out of range, IndexError('list index out of range')
+#3
+try:
+    [1, 2, 3][15]
+except (KeyError, IndexError) as ERR: #one alias for two exception
+    print(f'Logging error: {ERR}, {repr(ERR)}')
+    raise TypeError('ошибка типа') from None #показывате что ошибки не совпадают, но from None делает так что показываеться только raise. По умолчанию from ERR.
+#4
+try:
+    raise ValueError('ошибка значания') #вызываем ошибку
+except ValueError as first:
+    try:#пытаемся обработать ошибку
+        raise TypeError('ошибка типа')
+    except TypeError as second:
+        raise Exception('Big Exception') from <None, first, second> #Nono - show only last raise, first - show all rise, second - show second and last raise
+
+#exception args
+a = TypeError(1, 2, 3, 'ERROR')
+print(a.args) --> 1, 2, 3, 'ERROR'
 
 
 def f(x, y):
@@ -1771,11 +1882,7 @@ def f(x, y):
         print("finally")
 print(f(5, 0))
 
-
-except:   #cath every errors
-    print("Error :-(")
-
-# MY EXCEPTIONS
+#raise 
 
 def greet(name):
     if name[0].isupper():
@@ -1804,7 +1911,7 @@ while True:
     else:
         break # if don't catch break
 
-
+#MY EXCEPTION
 # if we wont see our Error_name, then we create own Error_class
 class BadName(Exception): # Exception is main class all exceptions
     pass
@@ -1816,9 +1923,49 @@ def great(name):
         raise BadName(name + " is inappropriate name")
 
 print(great("Anton"))
-print(great("anton"))--> BadName : antom is anapropriate name"
+print(great("anton"))--> BadName : antom is anapropriate name
+#2 __init__
+class MyException(Exception):
+    def __init__(self, *args):
+        if args:
+            self.message = args[0]
+        else: self.message = None
+    def __str__(self):
+        print('str called')
+        if self.message:
+            return f'MyException ({self.message})'
+        else: return 'MyException is empty'
+raise MyException('hello', 1, 2, 3) --> MyException (hello)
 
-
+# how catching errors
+#1
+def second():
+    print('second start')
+    1/0
+    print('second finish') #this line won't be printing
+def first():
+    print('first start')
+    try:
+        second()
+    except ZeroDivisionError:
+        print('handing first')
+    print('first second')
+print('main')
+#2
+def second():
+    print('second start')
+    try:
+        1/0
+    except ZeroDivisionError:
+        print('handing second')
+    print('second finish') #this line will be printing
+def first():
+    print('first start')
+    second()
+    except ZeroDivisionError:
+        print('handing first')
+    print('first second')
+print('main')
 
 # IMPORT
 (2.2.1)
@@ -1996,8 +2143,28 @@ for pair in MyList([1, 2, 3, 4]):
 # именно с этим новым экземпляром и никак не повлияет на счетчики ранее созданных экземпляров.
 
 # GENERATOR
-# yield - это отложенное исполнение при этом не требующее next и iter
+# Генератор списка
+a = [i**2 for i in range(1, 6)]
+print(a)-->[1, 4, 9, 16, 25]#в памяти записан весь список
 
+a = [i**2 for i in range(1, 100000000000000)]
+print(a)-->Error #в память не влезает весь список
+# Выражение-гениратор
+a = (i**2 for i in range(1, 100000000000000))
+print(a)-->generator #в памяти список не хранится
+for i in a:
+    print(i) -->1, 2, ... 100000000 #будет все выведено так как в памяти хранится только next element
+#минус в том что пройтись можно только один раз, не применить len(), не применить индекс
+
+#iter - так работает выражение-генератор
+s = [1, 2, 3]
+d = iter(s)
+next(d)
+...
+next(d)
+
+# yield - это отложенное исполнение при этом не требующее next и iter
+#1
 def semple_gen():
     print(1)
     yield 1
@@ -2006,7 +2173,6 @@ def semple_gen():
     # будет брощена StopIteration: No more elements
     yield 2
     print (3)
-
 gen = simple_gen()
 x = next(gen)
 print(x) --> 1
@@ -2014,11 +2180,8 @@ y = next(gen)
 print(y) --> 2
 z = next(gen) --> StopIteration
 
-
-
-
+#2
 from random import random
-
 def random_generator(k):
     for i in range(k):
         yeild random()
@@ -2026,7 +2189,24 @@ gen = random_generator(3)
 for i in gen:
     print(i)
 
+#3
+def genf():
+    for i in ['a', 'b', 'c']:
+        yield i
+        print('s')
+g = genf()
+print(next(g))-->a
+print(next(g))-->s \n b 
+print(next(g))-->s \n с
 
+#4
+def fact(n):
+    pr = 1
+    for i in range (1, 1+n):
+        pr = pr*i
+        yield pr
+for i in fact(10):
+    print(i, end= ' ')
 
 
 # MODULE OS
@@ -2543,3 +2723,37 @@ for i in something():
 1/3 + 2/3 + 1 = 2# 3/3 + 1
 #4
 await asinh
+
+
+#ALGORITM
+#fibonachi
+def fib3(n):
+    assert n >= 0 #Если условие утверждения assert истинно, то ничего не происходит и ваша программа продолжает выпол­няться как обычно. Но если же вычисление условия дает результат ложно, то вызывается исключение AssertionError
+    f0, f1 = 0, 1
+    for i in range(n -1):
+        f0, f1 = f1, f1+f0
+    return f1
+fib3(8)-->21
+
+#измерение времени работы
+import time
+def timed(f, *args, n_iter=100):
+    acc = float("inf") #'inf' is plus infinity , '-inf' is minus infinity
+    for i in range(n_iter):
+        t0 = time.perf_counter()
+        f(*args):
+        t1 = time.perf_counter()
+        acc = min(acc, t1-t0)
+    return acc
+timed(fib3, 800)
+
+#построение графика
+from matplotlib import pyplot as plt
+def compare(fs, args):
+    for f in fs:
+        plt.plot(args, [timed(f, args) for arg in args], label=f.__name__)
+    plt.legand()
+    plt.grid(True)
+fib1 = old_fib1
+compare([fib1, fib3], list(range(20)))
+
