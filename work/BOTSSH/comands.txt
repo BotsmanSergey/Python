@@ -1,0 +1,3 @@
+whoami
+sudo -s bash -c 'apt install sshpass'
+sudo -s bash -c 'sshpass -p "userdata" scp userdata@10.3.6.32:/var/spool/userdata/share/SPS.desktop /home/*@*/Desktops/Desktop1/'

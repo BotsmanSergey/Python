@@ -2,8 +2,6 @@ import re, os
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
-
-
 with open(os.path.join(current_dir,'trash.txt'), 'r') as trash:
     trash = trash.read()
     pattern = r"(10\.(3|107)\.\d{1,4}\.\d{1,4})"    
