@@ -2757,3 +2757,13 @@ def compare(fs, args):
 fib1 = old_fib1
 compare([fib1, fib3], list(range(20)))
 
+#Создание виртуальных сред Creating Virtual Environments https://docs.python.org/3/tutorial/venv.html
+python3 -m venv tutorial-env #venv - Модуль, используемый для создания и управления виртуальными средами
+#Создав виртуальную среду, вы можете активировать ее.
+#В Windows запустите:
+tutorial-env\Scripts\activate.bat
+#В Unix или MacOS запустите:
+source tutorial-env/bin/activate
+
+pip freeze > requirements.txt #создание файла версий пакета
+

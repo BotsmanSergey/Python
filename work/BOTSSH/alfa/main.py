@@ -79,7 +79,6 @@ with open(os.path.join(current_dir,'commands.txt'),'rb') as commands_file:
                 if line == '':
                     continue
                 commands.append(line)
-print(commands)
 
 
 
