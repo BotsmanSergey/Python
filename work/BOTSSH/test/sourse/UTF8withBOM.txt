@@ -1,0 +1,5 @@
+﻿echo 1
+echo привет
+echo 'gg'
+cmd2
+sudo apt install sshpass
