@@ -1,4 +1,4 @@
-import threading, paramiko, time, getpass, os
+import threading, paramiko, time, getpass, os, csv
 
 strdata=''
 fulldata=''
@@ -94,6 +94,7 @@ sshServer = "10.3.136.141"
 sshUsername = input('ВВЕДИТЕ ЛОГИН: ')
 sshPassword = getpass.getpass('ВВЕДИТЕ ПАРОЛЬ: ')
 short_pause = int(input('ВВЕДИТЕ ВРЕМЯ ОЖИДАНИЯ МЕЖДУ КОММАНДАМИ В СЕКУНДАХ: '))
+ 
 
 
 
@@ -111,16 +112,25 @@ for sshServer in list_ip:
         
         with open(os.path.join(current_dir,'list_ip_good.txt'), 'a') as list_ip_good_file:
             list_ip_good_file.write(str(sshServer)+'\n')
+        with open(os.path.join(current_dir,'log.csv'), 'a', newline='', encoding='utf-8') as log_file:
+            writer = csv.writer(log_file)
+            writer.writerow([sshServer, time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()), 'good'])
 
 
     except TimeoutError:
         print('не получен нужный отклик, или было разорвано уже установленное соединение')
         with open(os.path.join(current_dir,'list_ip_bad.txt'), 'a') as list_ip_good_bad:
             list_ip_good_bad.write(str(sshServer)+ '\n')
+        with open(os.path.join(current_dir,'log.csv'), 'a', newline='', encoding='utf-8') as log_file:
+            writer = csv.writer(log_file)
+            writer.writerow([sshServer, time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()), "TimeoutError"])
     except paramiko.AuthenticationException:
         print('Authentication failed')
         with open(os.path.join(current_dir,'list_ip_bad.txt'), 'a') as list_ip_good_bad:
             list_ip_good_bad.write(str(sshServer)+ '\n')
+        with open(os.path.join(current_dir,'log.csv'), 'a', newline='', encoding='utf-8') as log_file:
+            writer = csv.writer(log_file)
+            writer.writerow([sshServer, time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()), 'AuthenticationException'])
     finally: 
         try:
             connection.close_connection()
