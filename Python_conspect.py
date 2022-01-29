@@ -2766,4 +2766,17 @@ tutorial-env\Scripts\activate.bat
 source tutorial-env/bin/activate
 
 pip freeze > requirements.txt #создание файла версий пакета
+pip wheel -w wheels -r requirements.txt #Это загрузит и соберет пакеты *.whl
 
+
+
+На старой машине запустите pip freeze -l > packages.txt в virtualenv.
+Переместите packages.txt на новую машину.
+Создайте новый virtualenv на новой машине и введите его.
+Установите пакеты из txt файла: pip install -r packages.txt.
+РЕДАКТИРОВАТЬ: Если у вас нет доступа в Интернет на втором компьютере, вы можете продолжить с шага 2 с помощью:
+
+Запустите pip wheel -w wheels -r packages.txt в venv на первой машине. Это загрузит и соберет пакеты *.whl для всех необходимых вам пакетов. Обратите внимание: предполагается, что обе машины похожи по ОС и архитектуре!
+Скопируйте файлы колес на новую машину.
+Создайте новый virtualenv на новой машине и введите его.
+Установите пакеты с колес в новый virtualenv: pip install *.whl
