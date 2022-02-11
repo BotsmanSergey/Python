@@ -7,6 +7,7 @@ command = 'pwd'
 
 
 telnet = telnetlib.Telnet(host)
+#print(telnet.read_until(b'key'))
 print(1)
 time.sleep(2)
 all_result = telnet.read_very_eager().decode('utf-8')

@@ -2,7 +2,7 @@ from _typeshed import SupportsLenAndGetItem
 from collections import namedtuple
 from typing import AsyncIterable, Counter
 
-
+Ctrl + ` #open terminal
 Ctrl + / #Быстро добавить комментарий
 Ctrl + G #Перейти к строке под номером
 Alt + ↑ / ↓ #Поменять строку местами с соседними
@@ -2757,19 +2757,27 @@ def compare(fs, args):
 fib1 = old_fib1
 compare([fib1, fib3], list(range(20)))
 
+
+
 #Создание виртуальных сред Creating Virtual Environments https://docs.python.org/3/tutorial/venv.html
 python3 -m venv tutorial-env #venv - Модуль, используемый для создания и управления виртуальными средами
 #Создав виртуальную среду, вы можете активировать ее.
 #В Windows запустите:
 tutorial-env\Scripts\activate.bat
+#В Windows wits PowerShell
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted #разрешает выполнение скриптов PowerShell, запускать от Админа
+tutorial-env\Scripts\activate.ps1
 #В Unix или MacOS запустите:
 source tutorial-env/bin/activate
+#далее устанавливаем необходимые библиотеки
+python -m pip install --upgrade pip
+python -m pip install django
+>>> import django #или python -m django --version
+>>> print(django.get_version())#узнать версию Django
 
 pip freeze > requirements.txt #создание файла версий пакета
 pip wheel -w wheels -r requirements.txt #Это загрузит и соберет пакеты *.whl
-
-
-
+#wheels #загрузка пакетов установки whl
 На старой машине запустите pip freeze -l > packages.txt в virtualenv.
 Переместите packages.txt на новую машину.
 Создайте новый virtualenv на новой машине и введите его.
