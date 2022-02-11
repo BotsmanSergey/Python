@@ -26,3 +26,8 @@ while 1:
             print(serialString.decode("Ascii"))
         except:
             pass
+
+#for linux
+my_serial = serial.Serial('/dev/ttyS1', 115200)
+my_serial.write(b'command_1')
+my_serial.close()
