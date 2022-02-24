@@ -2788,3 +2788,50 @@ pip wheel -w wheels -r requirements.txt #Это загрузит и собере
 Скопируйте файлы колес на новую машину.
 Создайте новый virtualenv на новой машине и введите его.
 Установите пакеты с колес в новый virtualenv: pip install *.whl
+
+
+#POSTGRESQL
+#Доступ к PostgreSQL по сети, правила файерволла
+netsh advfirewall firewall add rule name="Postgre Port" dir=in action=allow protocol=TCP localport=5432 #cmd
+New-NetFirewallRule -Name 'POSTGRESQL-In-TCP' -DisplayName 'PostgreSQL (TCP-In)' -Direction Inbound -Enabled True -Protocol TCP -LocalPort 5432 #powershell
+CD C:\Program Files\PostgreSQL\11\bin #все запускается из данной папки
+#для powershell все комманды начинаются с ".\"
+psql –V # show Version
+createdb -U postgres testdb #где postgres суперпользователь, testdb новая база данных
+Psql -U postgres –l #Проверить список активных баз
+createuser –U postgres operator #где operator -имя нового пользователя
+psql –U postgres #запуск итерактивной оболочки
+ALTER ROLE operator SUPERUSER CREATEROLE CREATEDB #предоставление суперпользователя для operator
+\du # show all superuser
+CREATE DATABASE avecoder; #create db, don't foget ";"
+\l # show all database
+\c avecoder # connet to db
+CREATE TABLE table_name (Column_name + data_type + constraints (if any)) #create table
+CREATE TABLE employee ( id BIGSERIAL, #BIGSERIAL - самоувеличивающееся значение
+first_name VARCHAR (50), #VARCHAR - digits and characters, 50 - количество сиволов
+last_name VARCHAR (50),
+gender VARCHAR (6),
+email VARCHAR (150),
+date_of_birth DATE);
+\d #show tables list (when we in db)
+#we see our table and table_id_seq - последовательность созданная BiGSERIAL 
+\d table_name #show table
+DROP TABLE table_name; #delete table
+CREATE TABLE employee ( id BIGSERIAL NOT NULL PRIMARY KEY, first_name VARCHAR (50) NOT NULL, last_name VARCHAR (50) NOT NULL, gender VARCHAR (6) NOT NULL, email VARCHAR (150), date_of_birth DATE NOT NULL); #NOT NULL - не может быть пустым
+INSERT INTO employee (first_name, last_name, gender, email, date_of_birth) VALUES ('John', 'Doe', 'MALE', 'Jd@mail.com', '2000-01-01'); #insert table
+\dt #show quantity of insert
+# https://mockaroo.com/ - site with random data
+\i C:/Directory/file.sql #impor to table
+SELECT * FROM table_name #show table with data
+SELECT first_name FROM table_name #show all first_name
+SELECT first_name, last_name FROM table_name
+SELECT FROM table_name #show quanitity rows
+SELECT * FROM table_name ORDER BY country_of_birth ASC #sort by country_ по возрастанию
+SELECT * FROM table_name ORDER BY country_of_birth ASC #sort by в обратном порядке
+SELECT DISTINCT country_of_birth FROM table_name ORDER BY country_of_birth #sort without repeat
+SELECT * FROM table_name WHERE gender = 'Female' #show only Femele
+SELECT * FROM table_name WHERE gender = 'Female' and country_of_birth = 'Argentina'
+SELECT * FROM table_name WHERE gender = 'Female' and (country_of_birth = 'Argentina' or country_of_birth = 'Poland')
+SELECT * FROM table_name LIMIT 20 #show only 20 first rows
+SELECT * FROM table_name OFFSER 5 LIMIT 20 #show only 20 first rows from 5-th rows
+SELECT * FROM table_name OFFSER 5 FETCH FIRST 20 ROW ONLY #same as
