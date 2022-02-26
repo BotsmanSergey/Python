@@ -1,5 +1,6 @@
 from _typeshed import SupportsLenAndGetItem
 from collections import namedtuple
+from re import L
 from typing import AsyncIterable, Counter
 
 Ctrl + ` #open terminal
@@ -2817,7 +2818,7 @@ date_of_birth DATE);
 #we see our table and table_id_seq - последовательность созданная BiGSERIAL 
 \d table_name #show table
 DROP TABLE table_name; #delete table
-CREATE TABLE employee ( id BIGSERIAL NOT NULL PRIMARY KEY, first_name VARCHAR (50) NOT NULL, last_name VARCHAR (50) NOT NULL, gender VARCHAR (6) NOT NULL, email VARCHAR (150), date_of_birth DATE NOT NULL); #NOT NULL - не может быть пустым
+CREATE TABLE employee ( id BIGSERIAL NOT NULL PRIMARY KEY, first_name VARCHAR (50) NOT NULL, last_name VARCHAR (50) NOT NULL, gender VARCHAR (6) NOT NULL, email VARCHAR (150), date_of_birth DATE NOT NULL); #NOT NULL - не может быть пустым, PRIMARY KEY - число уникольно и добавить такоеже в таблицу не возможно
 INSERT INTO employee (first_name, last_name, gender, email, date_of_birth) VALUES ('John', 'Doe', 'MALE', 'Jd@mail.com', '2000-01-01'); #insert table
 \dt #show quantity of insert
 # https://mockaroo.com/ - site with random data
@@ -2827,11 +2828,44 @@ SELECT first_name FROM table_name #show all first_name
 SELECT first_name, last_name FROM table_name
 SELECT FROM table_name #show quanitity rows
 SELECT * FROM table_name ORDER BY country_of_birth ASC #sort by country_ по возрастанию
-SELECT * FROM table_name ORDER BY country_of_birth ASC #sort by в обратном порядке
+SELECT * FROM table_name ORDER BY country_of_birth DESC #sort by в обратном порядке
 SELECT DISTINCT country_of_birth FROM table_name ORDER BY country_of_birth #sort without repeat
 SELECT * FROM table_name WHERE gender = 'Female' #show only Femele
 SELECT * FROM table_name WHERE gender = 'Female' and country_of_birth = 'Argentina'
 SELECT * FROM table_name WHERE gender = 'Female' and (country_of_birth = 'Argentina' or country_of_birth = 'Poland')
+SELECT * FROM table_name WHERE country_of_birth IN ('China', 'Argentina') #IN same as '(... or ...)'
+SELECT * FROM table_name WHERE date_of_bitrh BETWEEN '2019-01-01' and '2020-01-01' #BETWEEN - show промежуток
+SELECT * FROM table_name WHERE email LIKE '%.com' # LIKE sorteb by part of string
+SELECT * FROM table_name WHERE email iLIKE '%.com' #iLIKE is ignoring case 
+SELECT country_of_birth, COUNT(*) FROM table_name GROUP BY country_of_birth #COUNT is show quanitity, GROUP BY is group
+SELECT country_of_birth, COUNT(*) FROM table_name GROUP BY country_of_birth HAVING COUNT(*) > 10 #HAVING is sorted who have somethink
+SELECT country_of_birth, COUNT(*) FROM table_name GROUP BY country_of_birth HAVING COUNT(*) > 10 ORDER BY DESC #sort by в обратном порядке
+SELECT id, first_name AS name, last_name AS surname, gender AS sex, imail, date_of_birth, country_of_birth FROM table_name #AS - alias
+SELECT COALESCE(email, 'not applicable') FROM table_name #COALESCE is change nul value to somethink
 SELECT * FROM table_name LIMIT 20 #show only 20 first rows
 SELECT * FROM table_name OFFSER 5 LIMIT 20 #show only 20 first rows from 5-th rows
 SELECT * FROM table_name OFFSER 5 FETCH FIRST 20 ROW ONLY #same as
+create table holiday (id BIGSERIAL NOT NULL PRIMARY KEY, destination_country VARCHAR(100) NOT NULL, destination_city VARCHAR(100) NOT NULL,	price NUMERIC(19, 2) NOT NULL); # 19, 2 - колличыество цифр до и после запятой
+SELECT MAX(price) FROM holiday # show MAX
+SELECT MIN(price) FROM holiday # show MIN
+SELECT AVG(price) FROM holiday # show averege
+SELECT ROUND(AVG(price)) FROM holiday #ROUND - округление до целого, не отбрасывание
+SELECT destination_country, destination_city, MAX(price) FROM holiday GROUP BY destination_country, destination_city
+SELECT SUM(price) FROM holiday # SUM is summa
+SELECT destination_country, SUM(price) FROM holiday GROUP BY destination_country
+SELECT 100+2 #show 102 (+, -, /, *, ^, %, !)
+SELECT NOW() #show current time
+SELECT NOW()::DATE #show current time only DATE
+SELECT NOW()::TIME #show current time only TIME
+SELECT NOW() - INTERVAL '1 YEAR' ##show current time minus 1 year
+SELECT NOW() - INTERVAL '10 MONTHs'
+SELECT NOW() - INTERVAL '10 DAYS'
+SELECT EXTRACT(YEAR FROM NOW()) # show only DATA
+SELECT EXTRACT(DOW FROM NOW()) # show Day Of the Week, starts of sundey
+SELECT fist_name, last_name, gender, country_of_birth, date_of_birth, AGE(NOW(), date_of_birth) as age FROM employee #show age 
+ALTER TABLE table_name DROP CONSTRAINT table_name_pkey #delete primary key
+ALTER TABLE table_name ADD PRIMARY KEY(id) #add primary key
+DELETE FROM table_name WHERE id = 1 #delete all line with 'id = 1'
+SELECT email, count(*) FROM table_name GROUP BY email HAVING COUNT(*) > 1; #show all email who repeat > 1
+ALTER TABLE table_name ADD CONSTRAINT gender_constraint CHECK (gender = 'Male' or gender = 'Female') #add ограничение(CONSTRAINT) to add only female and mail
+UPDATE table_name SET email = '123@123.rj', first_name = 'Joe' WHERE id = 3 # change email and first_name for line with id = 3, если не добавить WHERE обновиться для всеё таблицы
