@@ -2869,3 +2869,24 @@ DELETE FROM table_name WHERE id = 1 #delete all line with 'id = 1'
 SELECT email, count(*) FROM table_name GROUP BY email HAVING COUNT(*) > 1; #show all email who repeat > 1
 ALTER TABLE table_name ADD CONSTRAINT gender_constraint CHECK (gender = 'Male' or gender = 'Female') #add ограничение(CONSTRAINT) to add only female and mail
 UPDATE table_name SET email = '123@123.rj', first_name = 'Joe' WHERE id = 3 # change email and first_name for line with id = 3, если не добавить WHERE обновиться для всеё таблицы
+INSERT INTO table_name (id, first_name, last_name, gender, email, date_of_birth, country_of_birth) VALUES (3, 'John','Doe', 'Male', '123@123.ru', DATE '2019-12-10', 'Russia') # add new line
+ON CONFLICT (id) DO NOTHING # don't show exception when happen conflict
+ON CONFLICT (id) DO UPDATE SET email = EXCLUDED.email, first_name = EXCLUDED.first_name # when happen conflict id then udate only email and first_name
+#Foreign Keys (Внешние ключи)
+CREATE TABLE bicycle (
+id BIGSERIAL NOT NULL PRIMARY KEY,
+make VARCHAR(100) NOT NULL,
+type VARCHAR(100) NOT NULL,
+price NUMERIC(19, 2) NOT NULL)
+ALTER TABLE table_name ADD bicycle_id BIGINT REFERENCES bicycle (id) #add столбец with link to other table (id)
+ALTER TABLE table_name ADD UNIQUE(bicycle_id) # make поле unique
+UPDATE table_name SET bicycle_id = 2 WHERE id = 4 # add link to other table
+#INNER JOIN - show only common fields
+SELECT * FROM table_name JOIN bicycle ON table_name.bicycle_id = bicycle.id # show joins tables, table_name_id - field (поле) in first table, bicycle.id - field of other table
+SELECT table_name.first_name, bicycle.make, bicycle.type, bicycle.price FROM table_name JOIN bicycle ON employ # show joins tables with only needed field
+#LEFT JOIN - show all fields
+SELECT * FROM table_name LEFT JOIN bicycle ON bicycle.id = table_name.bicycle_id # show all fields in left table
+SELECT * FROM table_name LEFT JOIN bicycle ON bicycle.id = table_name.bicycle_id WHERE bicycle_id IS NOT NULL # show only NOT NULL
+#RIGHT JOIN
+SELECT * FROM table_name RIGHT JOIN bicycle ON bicycle.id = table_name.bicycle_id # show all fields in right table
+SELECT * FROM table_name FULL OUTER JOIN bicycle ON bicycle.id = table_name.bicycle_id # show all fields
