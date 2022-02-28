@@ -2804,7 +2804,7 @@ createuser –U postgres operator #где operator -имя нового поль
 psql –U postgres #запуск итерактивной оболочки
 ALTER ROLE operator SUPERUSER CREATEROLE CREATEDB #предоставление суперпользователя для operator
 \du # show all superuser
-CREATE DATABASE avecoder; #create db, don't foget ";"
+CREATE DATABASE avecoder #create db, don't foget ";"
 \l # show all database
 \c avecoder # connet to db
 CREATE TABLE table_name (Column_name + data_type + constraints (if any)) #create table
@@ -2890,3 +2890,12 @@ SELECT * FROM table_name LEFT JOIN bicycle ON bicycle.id = table_name.bicycle_id
 #RIGHT JOIN
 SELECT * FROM table_name RIGHT JOIN bicycle ON bicycle.id = table_name.bicycle_id # show all fields in right table
 SELECT * FROM table_name FULL OUTER JOIN bicycle ON bicycle.id = table_name.bicycle_id # show all fields
+#transfer
+\copy (SELECT * FROM table_name LEFT JOIN bicycle ON bicycle.id = table_name.id WHERE bicycle_id IS NOT NULL) TO '/Users/Desktop/test' DELIMITER ',' CSV HEADER # convert to csv, DELIMITER - разделитель
+
+SELECT * FROM pg_available_extensions; # show all extension which might install
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp" # IF NOT EXISTS - если не существует
+\df #show command of extension
+SELECT uuid_generate_v4(); # generate random uuid
+CREATE TABLE passport ( passport_serial UUID NOT NULL PRIMARY KEY, issue_date DATE NOT NULL, expire DATE NOT NULL, country_of_issue VARCHAR(150) NOT NULL)
+INSERT INTO passport (passport_serial, issue_date, expare_date, countru_of_issue) VALUES (uuid_generate_v4(), '2020_02_03', '2045_02_03', 'United_kindom') # table with uuid

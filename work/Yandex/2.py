@@ -48,3 +48,7 @@ print(match_object*)
 
 '''
 
+'''
+SELECT Countries.name, count(*) FROM Countries JOIN Cities ON Cities.country_id = Countries.id JOIN Companies ON Companies.city_id = Cities.id WHERE 
+Companies.labors >= 1000 GROUP BY Countries.name;
+'''
